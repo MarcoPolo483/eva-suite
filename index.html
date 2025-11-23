@@ -155,7 +155,30 @@
             font-size: 2.5rem;
             margin-bottom: 15px;
         }
-        .product-description {
+        .product-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        .product-btn {
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+        .product-btn:hover {
+            background: var(--secondary);
+            color: var(--dark);
+        }
+        .product-btn.active {
+            background: var(--success);
+        }
+        .product-description, .product-usecase {
             display: none;
             margin-top: 15px;
             padding-top: 15px;
@@ -164,7 +187,10 @@
             line-height: 1.8;
             text-align: left;
         }
-        .product-card.expanded .product-description {
+        .product-card.show-description .product-description {
+            display: block;
+        }
+        .product-card.show-usecase .product-usecase {
             display: block;
         }
         .product-category {
@@ -342,35 +368,100 @@
             <p style="color: var(--neutral); margin-bottom: 20px; font-style: italic;">Every EVA product works 3 ways: Traditional UI clicks, Chat with keyboard, or Voice commands. Click any product to see concrete examples.</p>
             <div class="eva-products">
                 <!-- User Products -->
-                <div class="product-card" onclick="this.classList.toggle('expanded')">
+                <div class="product-card">
                     <div class="product-icon">💬</div>
                     <h3>EVA Chat</h3>
                     <span class="product-category">User Product</span>
+                    <div class="product-buttons">
+                        <button class="product-btn" onclick="showProductInfo(this, 'description'); event.stopPropagation();">Description</button>
+                        <button class="product-btn" onclick="showProductInfo(this, 'usecase'); event.stopPropagation();">Use Case</button>
+                    </div>
                     <div class="product-description"><strong>Example:</strong> You type: "Search our SharePoint for the Q3 budget template Susan used last year, then email it to my team with a note that we need to submit by Friday." EVA Chat orchestrates multiple agents: finds the document, drafts the email with your signature, shows you the preview, sends on your approval. <strong>The Art:</strong> Eventually becomes your universal enterprise console - everything you do at work, you just tell EVA.</div>
+                    <div class="product-usecase"><strong>Use Case: Manager's Monday Morning Routine</strong><br>
+                    <strong>1)</strong> Opens EVA Chat: "Show me all team updates from last week"<br>
+                    <strong>2)</strong> EVA searches Teams, Outlook, SharePoint → summarizes 12 updates<br>
+                    <strong>3)</strong> "Schedule 1-on-1s with anyone who mentioned blockers"<br>
+                    <strong>4)</strong> EVA finds 3 people, checks calendars, books 30-min slots<br>
+                    <strong>5)</strong> "Draft status report for my VP highlighting the product launch milestone"<br>
+                    <strong>6)</strong> EVA drafts email with timeline, shows preview<br>
+                    <strong>7)</strong> Manager edits subject line, says "Send"<br>
+                    <strong>Result:</strong> 45-minute Monday morning routine → 10 minutes with EVA</div>
                 </div>
-                <div class="product-card" onclick="this.classList.toggle('expanded')">
+                <div class="product-card">
                     <div class="product-icon">🔍</div>
                     <h3>EVA DA</h3>
                     <span class="product-category">User Product</span>
+                    <div class="product-buttons">
+                        <button class="product-btn" onclick="showProductInfo(this, 'description'); event.stopPropagation();">Description</button>
+                        <button class="product-btn" onclick="showProductInfo(this, 'usecase'); event.stopPropagation();">Use Case</button>
+                    </div>
                     <div class="product-description"><strong>Example:</strong> Policy advisor asks: "Show me all CPP-D appeals where medical evidence was insufficient, jurisprudence cited, and claimant was under 45." EVA DA queries structured databases + RAG over documents + RaC rule engine, returns: 47 cases with citations, decision patterns, and common themes. <strong>The Art:</strong> RAG+RaC neurosymbolic reasoning - probabilistic search meets logical rules, no hallucinations on eligibility.</div>
+                    <div class="product-usecase"><strong>Use Case: Legal Researcher Finding Precedents</strong><br>
+                    <strong>1)</strong> Lawyer asks EVA DA: "Show appeals in Atlantic region, 2023-2024, where tribunal overturned initial decision"<br>
+                    <strong>2)</strong> EVA DA queries database (structured) + jurisprudence library (RAG) + RaC rules<br>
+                    <strong>3)</strong> Returns 23 cases with: decision text, key factors, cited statutes, outcome<br>
+                    <strong>4)</strong> Lawyer: "Which ones cited section 42(2)(a) medical evidence requirements?"<br>
+                    <strong>5)</strong> EVA DA filters → 8 cases, highlights relevant paragraphs<br>
+                    <strong>6)</strong> Lawyer: "Summarize common themes in overturns"<br>
+                    <strong>7)</strong> EVA DA: "Main themes: insufficient specialist reports (6 cases), outdated evidence (4 cases), tribunal found new functional limitations (3 cases)"<br>
+                    <strong>Result:</strong> 3 days of manual research → 20 minutes with EVA DA</div>
                 </div>
-                <div class="product-card" onclick="this.classList.toggle('expanded')">
+                <div class="product-card">
                     <div class="product-icon">🌐</div>
                     <h3>EVA Portal</h3>
                     <span class="product-category">User Product</span>
-                    <div class="product-description">Governance and administration dashboard for enterprise-wide EVA Suite management. Central hub for configuration, monitoring, and control.</div>
+                    <div class="product-buttons">
+                        <button class="product-btn" onclick="showProductInfo(this, 'description'); event.stopPropagation();">Description</button>
+                        <button class="product-btn" onclick="showProductInfo(this, 'usecase'); event.stopPropagation();">Use Case</button>
+                    </div>
+                    <div class="product-description"><strong>Example:</strong> IT Director logs in, sees dashboard: "47 active EVA spaces, $12K monthly cost, 8 spaces over budget alerts, 3 pending security reviews." Clicks "CPP-D Project" space, reviews: 1,200 queries this month, avg response 2.3s, 94% user satisfaction, top 5 documents accessed. Sets new budget cap: $2K/month. Gets alert when 80% threshold hit. <strong>The Art:</strong> Enterprise governance hub - who's using what, spending how much, achieving what results. Single pane of glass for AI platform oversight.</div>
+                    <div class="product-usecase"><strong>Use Case: IT Director Monthly Review</strong><br>
+                    <strong>1)</strong> Opens EVA Portal → sees 47 spaces across organization<br>
+                    <strong>2)</strong> Filters by "over budget" → 8 spaces flagged red<br>
+                    <strong>3)</strong> Clicks "Legal Discovery" space (highest spend: $3.2K this month)<br>
+                    <strong>4)</strong> Reviews usage: 450 queries, 12 active users, mostly document summarization<br>
+                    <strong>5)</strong> Sees spike on Nov 15-17 (court deadline prep)<br>
+                    <strong>6)</strong> Approves overage, sets alert for next spike<br>
+                    <strong>7)</strong> Exports cost report for Finance<br>
+                    <strong>Result:</strong> 15 min monthly review vs 3 hours manually tracking spreadsheets</div>
                 </div>
-                <div class="product-card" onclick="this.classList.toggle('expanded')">
+                <div class="product-card">
                     <div class="product-icon">💭</div>
                     <h3>EVA AskMe</h3>
                     <span class="product-category">User Product</span>
-                    <div class="product-description">Context-aware embeddable widget that learns host webpage navigation to become an intelligent app-specific chatbot. Answers questions about everything it learned.</div>
+                    <div class="product-buttons">
+                        <button class="product-btn" onclick="showProductInfo(this, 'description'); event.stopPropagation();">Description</button>
+                        <button class="product-btn" onclick="showProductInfo(this, 'usecase'); event.stopPropagation();">Use Case</button>
+                    </div>
+                    <div class="product-description"><strong>Example:</strong> HR embeds EVA AskMe widget on Benefits Portal. Widget crawls all portal pages, learns navigation structure: "Dental plan is under Health → Coverage Options." Employee asks widget: "How do I add my spouse to dental?" EVA AskMe answers: "Go to Health Coverage → Manage Dependents, click Add Spouse, upload marriage certificate, effective next pay period. FYI: deadline is 30 days after marriage." Widget learned this from portal content + HR policy docs. <strong>The Art:</strong> Embeddable chatbot that becomes an expert on YOUR application by learning its navigation and content.</div>
+                    <div class="product-usecase"><strong>Use Case: New Employee Onboarding Portal</strong><br>
+                    <strong>Scenario:</strong> Company has complex onboarding portal (20+ pages, 50+ forms)<br>
+                    <strong>1)</strong> HR embeds EVA AskMe widget in corner of portal<br>
+                    <strong>2)</strong> AskMe crawls portal, maps: Home → Direct Deposit → Tax Forms → Benefits → IT Access...<br>
+                    <strong>3)</strong> New hire Day 1, confused: "Where do I set up direct deposit?"<br>
+                    <strong>4)</strong> AskMe answers: "Click 'Payroll Setup' in left menu, then 'Direct Deposit Form'"<br>
+                    <strong>5)</strong> Employee: "What info do I need?"<br>
+                    <strong>6)</strong> AskMe: "Bank name, routing number, account number. You can find these on a check."<br>
+                    <strong>Result:</strong> 80% reduction in HR help desk tickets for navigation questions</div>
                 </div>
-                <div class="product-card" onclick="this.classList.toggle('expanded')">
+                <div class="product-card">
                     <div class="product-icon">👤</div>
                     <h3>EVA CloneMe</h3>
                     <span class="product-category">User Product</span>
+                    <div class="product-buttons">
+                        <button class="product-btn" onclick="showProductInfo(this, 'description'); event.stopPropagation();">Description</button>
+                        <button class="product-btn" onclick="showProductInfo(this, 'usecase'); event.stopPropagation();">Use Case</button>
+                    </div>
                     <div class="product-description"><strong>Example:</strong> You say: "Book me a meeting room for two next week, afternoon, 30 minutes. Find a slot in Shannon's calendar and send him an invite to discuss our common interests." CloneMe checks your calendars, finds Tuesday 2pm works, books Room 405, drafts invite referencing your last 3 email threads with Shannon. Then: "Ask CloneMe to attend the CIO debriefing I'll miss Friday, then make me a summary with my next steps." CloneMe joins Teams meeting, takes notes, emails you: "CIO approved the AI budget. Your action: submit Q1 forecast by Nov 30." <strong>Moonshot 2027:</strong> Saves 2+ hours/day.</div>
+                    <div class="product-usecase"><strong>Use Case: Executive's Crazy Thursday</strong><br>
+                    <strong>Morning:</strong> "CloneMe, I have back-to-back meetings 9-5 today. Monitor my Outlook for urgent items, draft holding responses."<br>
+                    <strong>10:30am:</strong> CFO emails: "Need Q4 forecast ASAP." CloneMe drafts: "Working on it, will have by EOD."<br>
+                    <strong>2pm:</strong> Double-booked conflict detected. CloneMe: "You're double-booked at 3pm: Product Review vs HR Budget. Which should I reschedule?"<br>
+                    <strong>2:05pm:</strong> You: "Move Product Review to tomorrow afternoon."<br>
+                    <strong>2:06pm:</strong> CloneMe finds slot, moves meeting, notifies 6 attendees<br>
+                    <strong>5:30pm:</strong> You: "CloneMe, what did I miss today?"<br>
+                    <strong>5:31pm:</strong> CloneMe summary: "3 urgent emails (drafted responses, await your approval), 2 meeting conflicts resolved, Shannon confirmed coffee tomorrow 10am, reminder: Q4 forecast due EOD."<br>
+                    <strong>Result:</strong> Stayed on top of 47 emails, 8 meetings, 0 dropped balls</div>
                 </div>
                 
                 <!-- AI Intelligence Products -->
@@ -577,6 +668,20 @@
     </div>
 
     <script>
+        // Product tile interaction
+        function showProductInfo(button, type) {
+            const card = button.closest('.product-card');
+            const buttons = card.querySelectorAll('.product-btn');
+            
+            // Remove active/expanded states
+            buttons.forEach(btn => btn.classList.remove('active'));
+            card.classList.remove('show-description', 'show-usecase', 'expanded');
+            
+            // Add new state
+            button.classList.add('active');
+            card.classList.add('show-' + type, 'expanded');
+        }
+        
         // Auto-refresh every 5 minutes
         setTimeout(() => {
             window.location.reload();
