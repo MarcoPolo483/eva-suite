@@ -138,14 +138,43 @@
             border-radius: 8px;
             text-align: center;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
         }
         .product-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .product-card.expanded {
+            grid-column: span 2;
+            text-align: left;
         }
         .product-icon {
             font-size: 2.5rem;
             margin-bottom: 15px;
+        }
+        .product-description {
+            display: none;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid var(--primary);
+            color: var(--neutral);
+            line-height: 1.8;
+            text-align: left;
+        }
+        .product-card.expanded .product-description {
+            display: block;
+        }
+        .product-category {
+            background: var(--primary);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            display: inline-block;
+            margin-top: 10px;
         }
         .last-updated {
             text-align: center;
@@ -309,67 +338,122 @@
 
         <!-- EVA Suite Products -->
         <div class="card">
-            <h2>�� EVA Suite Product Lineup</h2>
+            <h2>🎯 EVA Suite Product Lineup (18 Products)</h2>
             <div class="eva-products">
-                <div class="product-card">
+                <!-- User Products -->
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
                     <div class="product-icon">💬</div>
                     <h3>EVA Chat</h3>
-                    <p>Conversational AI Interface</p>
+                    <span class="product-category">User Product</span>
+                    <div class="product-description">Enterprise conversational AI console integrating agentic capabilities. The central interface for all EVA Suite interactions, eventually becoming the enterprise console for everything.</div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
                     <div class="product-icon">🔍</div>
                     <h3>EVA DA</h3>
-                    <p>Data Access Frontend</p>
+                    <span class="product-category">User Product</span>
+                    <div class="product-description">Domain Assistant - Intelligent data access layer enabling seamless querying across all organizational data sources. Retrieves information from anywhere in the enterprise.</div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
                     <div class="product-icon">🌐</div>
                     <h3>EVA Portal</h3>
-                    <p>Enterprise Dashboard</p>
+                    <span class="product-category">User Product</span>
+                    <div class="product-description">Governance and administration dashboard for enterprise-wide EVA Suite management. Central hub for configuration, monitoring, and control.</div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
                     <div class="product-icon">💭</div>
                     <h3>EVA AskMe</h3>
-                    <p>Context-Aware Widget</p>
+                    <span class="product-category">User Product</span>
+                    <div class="product-description">Context-aware embeddable widget that learns host webpage navigation to become an intelligent app-specific chatbot. Answers questions about everything it learned.</div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
                     <div class="product-icon">👤</div>
                     <h3>EVA CloneMe</h3>
-                    <p>Digital Twin Agent (2027)</p>
+                    <span class="product-category">User Product</span>
+                    <div class="product-description">M365 digital twin learning from Outlook, Calendar, Teams, OneDrive, OneNote, To-Do, and Planner for proactive assistance. Saves 2+ hours per day through intelligent automation.</div>
                 </div>
-                <div class="product-card">
+                
+                <!-- AI/Vision Products -->
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
                     <div class="product-icon">👁️</div>
                     <h3>EVA Vision</h3>
-                    <p>Power BI Voice Plugin</p>
+                    <span class="product-category">AI/Vision</span>
+                    <div class="product-description">Power BI voice plugin enabling accessibility through voice-driven data exploration. Makes business intelligence accessible to everyone.</div>
                 </div>
-                <div class="product-card">
-                    <div class="product-icon">💻</div>
-                    <h3>EVA OS</h3>
-                    <p>Windows Copilot+ Alternative</p>
-                </div>
-                <div class="product-card">
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
                     <div class="product-icon">🧠</div>
                     <h3>EVA IQ</h3>
-                    <p>Intelligent Query Engine</p>
+                    <span class="product-category">AI/Vision</span>
+                    <div class="product-description">Intelligent query engine powering natural language understanding across the platform. Core AI reasoning system for all EVA Suite products.</div>
                 </div>
-                <div class="product-card">
+                
+                <!-- Platform Products -->
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
+                    <div class="product-icon">💻</div>
+                    <h3>EVA OS</h3>
+                    <span class="product-category">Platform</span>
+                    <div class="product-description">Windows Copilot+ alternative providing company-branded AI operating system integration. "Your company's EVA" seamlessly embedded in Windows.</div>
+                </div>
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
                     <div class="product-icon">📚</div>
                     <h3>EVA Learning</h3>
-                    <p>Adaptive AI Training</p>
+                    <span class="product-category">Platform</span>
+                    <div class="product-description">Adaptive AI training platform for continuous model improvement and user education. Learns and evolves with your organization.</div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
                     <div class="product-icon">📊</div>
                     <h3>EVA LiveOps</h3>
-                    <p>Operations Monitoring</p>
+                    <span class="product-category">Platform</span>
+                    <div class="product-description">Real-time operations monitoring and incident management for production environments. Ensures 24/7 platform reliability.</div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
                     <div class="product-icon">📈</div>
                     <h3>EVA Analytics</h3>
-                    <p>Business Intelligence</p>
+                    <span class="product-category">Platform</span>
+                    <div class="product-description">Business intelligence engine providing insights across all EVA Suite operations. Data-driven decision making for enterprises.</div>
                 </div>
-                <div class="product-card">
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
                     <div class="product-icon">🛒</div>
                     <h3>EVA Marketplace</h3>
-                    <p>AI Agent Marketplace</p>
+                    <span class="product-category">Platform</span>
+                    <div class="product-description">AI agent marketplace for discovering, sharing, and deploying custom agents. Extends EVA Suite capabilities through community contributions.</div>
+                </div>
+                
+                <!-- Developer Platform -->
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
+                    <div class="product-icon">🔌</div>
+                    <h3>EVA Chat SDK</h3>
+                    <span class="product-category">Developer</span>
+                    <div class="product-description">Embeddable chat microservices SDK enabling legacy apps to integrate conversational AI capabilities. Bring EVA Chat to any application.</div>
+                </div>
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
+                    <div class="product-icon">🎨</div>
+                    <h3>EVA UI/UX Tools</h3>
+                    <span class="product-category">Developer</span>
+                    <div class="product-description">Visual IDE (WYSIWYG) for building accessible, internationalized interfaces. Leverages EVA design system with drag-and-drop simplicity.</div>
+                </div>
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
+                    <div class="product-icon">♿</div>
+                    <h3>EVA Accessibility</h3>
+                    <span class="product-category">Developer</span>
+                    <div class="product-description">WCAG 2.1 AA compliant component library (eva-i11y). Brings accessibility to any application through reusable components and testing tools.</div>
+                </div>
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
+                    <div class="product-icon">🌍</div>
+                    <h3>EVA i18n</h3>
+                    <span class="product-category">Developer</span>
+                    <div class="product-description">Multi-language support framework (eva-i18n) for global deployments. Seamless internationalization for enterprise applications.</div>
+                </div>
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
+                    <div class="product-icon">🛠️</div>
+                    <h3>EVA Agent Tooling</h3>
+                    <span class="product-category">Developer</span>
+                    <div class="product-description">DevTools and Reasoning-as-Code (RaC) helpers for building custom AI agents. Complete toolkit for agent development lifecycle.</div>
+                </div>
+                <div class="product-card" onclick="this.classList.toggle('expanded')">
+                    <div class="product-icon">🤖</div>
+                    <h3>EVA MCP</h3>
+                    <span class="product-category">Developer</span>
+                    <div class="product-description">Model Context Protocol integration and agent orchestration framework. Enables seamless agent communication and workflow coordination.</div>
                 </div>
             </div>
         </div>
