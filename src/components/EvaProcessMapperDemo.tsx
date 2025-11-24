@@ -45,11 +45,6 @@ const EvaProcessMapperDemo: React.FC = () => {
   const data = demoData as ProcessMapperData;
   const process = data.process;
 
-  // Get actor label by id
-  const getActorLabel = (actorId: string): string => {
-    return process.actors.find(a => a.id === actorId)?.label || actorId;
-  };
-
   // Get type color
   const getTypeColor = (type: string): string => {
     const typeMap: Record<string, string> = {
