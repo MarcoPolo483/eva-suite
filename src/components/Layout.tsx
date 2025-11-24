@@ -1,13 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import type { ReactNode } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import { useI18n } from '../i18n/i18n';
 
 interface LayoutProps {
   children: ReactNode;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const [lang, setLang] = useState<'en' | 'fr'>('en');
+  const { language, setLanguage, t } = useI18n();
 
   return (
     <div className="app-shell">
@@ -30,17 +31,15 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   isActive ? 'app-nav-link--active' : undefined
                 }
               >
-                {lang === 'en' ? 'Products' : 'Produits'}
+                {t('nav.products')}
               </NavLink>
               <button
                 type="button"
                 className="app-lang-toggle"
-                onClick={() => setLang(lang === 'en' ? 'fr' : 'en')}
-                aria-label={
-                  lang === 'en' ? 'Passer en français' : 'Switch to English'
-                }
+                onClick={() => setLanguage(language === 'en' ? 'fr' : 'en')}
+                aria-label={t('nav.switchLang')}
               >
-                {lang === 'en' ? 'FR' : 'EN'}
+                {language === 'en' ? 'FR' : 'EN'}
               </button>
             </nav>
           </div>
@@ -54,7 +53,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <footer className="app-footer">
         <div className="app-footer-inner">
           <span>© {new Date().getFullYear()} EVA Suite Lab</span>
-          <span>Built with ChatGPT + Copilot</span>
+          <span>{t('footer.builtWith')}</span>
         </div>
       </footer>
     </div>

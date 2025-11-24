@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import type { EvaProduct } from '../components/ProductCard';
 import rawData from '../data/eva-suite-products.json';
+import { useI18n } from '../i18n/i18n';
 
 interface ExtendedProduct extends EvaProduct {
   use_case?: {
@@ -27,6 +28,7 @@ interface EvaSuiteJson {
 
 const Home: React.FC = () => {
   const navigate = useNavigate();
+  const { t } = useI18n();
   const data = rawData as unknown as EvaSuiteJson;
   const suite = data.eva_suite;
   const products = suite.products ?? [];
@@ -56,9 +58,9 @@ const Home: React.FC = () => {
   return (
     <>
       {/* Vision Banner */}
-      <div className="vision-banner">
+      <section className="vision-banner" aria-labelledby="vision-heading">
         <div className="container">
-          <h2>💫 The EVA Suite: A Visionary's Personal Project</h2>
+          <h1 id="vision-heading">💫 {t('home.vision.title')}</h1>
           <div className="vision-story">
             <p>
               <strong>EVA Suite</strong> is an enterprise AI platform comprising{' '}
@@ -85,20 +87,20 @@ const Home: React.FC = () => {
             </p>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Main Dashboard */}
       <div className="container">
         <div className="hero">
-          <h1>🚀 EVA Suite Dashboard</h1>
-          <p>Enterprise AI Platform - Development Status & Progress Tracking</p>
+          <h2>🚀 {t('home.dashboard.title')}</h2>
+          <p>{t('home.dashboard.subtitle')}</p>
         </div>
 
         {/* Products Section */}
-        <div className="card">
-          <h2>🎯 EVA Suite Product Lineup ({suite.total_products} Products) - Real Examples</h2>
+        <section className="card" aria-labelledby="products-heading">
+          <h3 id="products-heading">🎯 {t('home.products.title')} ({suite.total_products} Products) - Real Examples</h3>
           <p className="products-intro">
-            Every EVA product works 3 ways: Traditional UI clicks, Chat with keyboard, or Voice commands.
+            {t('home.products.intro')}
             Click any product to see concrete examples.
           </p>
           
@@ -132,18 +134,21 @@ const Home: React.FC = () => {
                 {hasDemo(product) && (
                   <span style={{
                     position: 'absolute',
-                    top: '0.5rem',
-                    right: '0.5rem',
-                    padding: '0.25rem 0.5rem',
-                    fontSize: '0.65rem',
-                    borderRadius: '8px',
-                    background: 'rgba(40, 167, 69, 0.25)',
-                    border: '1px solid rgba(40, 167, 69, 0.5)',
-                    color: '#4ade80',
+                    top: '0.75rem',
+                    right: '0.75rem',
+                    padding: '0.4rem 0.75rem',
+                    fontSize: '0.7rem',
+                    borderRadius: '12px',
+                    background: 'linear-gradient(135deg, rgba(40, 167, 69, 0.2) 0%, rgba(74, 222, 128, 0.25) 100%)',
+                    border: '1.5px solid rgba(40, 167, 69, 0.6)',
+                    color: '#22c55e',
                     fontWeight: 'bold',
-                    textTransform: 'uppercase'
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.5px',
+                    boxShadow: '0 2px 8px rgba(40, 167, 69, 0.25)',
+                    backdropFilter: 'blur(4px)'
                   }}>
-                    ✨ Demo
+                    ✨ {t('home.demo.badge')}
                   </span>
                 )}
                 
@@ -160,7 +165,7 @@ const Home: React.FC = () => {
                         showProductInfo(product.id, 'description');
                       }}
                     >
-                      Description
+                      {t('product.description')}
                     </button>
                     <button
                       className={`product-btn ${
@@ -173,18 +178,18 @@ const Home: React.FC = () => {
                         showProductInfo(product.id, 'usecase');
                       }}
                     >
-                      Use Case
+                      {t('product.useCase')}
                     </button>
                   </div>
                 )}
 
                 {expandedCard?.id === product.id && expandedCard?.type === 'description' && (
                   <div className="product-description">
-                    <strong>Example:</strong> {product.description}
+                    <strong>{t('product.example')}</strong> {product.description}
                     {product.moonshot && (
                       <>
                         {' '}
-                        <strong>The Art:</strong> {product.moonshot}
+                        <strong>{t('product.theArt')}</strong> {product.moonshot}
                       </>
                     )}
                   </div>
@@ -214,7 +219,7 @@ const Home: React.FC = () => {
               </div>
             ))}
           </div>
-        </div>
+        </section>
       </div>
     </>
   );

@@ -2,6 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import rawData from '../data/eva-suite-products.json';
 import type { EvaProduct } from '../components/ProductCard';
+import { useI18n } from '../i18n/i18n';
 import LiveOpsDashboard from '../components/LiveOpsDashboard';
 import EvaDaDemo from '../components/EvaDaDemo';
 import EvaDevCrewDemo from '../components/EvaDevCrewDemo';
@@ -24,6 +25,7 @@ interface EvaSuiteJson {
 
 const ProductPage: React.FC = () => {
   const { id } = useParams();
+  const { t } = useI18n();
   const data = rawData as unknown as EvaSuiteJson;
   const products = data.eva_suite.products || [];
 
@@ -51,7 +53,7 @@ const ProductPage: React.FC = () => {
   return (
     <div className="product-layout">
       <p style={{ fontSize: '0.75rem' }}>
-        <Link to="/">← Back to all products</Link>
+        <Link to="/">← {t('productPage.back')}</Link>
       </p>
 
       <header className="product-header">
@@ -59,19 +61,19 @@ const ProductPage: React.FC = () => {
           {product.icon ?? '🧩'}
         </span>
         <div>
-          <div className="product-header-title">{product.name}</div>
+          <h1 className="product-header-title">{product.name}</h1>
           <div className="product-header-category">{product.category}</div>
         </div>
       </header>
 
       <section>
-        <div className="product-section-title">Overview</div>
+        <h2 className="product-section-title">{t('productPage.overview')}</h2>
         <p className="product-section-body">{product.description}</p>
       </section>
 
       {product.use_case && (
         <section>
-          <div className="product-section-title">Sample use case</div>
+          <h2 className="product-section-title">{t('productPage.sampleUseCase')}</h2>
           {product.use_case.title && (
             <p className="product-section-body">
               <strong>{product.use_case.title}</strong>
@@ -92,7 +94,7 @@ const ProductPage: React.FC = () => {
 
       {product.moonshot && (
         <section>
-          <div className="product-section-title">Moonshot vision</div>
+          <h2 className="product-section-title">{t('productPage.moonshot')}</h2>
           <p className="product-section-body">{product.moonshot}</p>
         </section>
       )}
