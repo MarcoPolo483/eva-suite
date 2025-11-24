@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, type ReactNode } from 'react';
 
-type Language = 'en' | 'fr';
+export type Language = 'en' | 'fr';
 
 interface Translations {
   [key: string]: {
@@ -10,7 +10,29 @@ interface Translations {
 }
 
 const translations: Translations = {
-  // App Navigation
+  // App Core
+  appTitle: {
+    en: 'EVA Suite',
+    fr: 'Suite EVA',
+  },
+  navProducts: {
+    en: 'Products',
+    fr: 'Produits',
+  },
+  navAbout: {
+    en: 'About',
+    fr: 'À Propos',
+  },
+  navLanguage: {
+    en: 'Language',
+    fr: 'Langue',
+  },
+  heroTagline: {
+    en: 'Personal lab – Dec 24, 2025 demo',
+    fr: 'Labo personnel – Démo 24 déc 2025',
+  },
+  
+  // App Navigation (legacy keys for compatibility)
   'nav.products': {
     en: 'Products',
     fr: 'Produits',
@@ -91,7 +113,10 @@ const translations: Translations = {
 
 interface I18nContextType {
   language: Language;
+  lang: Language;  // Alias for language
   setLanguage: (lang: Language) => void;
+  setLang: (lang: Language) => void;  // Alias for setLanguage
+  toggleLanguage: () => void;
   t: (key: string) => string;
 }
 
@@ -109,8 +134,19 @@ export const I18nProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     return translation[language];
   };
 
+  const toggleLanguage = () => {
+    setLanguage(prev => prev === 'en' ? 'fr' : 'en');
+  };
+
   return (
-    <I18nContext.Provider value={{ language, setLanguage, t }}>
+    <I18nContext.Provider value={{ 
+      language, 
+      lang: language,
+      setLanguage, 
+      setLang: setLanguage,
+      toggleLanguage,
+      t 
+    }}>
       {children}
     </I18nContext.Provider>
   );

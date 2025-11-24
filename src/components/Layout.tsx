@@ -8,7 +8,7 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const { language, setLanguage, t } = useI18n();
+  const { lang, toggleLanguage, t } = useI18n();
 
   return (
     <div className="app-shell">
@@ -18,9 +18,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             <Link to="/" className="app-title">
               <span aria-hidden="true">✨</span>
               <div>
-                <div className="app-title-main">EVA Suite</div>
+                <div className="app-title-main">{t('appTitle')}</div>
                 <div className="app-title-sub">
-                  Personal lab – Dec 24, 2025 demo
+                  {t('heroTagline')}
                 </div>
               </div>
             </Link>
@@ -31,15 +31,19 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                   isActive ? 'app-nav-link--active' : undefined
                 }
               >
-                {t('nav.products')}
+                {t('navProducts')}
               </NavLink>
               <button
                 type="button"
                 className="app-lang-toggle"
-                onClick={() => setLanguage(language === 'en' ? 'fr' : 'en')}
-                aria-label={t('nav.switchLang')}
+                onClick={toggleLanguage}
+                aria-label={
+                  lang === 'en'
+                    ? 'Basculer l\'interface en français'
+                    : 'Switch interface to English'
+                }
               >
-                {language === 'en' ? 'FR' : 'EN'}
+                {lang.toUpperCase()}
               </button>
             </nav>
           </div>
