@@ -331,6 +331,106 @@ body {
   color: var(--success);
 }
 
+/* Product Page Layout */
+.product-layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.product-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin: 32px 0 48px;
+  padding: 32px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 16px;
+  box-shadow: 
+    0 4px 16px rgba(0,0,0,0.08),
+    0 2px 8px rgba(0,0,0,0.04);
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+.product-header-icon {
+  font-size: 5rem;
+  line-height: 1;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+}
+
+.product-header-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--dark);
+  margin: 0 0 8px 0;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.product-header-category {
+  background: linear-gradient(135deg, var(--primary) 0%, #0056b3 100%);
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  display: inline-block;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  box-shadow: 0 3px 10px rgba(0, 123, 255, 0.25);
+}
+
+.product-section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 48px 0 20px 0;
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--primary);
+  display: inline-block;
+  letter-spacing: -0.02em;
+}
+
+.product-section-body {
+  font-size: 1.15rem;
+  line-height: 1.9;
+  color: #2d3748;
+  margin: 24px 0;
+  padding: 24px;
+  background: linear-gradient(145deg, #ffffff 0%, #fafbfc 100%);
+  border-radius: 12px;
+  border-left: 5px solid var(--primary);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.product-usecase-steps {
+  margin: 24px 0;
+  padding: 28px 32px 28px 56px;
+  background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+  border-radius: 12px;
+  border-left: 5px solid var(--success);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  list-style-position: outside;
+}
+
+.product-usecase-steps li {
+  font-size: 1.1rem;
+  line-height: 1.9;
+  color: #2d3748;
+  margin-bottom: 16px;
+  padding-left: 8px;
+}
+
+.product-usecase-steps li:last-child {
+  margin-bottom: 0;
+}
+
+.product-usecase-steps li::marker {
+  color: var(--success);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 /* Layout Styles */
 .app-shell {
   min-height: 100vh;
