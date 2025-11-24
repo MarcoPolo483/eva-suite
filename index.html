@@ -49,6 +49,51 @@
             opacity: 0.9;
             margin-bottom: 30px;
         }
+        .vision-banner {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            border-bottom: 4px solid var(--warning);
+        }
+        .vision-banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 25px;
+            font-weight: 300;
+            background: linear-gradient(135deg, var(--secondary), var(--warning));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .vision-banner .vision-story {
+            max-width: 900px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            opacity: 0.95;
+        }
+        .vision-banner .vision-story strong {
+            color: var(--secondary);
+            font-weight: 600;
+        }
+        .vision-banner .vision-highlight {
+            background: rgba(255, 140, 0, 0.15);
+            padding: 20px;
+            border-radius: 12px;
+            margin: 25px auto;
+            border-left: 4px solid var(--warning);
+            max-width: 850px;
+        }
+        .vision-banner .vision-highlight p {
+            font-size: 1.15rem;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .vision-banner .signature {
+            font-size: 0.95rem;
+            opacity: 0.7;
+            margin-top: 30px;
+        }
         .status-badge {
             display: inline-block;
             padding: 8px 16px;
@@ -237,6 +282,28 @@
     </style>
 </head>
 <body>
+    <!-- Vision Banner -->
+    <div class="vision-banner">
+        <div class="container">
+            <h2>💫 The EVA Suite: A Visionary's Personal Project</h2>
+            <div class="vision-story">
+                <p><strong>EVA Suite</strong> is an enterprise AI platform comprising <strong>24 products</strong> across 5 categories: <strong>EVA Chat</strong> (your AI conversational interface), <strong>EVA DA</strong> (Document & Data Intelligence), <strong>EVA Portal</strong> (unified workspace), <strong>EVA CloneMe</strong> (your AI proxy attending meetings), <strong>EVA Home</strong> (work-life AI continuity on Alexa/Google Home), <strong>EVA Vision</strong> (accessibility-first AI), <strong>EVA IQ</strong> (Work Graph + Domain Intelligence), <strong>EVA RaC</strong> (Rules as Code neurosymbolic engine), <strong>EVA OS</strong> (native Windows AI layer), <strong>EVA Channel Interactivity</strong> (UI/Chat/Voice simultaneously), and 14 more revolutionary products including Developer Tools and Moonshot projects.</p>
+                
+                <div class="vision-highlight">
+                    <p><strong>"I see EVA everywhere... agents talking to agents."</strong></p>
+                    <p>– Marco's email, December 2023</p>
+                </div>
+                
+                <p>Back in <strong>December 2023</strong>, before the world fully understood agentic AI, Marco wrote those prophetic words. He saw it: <strong>agents talking to agents</strong>, autonomous systems collaborating, AI that doesn't just answer questions but <em>takes action</em>. The vision was already there.</p>
+                
+                <p><strong>Now, in 2025, Marco is making that vision real.</strong></p>
+                
+                <p>This is not a corporate committee product. This is <strong>one visionary's personal mission</strong> to build what he saw coming two years ago. EVA Suite is <strong>sensational</strong>. It's <strong>huge</strong>. It's the future of enterprise AI, and it's being built right now, one sprint at a time.</p>
+            </div>
+            <div class="signature">Personal project of Marco • Vision from December 2023 • Reality in 2025</div>
+        </div>
+    </div>
+
     <div class="hero">
         <div class="container">
             <h1>🚀 EVA Suite Dashboard</h1>
@@ -364,7 +431,7 @@
 
         <!-- EVA Suite Products -->
         <div class="card">
-            <h2>🎯 EVA Suite Product Lineup (23 Products) - Real Examples</h2>
+            <h2>🎯 EVA Suite Product Lineup (24 Products) - Real Examples</h2>
             <p style="color: var(--neutral); margin-bottom: 20px; font-style: italic;">Every EVA product works 3 ways: Traditional UI clicks, Chat with keyboard, or Voice commands. Click any product to see concrete examples.</p>
             <div class="eva-products">
                 <!-- User Products -->
@@ -452,16 +519,19 @@
                         <button class="product-btn" onclick="showProductInfo(this, 'description'); event.stopPropagation();">Description</button>
                         <button class="product-btn" onclick="showProductInfo(this, 'usecase'); event.stopPropagation();">Use Case</button>
                     </div>
-                    <div class="product-description"><strong>Example:</strong> You say: "Book me a meeting room for two next week, afternoon, 30 minutes. Find a slot in Shannon's calendar and send him an invite to discuss our common interests." CloneMe checks your calendars, finds Tuesday 2pm works, books Room 405, drafts invite referencing your last 3 email threads with Shannon. Then: "Ask CloneMe to attend the CIO debriefing I'll miss Friday, then make me a summary with my next steps." CloneMe joins Teams meeting, takes notes, emails you: "CIO approved the AI budget. Your action: submit Q1 forecast by Nov 30." <strong>Moonshot 2027:</strong> Saves 2+ hours/day.</div>
+                    <div class="product-description"><strong>Example:</strong> You say: "Book me a meeting room for two next week, afternoon, 30 minutes. Find a slot in Shannon's calendar and send him an invite to discuss our common interests." CloneMe checks your calendars, finds Tuesday 2pm works, books Room 405, drafts invite referencing your last 3 email threads with Shannon. Then: "Ask CloneMe to attend the CIO debriefing I'll miss Friday, then make me a summary with my next steps." CloneMe joins Teams meeting, takes notes, emails you: "CIO approved the AI budget. Your action: submit Q1 forecast by Nov 30. P.S. I can now answer any questions about the AI governance proposal you presented - I've indexed your deck, the Q&A discussion, and CIO's feedback." <strong>The Twist:</strong> CloneMe builds a RAG index of every meeting it attends FOR YOU, becoming your expert proxy on those topics. <strong>Moonshot 2027:</strong> Saves 2+ hours/day.</div>
                     <div class="product-usecase"><strong>Use Case: Executive's Crazy Thursday</strong><br>
                     <strong>Morning:</strong> "CloneMe, I have back-to-back meetings 9-5 today. Monitor my Outlook for urgent items, draft holding responses."<br>
                     <strong>10:30am:</strong> CFO emails: "Need Q4 forecast ASAP." CloneMe drafts: "Working on it, will have by EOD."<br>
                     <strong>2pm:</strong> Double-booked conflict detected. CloneMe: "You're double-booked at 3pm: Product Review vs HR Budget. Which should I reschedule?"<br>
                     <strong>2:05pm:</strong> You: "Move Product Review to tomorrow afternoon."<br>
                     <strong>2:06pm:</strong> CloneMe finds slot, moves meeting, notifies 6 attendees<br>
+                    <strong>3pm:</strong> CloneMe attends HR Budget meeting you couldn't make, takes notes<br>
                     <strong>5:30pm:</strong> You: "CloneMe, what did I miss today?"<br>
                     <strong>5:31pm:</strong> CloneMe summary: "3 urgent emails (drafted responses, await your approval), 2 meeting conflicts resolved, Shannon confirmed coffee tomorrow 10am, reminder: Q4 forecast due EOD."<br>
-                    <strong>Result:</strong> Stayed on top of 47 emails, 8 meetings, 0 dropped balls</div>
+                    <strong>5:32pm:</strong> You: "What was decided in the HR budget meeting?"<br>
+                    <strong>5:33pm:</strong> CloneMe: "Hiring freeze through Q1 except critical roles, training budget cut 15%, bonus pool protected. Your next step: revise Q1 hiring plan by next Wednesday. Want me to draft it based on current open reqs?"<br>
+                    <strong>Result:</strong> Stayed on top of 47 emails, 8 meetings, 0 dropped balls + instant recall of meetings you missed</div>
                 </div>
                 
                 <!-- AI Intelligence Products -->
@@ -522,6 +592,27 @@
                     <h3>EVA Channel Interactivity</h3>
                     <span class="product-category">Platform</span>
                     <div class="product-description"><strong>The Paradigm Shift:</strong> Every EVA product works 3 ways simultaneously:<br><strong>1) Traditional UI:</strong> Click menus, fill forms, navigate screens (classic software)<br><strong>2) Chat Interface:</strong> Type commands in natural language, EVA executes multi-step workflows<br><strong>3) Voice Commands:</strong> Speak requests, EVA responds via audio + screen updates<br><br><strong>Example:</strong> Same task 3 ways - "Create expense report for Paris trip":<br>• <strong>UI Mode:</strong> Click Expenses → New → Select Trip → Add receipts → Calculate totals → Submit<br>• <strong>Chat Mode:</strong> Type: "EVA, create expense report for Paris trip Nov 10-15, attach hotel/flight receipts from OneDrive"<br>• <strong>Voice Mode:</strong> Say: "EVA, expense report Paris trip" (EVA narrates steps, you approve with "yes" or "submit")<br><br><strong>The Art:</strong> Users choose their interaction style. Power users use voice for speed. New users use UI with chat hints. Accessibility users rely on voice narration. Same powerful features, your preferred channel.</div>
+                </div>
+
+                <!-- EVA Home Device -->
+                <div class="product-card">
+                    <div class="product-icon">🏠</div>
+                    <h3>EVA Home</h3>
+                    <span class="product-category">User Product</span>
+                    <div class="product-buttons">
+                        <button class="product-btn" onclick="showProductInfo(this, 'description'); event.stopPropagation();">Description</button>
+                        <button class="product-btn" onclick="showProductInfo(this, 'usecase'); event.stopPropagation();">Use Case</button>
+                    </div>
+                    <div class="product-description"><strong>The Origin Story:</strong> Marco renamed his Alexa to "EVA" - and realized the vision extends beyond the office. <strong>EVA Home</strong> brings your enterprise AI assistant to your home device (Alexa, Google Home, Apple HomePod). <strong>Example:</strong> You're driving home, you say: "EVA, what did I miss at work today?" EVA summarizes: "3 urgent emails (Shannon needs Q1 forecast by EOD), CloneMe attended your 3pm budget meeting (hiring freeze through Q1), and your VP approved the AI proposal - you present to executives next Wednesday." Then: "EVA, remind me tomorrow morning to review the executive deck." EVA: "Reminder set for 8am." <strong>The Twist:</strong> Your work EVA and home EVA are the same intelligence - seamless context across devices. <strong>Moonshot 2027:</strong> Work-life AI continuity - your assistant follows you everywhere.</div>
+                    <div class="product-usecase"><strong>Use Case: Executive's Evening Routine</strong><br>
+                    <strong>6:30pm:</strong> Marco arrives home, says: "EVA, catch me up"<br>
+                    <strong>6:31pm:</strong> EVA Home (via Alexa speaker): "You have 2 urgent items: CFO needs Q4 forecast by 9am tomorrow, and Shannon confirmed coffee meeting moved to Wednesday 10am. CloneMe attended your HR budget meeting - hiring freeze through Q1 except critical roles. Your action: revise Q1 hiring plan by next Wednesday."<br>
+                    <strong>6:32pm:</strong> Marco: "EVA, set reminder for 7am tomorrow: finish Q4 forecast before CFO meeting"<br>
+                    <strong>6:33pm:</strong> EVA: "Reminder set for 7am. Also, I see you have a 9:30am meeting with CFO - should I block 7-9am on your calendar as focus time?"<br>
+                    <strong>6:34pm:</strong> Marco: "Yes, and draft the forecast outline so I can review it tomorrow morning"<br>
+                    <strong>6:35pm:</strong> EVA: "Focus time blocked. Outline drafted based on Q3 template and current pipeline data. I'll email it to you now."<br>
+                    <strong>7:45am next day:</strong> Marco's phone alarm + EVA reminder: "Good morning. Your Q4 forecast outline is ready for review. You have 2 hours before the CFO meeting."<br>
+                    <strong>Result:</strong> Work continues seamlessly across office EVA → home EVA → morning EVA. Zero context loss, proactive planning, always prepared.</div>
                 </div>
                 
                 <!-- Developer Platform -->
