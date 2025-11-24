@@ -1,0 +1,140 @@
+import React from 'react';
+import { useParams, Link } from 'react-router-dom';
+import rawData from '../data/eva-suite-products.json';
+import type { EvaProduct } from '../components/ProductCard';
+import LiveOpsDashboard from '../components/LiveOpsDashboard';
+import EvaDaDemo from '../components/EvaDaDemo';
+import EvaDevCrewDemo from '../components/EvaDevCrewDemo';
+import EvaAccessibilityDemo from '../components/EvaAccessibilityDemo';
+import EvaImpactAnalyzerDemo from '../components/EvaImpactAnalyzerDemo';
+import EvaProcessMapperDemo from '../components/EvaProcessMapperDemo';
+
+interface EvaSuiteJson {
+  eva_suite: {
+    products: (EvaProduct & {
+      use_case?: {
+        title?: string;
+        steps?: string[];
+        result?: string;
+      } | null;
+      moonshot?: string;
+    })[];
+  };
+}
+
+const ProductPage: React.FC = () => {
+  const { id } = useParams();
+  const data = rawData as unknown as EvaSuiteJson;
+  const products = data.eva_suite.products || [];
+
+  const idNum = Number(id);
+  const product = products.find((p) => p.id === idNum);
+
+  if (!product) {
+    return (
+      <div>
+        <p style={{ fontSize: '0.9rem' }}>Product not found.</p>
+        <p>
+          <Link to="/">← Back to all products</Link>
+        </p>
+      </div>
+    );
+  }
+
+  const isLiveOps = product.name.toLowerCase().includes('liveops');
+  const isEvaDa = product.name.toLowerCase().includes('eva da');
+  const isDevTools = product.name.toLowerCase().includes('devtools');
+  const isAccessibility = product.name.toLowerCase().includes('accessibility');
+  const isImpactAnalyzer = product.name.toLowerCase().includes('impact analyzer');
+  const isProcessMapper = product.name.toLowerCase().includes('process mapper');
+
+  return (
+    <div className="product-layout">
+      <p style={{ fontSize: '0.75rem' }}>
+        <Link to="/">← Back to all products</Link>
+      </p>
+
+      <header className="product-header">
+        <span className="product-header-icon" aria-hidden="true">
+          {product.icon ?? '🧩'}
+        </span>
+        <div>
+          <div className="product-header-title">{product.name}</div>
+          <div className="product-header-category">{product.category}</div>
+        </div>
+      </header>
+
+      <section>
+        <div className="product-section-title">Overview</div>
+        <p className="product-section-body">{product.description}</p>
+      </section>
+
+      {product.use_case && (
+        <section>
+          <div className="product-section-title">Sample use case</div>
+          {product.use_case.title && (
+            <p className="product-section-body">
+              <strong>{product.use_case.title}</strong>
+            </p>
+          )}
+          {product.use_case.steps && product.use_case.steps.length > 0 && (
+            <ol className="product-usecase-steps">
+              {product.use_case.steps.map((step, idx) => (
+                <li key={idx}>{step}</li>
+              ))}
+            </ol>
+          )}
+          {product.use_case.result && (
+            <p className="product-section-body">{product.use_case.result}</p>
+          )}
+        </section>
+      )}
+
+      {product.moonshot && (
+        <section>
+          <div className="product-section-title">Moonshot vision</div>
+          <p className="product-section-body">{product.moonshot}</p>
+        </section>
+      )}
+
+      {/* Placeholder where hero demos will plug in */}
+      {isLiveOps && (
+        <section style={{ marginTop: '1rem' }}>
+          <LiveOpsDashboard />
+        </section>
+      )}
+
+      {isEvaDa && (
+        <section style={{ marginTop: '1rem' }}>
+          <EvaDaDemo />
+        </section>
+      )}
+
+      {isDevTools && (
+        <section style={{ marginTop: '1rem' }}>
+          <EvaDevCrewDemo />
+        </section>
+      )}
+
+      {isAccessibility && (
+        <section style={{ marginTop: '1rem' }}>
+          <EvaAccessibilityDemo />
+        </section>
+      )}
+
+      {isImpactAnalyzer && (
+        <section style={{ marginTop: '1rem' }}>
+          <EvaImpactAnalyzerDemo />
+        </section>
+      )}
+
+      {isProcessMapper && (
+        <section style={{ marginTop: '1rem' }}>
+          <EvaProcessMapperDemo />
+        </section>
+      )}
+    </div>
+  );
+};
+
+export default ProductPage;

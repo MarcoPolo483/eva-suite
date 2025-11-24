@@ -1,51 +1,73 @@
-# EVA Suite - Enterprise AI Platform Dashboard
+# React + TypeScript + Vite
 
-**Live Dashboard:** https://marcopolo483.github.io/eva-suite/
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Overview
+Currently, two official plugins are available:
 
-Real-time status dashboard for EVA Suite development, featuring:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-- 📊 Sprint progress tracking
-- 📝 CDD completion metrics
-- 🚀 Development velocity
-- 🎯 Project milestones
-- 📈 Quality metrics
+## React Compiler
 
-## About EVA Suite
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-EVA (Enterprise Virtual Assistant) Suite is a comprehensive AI platform with 26+ microservice repositories, including:
+## Expanding the ESLint configuration
 
-- **User Products:** EVA Chat, EVA DA, EVA Portal, EVA AskMe, EVA CloneMe, EVA Vision, EVA OS
-- **Platform Components:** Agent Runtime, Authentication, RAG Engine, Azure OpenAI integration, MCP servers
-- **Developer Tools:** 16 specialized EVA Crew agents (P00-P15)
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-## Development
+```js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
 
-This dashboard is automatically deployed from the `main` branch via GitHub Pages.
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-### Local Development
-
-Open `index.html` directly in your browser or run a local server:
-
-```bash
-# Python
-python -m http.server 8000
-
-# Node.js
-npx http-server
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
 ```
 
-Then navigate to http://localhost:8000
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
-## Repository Migration
+```js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
 
-This repository replaces `eva-matrix` as the official EVA Suite dashboard. The URL has been consolidated to:
-- **Old:** `https://marcopolo483.github.io/eva-matrix/`
-- **New:** `https://marcopolo483.github.io/eva-suite/`
-
-## Links
-
-- **GitHub Organization:** https://github.com/MarcoPolo483
-- **Main Orchestrator:** https://github.com/MarcoPolo483/eva-orchestrator
-- **APIM POC:** https://github.com/MarcoPolo483/eva-apim-governance-poc
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+```
