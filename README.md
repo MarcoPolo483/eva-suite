@@ -2,6 +2,12 @@
 
 A showcase application demonstrating 24 EVA Suite products across 5 categories, built with React + TypeScript + Vite.
 
+## EVA Suite Lab Overview
+
+For a narrative explanation of what this lab contains and how it was built with AI assistance, see:
+
+- [`docs/EVA-Suite-Lab-Overview.md`](docs/EVA-Suite-Lab-Overview.md)
+
 ## EVA Suite – 6 Hero Demos Implemented
 
 All six EVA Suite hero demos defined in the EVA Orchestrator plan (`eva-suite-heroes-demo-v1`) are now fully implemented in the `eva-suite` repo:
