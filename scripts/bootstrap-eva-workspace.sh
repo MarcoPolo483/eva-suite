@@ -11,7 +11,7 @@
 #     eva-foundation/
 #     eva-orchestrator/
 #     eva-da-2/
-#     eva-suite-liveops/
+#     eva-ops/
 #     eva-meta/
 #
 # Usage:
@@ -63,7 +63,7 @@ echo "2) Checking expected EVA Suite folder structure..."
 check_dir "eva-foundation"
 check_dir "eva-orchestrator"
 check_dir "eva-da-2"
-check_dir "eva-suite-liveops"
+check_dir "eva-ops"
 check_dir "eva-meta"
 echo ""
 
@@ -73,7 +73,7 @@ If any directories are missing, you likely need to clone them, for example:
   git clone <your-origin-url>/eva-foundation.git
   git clone <your-origin-url>/eva-orchestrator.git
   git clone <your-origin-url>/eva-da-2.git
-  git clone <your-origin-url>/eva-suite-liveops.git
+  git clone <your-origin-url>/eva-ops.git
   git clone <your-origin-url>/eva-meta.git
 
 EOF
@@ -164,7 +164,7 @@ Repo-specific focus:
 - In `eva-foundation`: infra as code, APIM configs, shared services.
 - In `eva-orchestrator`: execution policies, routing, guardrails, telemetry.
 - In `eva-da-2`: UI, accessibility (WCAG), i18n, API client, feedback UI.
-- In `eva-suite-liveops`: dashboards, monitoring definitions, LiveOps docs.
+- In `eva-ops`: dashboards, monitoring definitions, LiveOps docs.
 - In `eva-meta`: documentation, patterns, architectural notes, dev crew runbooks.
 
 Always help maintain a clean, enterprise-grade EVA Suite codebase.
