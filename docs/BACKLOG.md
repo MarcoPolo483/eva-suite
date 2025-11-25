@@ -7,9 +7,11 @@
 ## 🐛 Bugs / Issues
 
 ### Issue #1: eva-orchestrator project-board-sync workflow failing
-**Status:** Open  
+**Status:** Known Issue - Tracked in eva-orchestrator  
 **Priority:** Low  
 **Reported:** 2025-11-25  
+**Tracked As:** REQ-2025-11-18-001 in `eva-orchestrator/docs/intake/inbox/user-request-backlog.md`  
+**GitHub Issue:** [eva-orchestrator#20](https://github.com/MarcoPolo483/eva-orchestrator/issues/20)
 
 **Description:**
 GitHub Actions workflow in `eva-orchestrator` repo is failing when attempting to sync backlog to project board.
@@ -24,27 +26,26 @@ GitHub Actions workflow in `eva-orchestrator` repo is failing when attempting to
 - Does NOT affect GitHub Pages (https://marcopolo483.github.io/eva-suite/)
 - Only affects internal project board sync automation
 
-**Root Cause:**
-- GitHub token in workflow lacks proper permissions for project board access
-- Issue links reference repos that may not exist or have incorrect URLs
+**Root Cause (KNOWN):**
+- Workflow awaiting `PAT_TOKEN` secret configuration before enabling scheduled runs
+- Per eva-orchestrator backlog: "Workflow `.github/workflows/project-board-sync.yml` added; awaiting PAT secret before enabling scheduled runs."
 
-**Proposed Solution:**
-1. Navigate to eva-orchestrator repo
-2. Update `.github/workflows/project-board-sync.yml`:
-   - Fix `GITHUB_TOKEN` permissions (needs `project: write`)
-   - Or disable/remove workflow if not needed
-3. Clean up issue references to non-existent repos
-4. Test workflow with manual trigger
+**Solution:**
+- Configure Personal Access Token with project board permissions in GitHub Secrets
+- Set secret name: `PAT_TOKEN` or `METRICS_TOKEN` (as referenced in workflows)
+- Already documented in eva-orchestrator sprint plan
 
 **Related Files:**
 - `eva-orchestrator/.github/workflows/project-board-sync.yml`
 - `eva-orchestrator/.github/workflows/sm-job.yml`
 - `eva-orchestrator/.github/workflows/sprint-metrics.yml`
+- `eva-orchestrator/docs/intake/inbox/user-request-backlog.md` (REQ-2025-11-18-001)
 
 **Notes:**
-- eva-suite deploy workflow is working correctly
-- This is a separate workflow issue in a different repo
-- Low priority unless project board automation is actively used
+- ✅ eva-suite deploy workflow is working correctly
+- ✅ Already tracked in master EVA backlog system
+- ✅ Solution documented, awaiting token configuration
+- Low priority - part of Sprint 01 management pod automation
 
 ---
 
