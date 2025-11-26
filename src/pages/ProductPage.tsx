@@ -10,6 +10,7 @@ import EvaAccessibilityDemo from '../components/EvaAccessibilityDemo';
 import EvaImpactAnalyzerDemo from '../components/EvaImpactAnalyzerDemo';
 import EvaProcessMapperDemo from '../components/EvaProcessMapperDemo';
 import InfoAssistantDemo from '../components/InfoAssistantDemo';
+import { findProductByRouteParam } from '../utils/productRoutes';
 
 interface EvaSuiteJson {
   eva_suite: {
@@ -29,9 +30,7 @@ const ProductPage: React.FC = () => {
   const { t } = useI18n();
   const data = rawData as unknown as EvaSuiteJson;
   const products = data.eva_suite.products || [];
-
-  const idNum = Number(id);
-  const product = products.find((p) => p.id === idNum);
+  const product = findProductByRouteParam(products, id);
 
   if (!product) {
     return (

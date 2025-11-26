@@ -4,6 +4,7 @@ import type { EvaProduct } from '../components/ProductCard';
 import rawData from '../data/eva-suite-products.json';
 import { useI18n } from '../i18n/i18n';
 import AuditTrailDashboard from '../components/AuditTrailDashboard';
+import { getProductRouteSegment } from '../utils/productRoutes';
 
 interface ExtendedProduct extends EvaProduct {
   use_case?: {
@@ -53,8 +54,8 @@ const Home: React.FC = () => {
       name.includes('devtools') ||
       name.includes('accessibility') ||
       name.includes('impact analyzer') ||
-        name.includes('process mapper') ||
-        name.includes('info assistant');
+      name.includes('process mapper') ||
+      name.includes('info assistant');
   };
 
   return (
@@ -156,7 +157,8 @@ const Home: React.FC = () => {
                 onClick={(e) => {
                   // Only navigate if this product has a demo AND not clicking a button
                   if (hasDemo(product) && !(e.target as HTMLElement).closest('button')) {
-                    navigate(`/products/${product.id}`);
+                    const routeSegment = getProductRouteSegment(product);
+                    navigate(`/products/${routeSegment}`);
                   }
                 }}
                 style={{

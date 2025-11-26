@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import { getProductRouteSegment } from '../utils/productRoutes';
 
 export interface EvaProduct {
   id: number;
@@ -18,7 +19,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate(`/products/${product.id}`);
+    const routeSegment = getProductRouteSegment(product);
+    navigate(`/products/${routeSegment}`);
   };
 
   return (
