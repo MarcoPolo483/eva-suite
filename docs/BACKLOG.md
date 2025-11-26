@@ -75,6 +75,7 @@ Build automatic context loading/saving system integrated with login.ps1/logoff.p
 - **Integrated** `logoff.ps1`: Calls save-context.ps1 before stats display
 - Session ID passed to save-context for tracking
 - Error handling added (graceful fallback if scripts missing)
+- **New:** Logoff auto-summarizes accomplishments from git activity (no manual prompt)
 - **Tested**: Context loads correctly at simulated login ✅
 
 🔄 **Phase 3: Multi-Repo Support** (Next - Est. 2-3 hours)
