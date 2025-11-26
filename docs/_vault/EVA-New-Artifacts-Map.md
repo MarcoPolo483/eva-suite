@@ -1,11 +1,11 @@
 # EVA New Artifacts Map
 
 This file lists all files under eva-orchestrator modified in the last 21 days
-(since 2025-11-05 04:42).  
+(since 2025-11-05 04:48).  
 These are treated as **new or recently changed EVA-specific artifacts**
 relative to the original Microsoft PubSec Information Assistant baseline.
 
-> Generated on: 2025-11-26 04:42
+> Generated on: 2025-11-26 04:48
 > Root: C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-suite
 
 ---
@@ -73,7 +73,7 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\test-token.ps1  (Last modified: 2025-11-21 19:13)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\time-report.ps1  (Last modified: 2025-11-24 06:44)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\tsconfig.json  (Last modified: 2025-11-21 14:19)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\work-sessions.json  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\work-sessions.json  (Last modified: 2025-11-26 04:48)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.devcontainer
 
@@ -81,7 +81,7 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.eva
 
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.eva\context.json  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.eva\context.json  (Last modified: 2025-11-26 04:48)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github
 
