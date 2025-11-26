@@ -1,6 +1,6 @@
 {
   "eva_suite": {
-    "total_products": 24,
+    "total_products": 25,
     "categories": [
       "User Products",
       "AI Intelligence",
@@ -34,6 +34,25 @@
           "result": "45-minute Monday morning routine → 10 minutes with EVA"
         },
         "moonshot": "Eventually becomes your universal enterprise console - everything you do at work, you just tell EVA.",
+        "has_dual_buttons": true
+      },
+      {
+        "id": 25,
+        "name": "Info Assistant Demo",
+        "icon": "🧠",
+        "category": "User Product",
+        "description": "Bilingual, accessibility-first landing experience that showcases how EVA Info Assistant cards, voice preview, and i18n editor work together. Demonstrates the 'impossible now possible' UX before any backend wiring by pulling strings from the EVA i18n contract and pairing them with seeded interactions.",
+        "use_case": {
+          "title": "Showcase scenario for CIO and accessibility teams",
+          "steps": [
+            "Presenter opens the Info Assistant card on EVA Suite and toggles between EN/FR to prove bilingual readiness.",
+            "Voice preview tile captures a spoken prompt ('What changed in the audit trail today?') and displays the narrated response with citations.",
+            "Presenter switches to the i18n editor view, edits a literal, and points to how APIM will eventually serve those strings.",
+            "Wrap-up: highlight WCAG notes and keyboard navigation working across all elements."
+          ],
+          "result": "Stakeholders see an accessible, bilingual AI experience they can test immediately while Azure/APIM plumbing comes next."
+        },
+        "moonshot": "Single front door for public sector demos where voice, chat, and UI co-exist with explainable strings delivered through APIM-backed i18n services.",
         "has_dual_buttons": true
       },
       {

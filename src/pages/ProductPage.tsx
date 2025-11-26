@@ -9,6 +9,7 @@ import EvaDevCrewDemo from '../components/EvaDevCrewDemo';
 import EvaAccessibilityDemo from '../components/EvaAccessibilityDemo';
 import EvaImpactAnalyzerDemo from '../components/EvaImpactAnalyzerDemo';
 import EvaProcessMapperDemo from '../components/EvaProcessMapperDemo';
+import InfoAssistantDemo from '../components/InfoAssistantDemo';
 
 interface EvaSuiteJson {
   eva_suite: {
@@ -49,6 +50,7 @@ const ProductPage: React.FC = () => {
   const isAccessibility = product.name.toLowerCase().includes('accessibility');
   const isImpactAnalyzer = product.name.toLowerCase().includes('impact analyzer');
   const isProcessMapper = product.name.toLowerCase().includes('process mapper');
+  const isInfoAssistant = product.name.toLowerCase().includes('info assistant');
 
   return (
     <div className="product-layout">
@@ -133,6 +135,12 @@ const ProductPage: React.FC = () => {
       {isProcessMapper && (
         <section style={{ marginTop: '1rem' }}>
           <EvaProcessMapperDemo />
+        </section>
+      )}
+
+      {isInfoAssistant && (
+        <section style={{ marginTop: '1rem' }}>
+          <InfoAssistantDemo />
         </section>
       )}
     </div>

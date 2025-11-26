@@ -399,6 +399,96 @@ const translations: Translations = {
     fr: 'Sessions de travail détectées avec durée et comptes de fichiers',
   },
 
+  // Info Assistant Demo
+  'infoAssistant.hero.heading': {
+    en: 'Info Assistant – Impossible Now Possible',
+    fr: 'Assistant d’information – L’impossible devient possible',
+  },
+  'infoAssistant.hero.subheading': {
+    en: 'Bilingual, accessible storytelling surface powered by seeded data and EVA i18n contracts.',
+    fr: 'Surface narrative bilingue et accessible alimentée par des données démonstratives et les contrats i18n d’EVA.',
+  },
+  'infoAssistant.hero.badge': {
+    en: 'Priority 1 Demo',
+    fr: 'Démo priorité 1',
+  },
+  'infoAssistant.cards.label': {
+    en: 'Story cards',
+    fr: 'Cartes narratives',
+  },
+  'infoAssistant.cards.detailsLabel': {
+    en: 'Card details',
+    fr: 'Détails de la carte',
+  },
+  'infoAssistant.cards.copilot.details': {
+    en: 'Explains how Copilot Pro+ offloads routine work so humans stay focused on architecture, testing, and accessibility. The Info Assistant page uses this copy as live proof that strings can be swapped in seconds.',
+    fr: 'Explique comment Copilot Pro+ décharge les tâches routinières afin que les humains se concentrent sur l’architecture, les tests et l’accessibilité. La page de l’assistant d’information utilise ce texte comme preuve vivante que les chaînes peuvent être modifiées en quelques secondes.',
+  },
+  'infoAssistant.cards.imagination.details': {
+    en: 'Highlights why imagination-led demos matter: seeded data plus explainability beats static slideware. Reviewers can toggle cards, voice, and i18n editor without waiting for backend integration.',
+    fr: 'Souligne pourquoi les démonstrations guidées par l’imagination sont essentielles : données semées et explicabilité surpassent les présentations statiques. Les réviseurs peuvent basculer entre les cartes, la voix et l’éditeur i18n sans attendre l’intégration backend.',
+  },
+  'infoAssistant.cards.evaAtGoC.details': {
+    en: 'Connects the Info Assistant experience to Government of Canada priorities: bilingual delivery, WCAG readiness, and governance hooks that APIM + FinOps will provide next.',
+    fr: 'Relie l’expérience Assistant d’information aux priorités du GC : livraison bilingue, préparation WCAG et points d’ancrage de gouvernance qu’APIM + FinOps fourniront ensuite.',
+  },
+  'infoAssistant.voice.localeSwitcher': {
+    en: 'Voice sample locale',
+    fr: 'Langue de l’exemple vocal',
+  },
+  'infoAssistant.voice.promptLabel': {
+    en: 'User prompt',
+    fr: 'Invite utilisateur',
+  },
+  'infoAssistant.voice.responseLabel': {
+    en: 'Assistant response',
+    fr: 'Réponse de l’assistant',
+  },
+  'infoAssistant.voice.sample.en.prompt': {
+    en: '“EVA, what changed in the audit trail today? Highlight anything that affects accessibility.”',
+    fr: '“EVA, what changed in the audit trail today? Highlight anything that affects accessibility.”',
+  },
+  'infoAssistant.voice.sample.en.response': {
+    en: '“Two pull requests touched the WCAG scanner: focus ring refactor merged and localization copy updated. No regressions detected. I logged a reminder to run Axe after the next deploy.”',
+    fr: '“Deux demandes de tirage ont modifié l’analyseur WCAG : refonte de l’anneau de focus et mise à jour des textes de localisation. Aucune régression détectée. J’ai consigné un rappel pour exécuter Axe après le prochain déploiement.”',
+  },
+  'infoAssistant.voice.sample.fr.prompt': {
+    en: '« EVA, quelles mises à jour dois-je partager avec le CIO aujourd’hui? »',
+    fr: '« EVA, quelles mises à jour dois-je partager avec le CIO aujourd’hui? »',
+  },
+  'infoAssistant.voice.sample.fr.response': {
+    en: '“Résumé en français : LiveOps demeure stable, la démo Info Assistant est prête côté UI et l’intégration APIM commence demain. Aucune alerte critique.”',
+    fr: '« Résumé : LiveOps demeure stable, la démo Assistant d’information côté interface est prête et l’intégration APIM commence demain. Aucune alerte critique. »',
+  },
+  'infoAssistant.editor.title': {
+    en: 'i18n editor preview',
+    fr: 'Aperçu de l’éditeur i18n',
+  },
+  'infoAssistant.editor.description': {
+    en: 'Strings shown here are sourced from the EVA i18n contract so APIM can serve them later.',
+    fr: 'Les chaînes présentées proviennent du contrat i18n d’EVA afin qu’APIM puisse les diffuser plus tard.',
+  },
+  'infoAssistant.editor.rows.hero.label': {
+    en: 'home.hero.heading',
+    fr: 'home.hero.heading',
+  },
+  'infoAssistant.editor.rows.hero.value': {
+    en: 'EVA Suite – One AI Platform, Many Experiences',
+    fr: 'EVA Suite – Une plateforme d’IA, plusieurs expériences',
+  },
+  'infoAssistant.editor.rows.copilot.label': {
+    en: 'home.cards.copilotLove.summary',
+    fr: 'home.cards.copilotLove.summary',
+  },
+  'infoAssistant.editor.rows.voice.label': {
+    en: 'home.voice.helper',
+    fr: 'home.voice.helper',
+  },
+  'infoAssistant.disclaimer': {
+    en: 'Lab data only. Strings are hydrated from mock contracts today and will flow through APIM + FinOps telemetry in the next increment.',
+    fr: 'Données de laboratoire seulement. Les chaînes proviennent de contrats simulés aujourd’hui et passeront par APIM + télémétrie FinOps lors du prochain incrément.',
+  },
+
   'devtools.multirepo.title': {
     en: 'Multi-Repo Pattern',
     fr: 'Modèle Multi-Dépôts',

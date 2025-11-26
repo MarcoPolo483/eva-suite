@@ -67,7 +67,6 @@ const sampleData: AuditWidgets = {
 
 const AuditTrailDashboard: React.FC = () => {
     const [data, setData] = useState<AuditWidgets>(sampleData);
-    const [loading, setLoading] = useState(false);
 
     // Future: Fetch real data from API
     useEffect(() => {

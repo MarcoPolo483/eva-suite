@@ -53,7 +53,8 @@ const Home: React.FC = () => {
       name.includes('devtools') ||
       name.includes('accessibility') ||
       name.includes('impact analyzer') ||
-      name.includes('process mapper');
+        name.includes('process mapper') ||
+        name.includes('info assistant');
   };
 
   return (
