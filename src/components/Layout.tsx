@@ -33,6 +33,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               >
                 {t('navProducts')}
               </NavLink>
+              <NavLink
+                to="/devtools"
+                className={({ isActive }) =>
+                  isActive ? 'app-nav-link--active' : undefined
+                }
+              >
+                {t('navDevTools')}
+              </NavLink>
               <button
                 type="button"
                 className="app-lang-toggle"

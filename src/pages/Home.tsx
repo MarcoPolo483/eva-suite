@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import type { EvaProduct } from '../components/ProductCard';
 import rawData from '../data/eva-suite-products.json';
 import { useI18n } from '../i18n/i18n';
+import AuditTrailDashboard from '../components/AuditTrailDashboard';
 
 interface ExtendedProduct extends EvaProduct {
   use_case?: {
@@ -32,7 +33,7 @@ const Home: React.FC = () => {
   const data = rawData as unknown as EvaSuiteJson;
   const suite = data.eva_suite;
   const products = suite.products ?? [];
-  
+
   const [expandedCard, setExpandedCard] = useState<{ id: number; type: 'description' | 'usecase' } | null>(null);
 
   const showProductInfo = (productId: number, type: 'description' | 'usecase') => {
@@ -47,12 +48,12 @@ const Home: React.FC = () => {
 
   const hasDemo = (product: ExtendedProduct): boolean => {
     const name = product.name.toLowerCase();
-    return name.includes('liveops') || 
-           name.includes('eva da') || 
-           name.includes('devtools') ||
-           name.includes('accessibility') ||
-           name.includes('impact analyzer') ||
-           name.includes('process mapper');
+    return name.includes('liveops') ||
+      name.includes('eva da') ||
+      name.includes('devtools') ||
+      name.includes('accessibility') ||
+      name.includes('impact analyzer') ||
+      name.includes('process mapper');
   };
 
   return (
@@ -66,22 +67,22 @@ const Home: React.FC = () => {
               <strong>EVA Suite</strong> is an enterprise AI platform comprising{' '}
               <strong>24 products</strong> across 5 categories.
             </p>
-            
+
             <div className="vision-highlight">
               <p>
                 <strong>"I see EVA everywhere... agents talking to agents."</strong>
               </p>
               <p>– Marco's email, December 2023</p>
             </div>
-            
+
             <p>
               Back in <strong>December 2023</strong>, before the world fully understood agentic AI,
               Marco wrote those prophetic words. He saw it: <strong>agents talking to agents</strong>,
               autonomous systems collaborating, AI that doesn't just answer questions but <em>takes action</em>.
             </p>
-            
+
             <p><strong>Now, in 2025, Marco is making that vision real.</strong></p>
-            
+
             <p className="signature">
               Personal project of Marco • Vision from December 2023 • Reality in 2025
             </p>
@@ -89,8 +90,49 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* DevTools Hero Section */}
+      <section className="card" style={{ marginBottom: '2rem', background: 'linear-gradient(135deg, rgba(74, 222, 128, 0.1) 0%, rgba(34, 197, 94, 0.05) 100%)', border: '2px solid rgba(74, 222, 128, 0.2)' }}>
+        <div className="container">
+          <h2 style={{ color: '#4ade80', marginBottom: '1rem', fontSize: '1.8rem' }}>
+            ⚙️ {t('home.devtools.hero.title')}
+          </h2>
+          <p style={{ color: '#aaa', fontSize: '1.1rem', marginBottom: '1.5rem', maxWidth: '800px' }}>
+            {t('home.devtools.hero.subtitle')}
+          </p>
+
+          {/* Three Highlight Cards */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1.25rem', marginTop: '1.5rem' }}>
+            <div style={{ background: 'rgba(0, 0, 0, 0.3)', padding: '1.25rem', borderRadius: '8px', border: '1px solid rgba(74, 222, 128, 0.2)' }}>
+              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🔎</div>
+              <h3 style={{ color: '#4ade80', fontSize: '1.1rem', marginBottom: '0.5rem' }}>{t('home.devtools.highlights.audit.title')}</h3>
+              <p style={{ color: '#888', fontSize: '0.9rem' }}>{t('home.devtools.highlights.audit.description')}</p>
+            </div>
+            <div style={{ background: 'rgba(0, 0, 0, 0.3)', padding: '1.25rem', borderRadius: '8px', border: '1px solid rgba(74, 222, 128, 0.2)' }}>
+              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>⚙️</div>
+              <h3 style={{ color: '#4ade80', fontSize: '1.1rem', marginBottom: '0.5rem' }}>{t('home.devtools.highlights.automate.title')}</h3>
+              <p style={{ color: '#888', fontSize: '0.9rem' }}>{t('home.devtools.highlights.automate.description')}</p>
+            </div>
+            <div style={{ background: 'rgba(0, 0, 0, 0.3)', padding: '1.25rem', borderRadius: '8px', border: '1px solid rgba(74, 222, 128, 0.2)' }}>
+              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>💸</div>
+              <h3 style={{ color: '#4ade80', fontSize: '1.1rem', marginBottom: '0.5rem' }}>{t('home.devtools.highlights.measure.title')}</h3>
+              <p style={{ color: '#888', fontSize: '0.9rem' }}>{t('home.devtools.highlights.measure.description')}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Dashboard */}
       <div className="container">
+        {/* EVA Audit Trail LiveOps Section */}
+        <section className="card" style={{ marginBottom: '2rem' }} aria-labelledby="audit-liveops-heading">
+          <h3 id="audit-liveops-heading">🎯 EVA Audit Trail LiveOps</h3>
+          <p style={{ marginBottom: '1.5rem', color: '#aaa' }}>
+            Real-time view of EVA Suite repository activity. Demonstrates operational transparency
+            for IT shops & research labs implementing autonomous AI platforms.
+          </p>
+          <AuditTrailDashboard />
+        </section>
+
         <div className="hero">
           <h2>🚀 {t('home.dashboard.title')}</h2>
           <p>{t('home.dashboard.subtitle')}</p>
@@ -103,26 +145,25 @@ const Home: React.FC = () => {
             {t('home.products.intro')}
             Click any product to see concrete examples.
           </p>
-          
+
           <div className="eva-products">
             {products.map((product) => (
-              <div 
-                key={product.id} 
-                className={`product-card ${
-                  expandedCard?.id === product.id ? 'expanded' : ''
-                }`}
+              <div
+                key={product.id}
+                className={`product-card ${expandedCard?.id === product.id ? 'expanded' : ''
+                  }`}
                 onClick={(e) => {
                   // Only navigate if this product has a demo AND not clicking a button
                   if (hasDemo(product) && !(e.target as HTMLElement).closest('button')) {
                     navigate(`/products/${product.id}`);
                   }
                 }}
-                style={{ 
+                style={{
                   cursor: hasDemo(product) ? 'pointer' : 'default',
-                  background: hasDemo(product) 
+                  background: hasDemo(product)
                     ? 'linear-gradient(135deg, rgba(16, 124, 16, 0.15) 0%, rgba(40, 167, 69, 0.1) 100%)'
                     : undefined,
-                  border: hasDemo(product) 
+                  border: hasDemo(product)
                     ? '2px solid rgba(40, 167, 69, 0.3)'
                     : undefined,
                   opacity: hasDemo(product) ? 1 : 0.7
@@ -151,15 +192,14 @@ const Home: React.FC = () => {
                     ✨ {t('home.demo.badge')}
                   </span>
                 )}
-                
+
                 {product.has_dual_buttons && (
                   <div className="product-buttons">
                     <button
-                      className={`product-btn ${
-                        expandedCard?.id === product.id && expandedCard?.type === 'description'
-                          ? 'active'
-                          : ''
-                      }`}
+                      className={`product-btn ${expandedCard?.id === product.id && expandedCard?.type === 'description'
+                        ? 'active'
+                        : ''
+                        }`}
                       onClick={(e) => {
                         e.stopPropagation();
                         showProductInfo(product.id, 'description');
@@ -168,11 +208,10 @@ const Home: React.FC = () => {
                       {t('product.description')}
                     </button>
                     <button
-                      className={`product-btn ${
-                        expandedCard?.id === product.id && expandedCard?.type === 'usecase'
-                          ? 'active'
-                          : ''
-                      }`}
+                      className={`product-btn ${expandedCard?.id === product.id && expandedCard?.type === 'usecase'
+                        ? 'active'
+                        : ''
+                        }`}
                       onClick={(e) => {
                         e.stopPropagation();
                         showProductInfo(product.id, 'usecase');
