@@ -53,21 +53,22 @@ body {
   padding: 0 20px;
 }
 
-/* Vision Banner */
+/* Vision Banner - GC Branded */
 .vision-banner {
-  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  background: linear-gradient(135deg, var(--gc-dark-blue) 0%, var(--gc-blue) 100%);
   color: white;
   padding: 50px 0;
   text-align: center;
-  border-bottom: 4px solid var(--warning);
+  border-bottom: 4px solid var(--gc-yellow);
   margin-bottom: 30px;
 }
 
 .vision-banner h2 {
   font-size: 2.5rem;
   margin-bottom: 25px;
-  font-weight: 300;
-  background: linear-gradient(135deg, var(--secondary), var(--warning));
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(135deg, var(--gc-yellow), var(--gc-orange));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -76,8 +77,9 @@ body {
 .vision-banner h1 {
   font-size: 2.5rem;
   margin-bottom: 25px;
-  font-weight: 300;
-  background: linear-gradient(135deg, var(--secondary), var(--warning));
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(135deg, var(--gc-yellow), var(--gc-orange));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -88,20 +90,21 @@ body {
   margin: 0 auto;
   font-size: 1.1rem;
   line-height: 1.8;
-  opacity: 0.95;
+  opacity: 1;
+  color: white;
 }
 
 .vision-story strong {
-  color: var(--secondary);
+  color: var(--gc-yellow);
   font-weight: 600;
 }
 
 .vision-highlight {
-  background: rgba(255, 140, 0, 0.15);
+  background: rgba(255, 191, 71, 0.2);
   padding: 20px;
   border-radius: 12px;
   margin: 25px auto;
-  border-left: 4px solid var(--warning);
+  border-left: 4px solid var(--gc-yellow);
   max-width: 850px;
 }
 
@@ -109,15 +112,17 @@ body {
   font-size: 1.15rem;
   font-style: italic;
   margin-bottom: 10px;
+  color: white;
 }
 
 .signature {
   font-size: 0.95rem;
-  opacity: 0.7;
+  opacity: 0.9;
   margin-top: 30px;
+  color: var(--gc-yellow);
 }
 
-/* Hero Section */
+/* Hero Section - GC Branded */
 .hero {
   text-align: center;
   margin: 50px 0;
@@ -125,41 +130,50 @@ body {
 
 .hero h1 {
   font-size: 2.5rem;
-  color: var(--primary);
+  color: var(--gc-blue);
   margin-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
 .hero h2 {
   font-size: 2.5rem;
-  color: var(--primary);
+  color: var(--gc-blue);
   margin-bottom: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
 .hero p {
   font-size: 1.2rem;
-  color: var(--neutral);
+  color: var(--gc-dark-blue);
+  font-family: 'Noto Sans', sans-serif;
 }
 
-/* Card */
+/* Card - GC Branded */
 .card {
   background: white;
   padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-  border-left: 4px solid var(--primary);
+  box-shadow: 0 4px 20px rgba(5, 53, 210, 0.1);
+  border-left: 4px solid var(--gc-blue);
   margin-bottom: 30px;
 }
 
 .card h2 {
-  color: var(--primary);
+  color: var(--gc-blue);
   margin-bottom: 20px;
   font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
 .card h3 {
-  color: var(--primary);
+  color: var(--gc-blue);
   margin-bottom: 20px;
   font-size: 1.5rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 
 /* Products Grid */
@@ -186,11 +200,12 @@ body {
 }
 
 .products-intro {
-  color: #666;
+  color: var(--gc-dark-blue);
   margin-bottom: 30px;
   font-style: italic;
   font-size: 1.05rem;
   line-height: 1.6;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .product-card {
@@ -220,13 +235,13 @@ body {
 .product-card:hover {
   transform: translateY(-8px) scale(1.02);
   box-shadow: 
-    0 8px 24px rgba(0,0,0,0.12),
-    0 16px 48px rgba(0,0,0,0.08);
-  border-color: rgba(0, 123, 255, 0.25);
+    0 8px 24px rgba(5, 53, 210, 0.15),
+    0 16px 48px rgba(5, 53, 210, 0.1);
+  border-color: var(--gc-blue);
 }
 
 .product-card:focus-within {
-  outline: 3px solid var(--primary);
+  outline: 3px solid var(--gc-blue);
   outline-offset: 3px;
 }
 
@@ -243,7 +258,7 @@ body {
 }
 
 .product-card h3 {
-  color: var(--dark);
+  color: var(--gc-dark-blue);
   font-size: 1.4rem;
   margin-bottom: 16px;
   font-weight: 700;
@@ -253,11 +268,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Lato', sans-serif;
 }
 
 .product-category {
-  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
-  color: #4a5568;
+  background: linear-gradient(135deg, var(--gc-blue) 0%, var(--gc-dark-blue) 100%);
+  color: white;
   padding: 8px 16px;
   border-radius: 8px;
   font-size: 0.75rem;
@@ -266,8 +282,9 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 1px;
-  border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+  border: 1px solid var(--gc-blue);
+  box-shadow: 0 2px 4px rgba(5, 53, 210, 0.2);
+  font-family: 'Lato', sans-serif;
 }
 
 .product-buttons {
@@ -280,7 +297,7 @@ body {
 }
 
 .product-btn {
-  background: linear-gradient(135deg, var(--primary) 0%, #0056b3 100%);
+  background: linear-gradient(135deg, var(--gc-blue) 0%, var(--gc-dark-blue) 100%);
   color: white;
   border: none;
   padding: 12px 24px;
@@ -290,65 +307,67 @@ body {
   font-weight: 700;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 
-    0 2px 8px rgba(0, 123, 255, 0.25),
-    0 1px 3px rgba(0,0,0,0.12);
+    0 2px 8px rgba(5, 53, 210, 0.3),
+    0 1px 3px rgba(5, 53, 210, 0.15);
   letter-spacing: 0.4px;
   text-transform: uppercase;
   font-size: 0.75rem;
+  font-family: 'Lato', sans-serif;
 }
 
 .product-btn:hover {
-  background: linear-gradient(135deg, var(--secondary) 0%, #e67e00 100%);
+  background: linear-gradient(135deg, var(--gc-green) 0%, #1a6600 100%);
   color: white;
   transform: translateY(-2px);
   box-shadow: 
-    0 6px 16px rgba(255, 140, 0, 0.35),
-    0 3px 8px rgba(0,0,0,0.15);
+    0 4px 16px rgba(39, 132, 0, 0.35),
+    0 2px 8px rgba(39, 132, 0, 0.2);
 }
 
 .product-btn:focus {
-  outline: 3px solid var(--warning);
+  outline: 3px solid var(--gc-yellow);
   outline-offset: 3px;
 }
 
 .product-btn.active {
-  background: linear-gradient(135deg, var(--success) 0%, #218838 100%);
+  background: linear-gradient(135deg, var(--gc-green) 0%, #1a6600 100%);
   box-shadow: 
-    0 4px 12px rgba(40, 167, 69, 0.4),
-    0 2px 6px rgba(0,0,0,0.15);
+    0 4px 12px rgba(39, 132, 0, 0.4),
+    0 2px 6px rgba(39, 132, 0, 0.2);
 }
 
 .product-description,
 .product-usecase {
   margin-top: 24px;
   padding: 24px;
-  background: linear-gradient(145deg, rgba(0, 123, 255, 0.04) 0%, rgba(0, 123, 255, 0.1) 100%);
-  border-left: 5px solid var(--primary);
+  background: linear-gradient(145deg, rgba(5, 53, 210, 0.04) 0%, rgba(5, 53, 210, 0.1) 100%);
+  border-left: 5px solid var(--gc-blue);
   border-radius: 12px;
-  color: #2d3748;
+  color: var(--gc-dark-blue);
   line-height: 1.9;
   text-align: left;
   font-size: 0.98rem;
   box-shadow: 
-    inset 0 2px 4px rgba(0,0,0,0.06),
-    0 2px 8px rgba(0,0,0,0.04);
+    inset 0 2px 4px rgba(5, 53, 210, 0.08),
+    0 2px 8px rgba(5, 53, 210, 0.06);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .product-description strong,
 .product-usecase strong {
-  color: var(--primary);
+  color: var(--gc-blue);
   font-weight: 700;
 }
 
 .product-usecase {
-  background: linear-gradient(145deg, rgba(40, 167, 69, 0.04) 0%, rgba(40, 167, 69, 0.1) 100%);
-  border-left-color: var(--success);
+  background: linear-gradient(145deg, rgba(39, 132, 0, 0.04) 0%, rgba(39, 132, 0, 0.1) 100%);
+  border-left-color: var(--gc-green);
 }
 
 .product-usecase strong {
-  color: var(--success);
+  color: var(--gc-green);
 }
 
 /* Product Page Layout */
