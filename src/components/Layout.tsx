@@ -206,17 +206,3 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 };
 
 export default Layout;
-          </div>
-          <span>{t('footer.builtWith')}</span>
-          <span style={{ fontSize: '0.75rem', opacity: 0.7 }}>
-            {lang === 'fr' 
-              ? 'Conforme au Programme de coordination de l\'image de marque • WCAG 2.1 AA'
-              : 'Federal Identity Program Compliant • WCAG 2.1 AA'}
-          </span>
-        </div>
-      </footer>
-    </div>
-  );
-};
-
-export default Layout;
