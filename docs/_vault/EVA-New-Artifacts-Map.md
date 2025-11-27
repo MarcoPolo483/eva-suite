@@ -1,11 +1,11 @@
 # EVA New Artifacts Map
 
 This file lists all files under eva-orchestrator modified in the last 21 days
-(since 2025-11-05 04:48).  
+(since 2025-11-06 07:59).  
 These are treated as **new or recently changed EVA-specific artifacts**
 relative to the original Microsoft PubSec Information Assistant baseline.
 
-> Generated on: 2025-11-26 04:48
+> Generated on: 2025-11-27 07:59
 > Root: C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-suite
 
 ---
@@ -40,19 +40,20 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\fix-sessions.ps1  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\GITHUB-TOKEN-SETUP.md  (Last modified: 2025-11-21 19:13)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\HEALTH-CHECK-REPORT.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\health-check.ps1  (Last modified: 2025-11-26 05:02)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\list-sessions.ps1  (Last modified: 2025-11-26 04:40)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\load-context.ps1  (Last modified: 2025-11-25 19:22)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\login.ps1  (Last modified: 2025-11-26 04:40)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\logoff.ps1  (Last modified: 2025-11-25 19:59)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\load-context.ps1  (Last modified: 2025-11-27 07:59)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\login.ps1  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\logoff.ps1  (Last modified: 2025-11-26 18:20)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\MARCO-CHEAT-SHEET.md  (Last modified: 2025-11-26 04:40)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\MARCO-HUB.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\MARCO-HUB.md  (Last modified: 2025-11-27 07:34)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\orchestrator.yml  (Last modified: 2025-11-21 14:19)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\package-lock.json  (Last modified: 2025-11-25 15:09)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\package-lock.json  (Last modified: 2025-11-26 18:20)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\package.json  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\PR_DESCRIPTION.md  (Last modified: 2025-11-21 19:13)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\PR_SUMMARY.md  (Last modified: 2025-11-21 19:13)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\QUICK-START.md  (Last modified: 2025-11-21 19:13)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\README.md  (Last modified: 2025-11-24 07:12)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\README.md  (Last modified: 2025-11-26 18:20)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\READY-TO-CREATE.md  (Last modified: 2025-11-21 19:13)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\REPO-QUICK-REFERENCE.md  (Last modified: 2025-11-24 06:44)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\requirements.txt  (Last modified: 2025-11-24 06:44)
@@ -73,7 +74,7 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\test-token.ps1  (Last modified: 2025-11-21 19:13)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\time-report.ps1  (Last modified: 2025-11-24 06:44)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\tsconfig.json  (Last modified: 2025-11-21 14:19)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\work-sessions.json  (Last modified: 2025-11-26 04:48)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\work-sessions.json  (Last modified: 2025-11-27 07:59)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.devcontainer
 
@@ -81,7 +82,7 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.eva
 
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.eva\context.json  (Last modified: 2025-11-26 04:48)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.eva\context.json  (Last modified: 2025-11-27 07:58)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github
 
@@ -98,8 +99,12 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github\workflows\hub-update.yml  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github\workflows\orchestrate.yml  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github\workflows\orchestrator-auto.yml  (Last modified: 2025-11-21 14:19)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github\workflows\p02-intake-pipeline.yml  (Last modified: 2025-11-26 04:40)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github\workflows\project-board-sync.yml  (Last modified: 2025-11-21 14:19)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github\workflows\p02-advisor-daily.yml  (Last modified: 2025-11-26 21:34)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github\workflows\p02-intake-pipeline.yml  (Last modified: 2025-11-27 07:34)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github\workflows\p02-intake.yml  (Last modified: 2025-11-26 05:57)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github\workflows\p02-smoke-test.yml  (Last modified: 2025-11-26 06:33)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github\workflows\p02-usage-snapshot.yml  (Last modified: 2025-11-26 21:34)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github\workflows\project-board-sync.yml  (Last modified: 2025-11-27 07:58)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github\workflows\propose-patch-test.yml  (Last modified: 2025-11-24 07:56)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github\workflows\qa-gate.yml  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\.github\workflows\report-ingest.yml  (Last modified: 2025-11-21 14:19)
@@ -8945,7 +8950,7 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\contracts\i18n
 
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\contracts\i18n\eva-i18n-contract.yaml  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\contracts\i18n\eva-i18n-contract.yaml  (Last modified: 2025-11-26 05:57)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\dashboards
 
@@ -8986,6 +8991,7 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\AGILE-OPERATING-MODE.md  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\backlog-status.md  (Last modified: 2025-11-25 21:05)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\cdd-todo-list.md  (Last modified: 2025-11-26 18:20)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\chatgpt-bridge-checklist.md  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\chatgpt-bridge.md  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\chatgpt-missing-cdds.md  (Last modified: 2025-11-21 14:19)
@@ -8999,11 +9005,19 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\EVA-PORTAL-VISION.md  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\EXECUTION-POLICY-TEST-REPORT.md  (Last modified: 2025-11-24 10:10)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\FILE-ORGANIZATION-REPORT-2025-11-19.md  (Last modified: 2025-11-21 19:13)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\housekeeping.md  (Last modified: 2025-11-26 07:04)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\lwo-working-office.md  (Last modified: 2025-11-26 06:33)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\marco-hub.html  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\master-plan.md  (Last modified: 2025-11-25 19:22)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\naming-conventions.md  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\P02-Intake-Pipeline-QuickStart.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\p02-overview.md  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\p02-task-schema.json  (Last modified: 2025-11-26 06:33)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\PROJECT-JOURNAL-2025-11-24.md  (Last modified: 2025-11-24 07:56)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\prompt-library-P02-000-eva-oui-infoasst-integration.md  (Last modified: 2025-11-26 20:56)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\prompt-library-P02-000-eva-oui-infoasst-SrAdv-daily-status.md  (Last modified: 2025-11-26 20:59)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\prompt-library-P02-000-eva-oui-infoasst-usage-wkfw.md  (Last modified: 2025-11-26 20:58)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\prompt-library.md  (Last modified: 2025-11-26 18:20)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\qa-master-pod-integration.md  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\SPRINT-ZERO-PLAYBOOK.md  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\TESTING-codespaces-secrets.md  (Last modified: 2025-11-24 06:44)
@@ -9012,12 +9026,12 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\_audit
 
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\_audit\EVA-Audit-Log.jsonl  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\_audit\EVA-Audit-Log.jsonl  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\_audit\P02-Usage-Report.csv  (Last modified: 2025-11-26 04:40)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\_state
 
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\_state\P02-Intake-State.json  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\_state\P02-Intake-State.json  (Last modified: 2025-11-27 07:53)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\_vault
 
@@ -9039,9 +9053,17 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\azure-cost-anomaly-detection-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\backloglist-manifest.json  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\cdd-archive-report-2025-01-27-manifest.json  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\cdd-consolidation-complete-report-2025-01-27-manifest.json  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\cdd-consolidation-report-2025-01-27-manifest.json  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\cdd-ecosystem-final-report-2025-01-27-manifest.json  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\cdd-inventory-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\cdd-inventory-old-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\cdd-inventory-updated-manifest.json  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\cdd-standardization-report-2025-01-27-manifest.json  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\chatgpt-repo-status-manifest.json  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\copilot-readme-manifest.json  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\create-eva-repos-manifest.json  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-analytics-command-center-dashboard-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-analytics-dashboard-suite-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-analytics-learning-dashboard-manifest.json  (Last modified: 2025-11-26 04:40)
@@ -9058,6 +9080,7 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-external-customer-support-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-feature-flags-ab-testing-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-github-projects-dashboard-agent-manifest.json  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-hub-manifest.json  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-learning-cms-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-learning-community-forum-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-learning-lab-environments-manifest.json  (Last modified: 2025-11-26 04:40)
@@ -9069,6 +9092,7 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-mobile-app-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-multi-tenant-architecture-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-notification-system-manifest.json  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-orchestrator-readme-manifest.json  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-os-app-integrations-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-os-context-awareness-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-os-deployment-models-manifest.json  (Last modified: 2025-11-26 04:40)
@@ -9081,10 +9105,12 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-portal-landing-page-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-portal-navigation-ux-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-portal-sso-user-profiles-manifest.json  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-product-list-manifest.json  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-production-spaces-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-pubsec-info-assistant-assets-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-sandbox-spaces-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-space-management-manifest.json  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-suite-full-tree-manifest.json  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-tool-code-review-helper-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-tool-data-analysis-copilot-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-tool-document-summarizer-manifest.json  (Last modified: 2025-11-26 04:40)
@@ -9098,9 +9124,22 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-vision-screenshot-analysis-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-vision-voice-interface-manifest.json  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\eva-wsl2-claude-integration-manifest.json  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\github-token-setup-manifest.json  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\health-check-report-manifest.json  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\issue-draft-commands-manifest.json  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\marco-cheat-sheet-manifest.json  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\marco-hub-manifest.json  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\power-bi-dashboard-architecture-manifest.json  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\pr-description-manifest.json  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\pr-summary-manifest.json  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\quick-start-manifest.json  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\readme-manifest.json  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\ready-to-create-manifest.json  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\repo-quick-reference-manifest.json  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\requirements-manifest.json  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\safe-deletion-checklist-manifest.json  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\sample-ai-code-review-manifest.json  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\start-here-manifest.json  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\agile-crew\inbox\user-request-backlog-manifest.json  (Last modified: 2025-11-26 04:40)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\analysis
@@ -9181,7 +9220,7 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\backlog\eva-wsl2-claude-integration.md  (Last modified: 2025-11-25 19:10)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\backlog\issue-draft-commands.md  (Last modified: 2025-11-25 19:10)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\backlog\power-bi-dashboard-architecture.md  (Last modified: 2025-11-25 19:10)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\backlog\user-request-backlog.md  (Last modified: 2025-11-25 19:10)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\backlog\user-request-backlog.md  (Last modified: 2025-11-26 21:36)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\compliance
 
@@ -9426,6 +9465,14 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\EVA-2.0\vision\eva-cloneme.md  (Last modified: 2025-11-25 19:10)
 
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\eva-oui-info-asst
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\eva-oui-info-asst\backlog-eva-oui-info-asst.md  (Last modified: 2025-11-26 22:05)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\eva-oui-info-asst\cdd-eva-oui-info-asst.md  (Last modified: 2025-11-26 21:42)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\eva-oui-info-asst\demo-playbook-eva-suite.md  (Last modified: 2025-11-26 21:39)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\eva-oui-info-asst\sprints-plan-0-10.md  (Last modified: 2025-11-26 21:34)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\eva-oui-info-asst\testplan-a11y-i18n-apim.md  (Last modified: 2025-11-26 21:34)
+
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\azure-cost-anomaly-detection
 
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\azure-cost-anomaly-detection\adr-azure-cost-anomaly-detection.md  (Last modified: 2025-11-26 04:40)
@@ -9451,6 +9498,58 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\backloglist\risks.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\backloglist\tests.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\backloglist\use-cases.md  (Last modified: 2025-11-26 04:40)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-archive-report-2025-01-27
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-archive-report-2025-01-27\adr-cdd-archive-report-2025-01-27.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-archive-report-2025-01-27\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-archive-report-2025-01-27\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-archive-report-2025-01-27\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-archive-report-2025-01-27\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-archive-report-2025-01-27\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-archive-report-2025-01-27\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-archive-report-2025-01-27\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-archive-report-2025-01-27\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-archive-report-2025-01-27\use-cases.md  (Last modified: 2025-11-27 07:53)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-complete-report-2025-01-27
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-complete-report-2025-01-27\adr-cdd-consolidation-complete-report-2025-01-27.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-complete-report-2025-01-27\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-complete-report-2025-01-27\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-complete-report-2025-01-27\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-complete-report-2025-01-27\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-complete-report-2025-01-27\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-complete-report-2025-01-27\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-complete-report-2025-01-27\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-complete-report-2025-01-27\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-complete-report-2025-01-27\use-cases.md  (Last modified: 2025-11-27 07:53)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-report-2025-01-27
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-report-2025-01-27\adr-cdd-consolidation-report-2025-01-27.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-report-2025-01-27\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-report-2025-01-27\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-report-2025-01-27\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-report-2025-01-27\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-report-2025-01-27\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-report-2025-01-27\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-report-2025-01-27\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-report-2025-01-27\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-consolidation-report-2025-01-27\use-cases.md  (Last modified: 2025-11-27 07:53)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-ecosystem-final-report-2025-01-27
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-ecosystem-final-report-2025-01-27\adr-cdd-ecosystem-final-report-2025-01-27.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-ecosystem-final-report-2025-01-27\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-ecosystem-final-report-2025-01-27\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-ecosystem-final-report-2025-01-27\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-ecosystem-final-report-2025-01-27\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-ecosystem-final-report-2025-01-27\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-ecosystem-final-report-2025-01-27\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-ecosystem-final-report-2025-01-27\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-ecosystem-final-report-2025-01-27\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-ecosystem-final-report-2025-01-27\use-cases.md  (Last modified: 2025-11-27 07:53)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-inventory
 
@@ -9491,6 +9590,58 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-inventory-updated\tests.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-inventory-updated\use-cases.md  (Last modified: 2025-11-26 04:40)
 
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-standardization-report-2025-01-27
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-standardization-report-2025-01-27\adr-cdd-standardization-report-2025-01-27.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-standardization-report-2025-01-27\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-standardization-report-2025-01-27\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-standardization-report-2025-01-27\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-standardization-report-2025-01-27\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-standardization-report-2025-01-27\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-standardization-report-2025-01-27\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-standardization-report-2025-01-27\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-standardization-report-2025-01-27\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\cdd-standardization-report-2025-01-27\use-cases.md  (Last modified: 2025-11-27 07:53)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\chatgpt-repo-status
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\chatgpt-repo-status\adr-chatgpt-repo-status.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\chatgpt-repo-status\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\chatgpt-repo-status\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\chatgpt-repo-status\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\chatgpt-repo-status\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\chatgpt-repo-status\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\chatgpt-repo-status\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\chatgpt-repo-status\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\chatgpt-repo-status\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\chatgpt-repo-status\use-cases.md  (Last modified: 2025-11-27 07:53)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\copilot-readme
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\copilot-readme\adr-copilot-readme.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\copilot-readme\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\copilot-readme\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\copilot-readme\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\copilot-readme\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\copilot-readme\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\copilot-readme\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\copilot-readme\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\copilot-readme\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\copilot-readme\use-cases.md  (Last modified: 2025-11-27 07:53)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\create-eva-repos
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\create-eva-repos\adr-create-eva-repos.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\create-eva-repos\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\create-eva-repos\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\create-eva-repos\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\create-eva-repos\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\create-eva-repos\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\create-eva-repos\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\create-eva-repos\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\create-eva-repos\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\create-eva-repos\use-cases.md  (Last modified: 2025-11-27 07:53)
+
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\demo-009
 
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\demo-009\adr-demo-009.md  (Last modified: 2025-11-26 04:40)
@@ -9516,6 +9667,19 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\demo-feature\risks.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\demo-feature\tests.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\demo-feature\use-cases.md  (Last modified: 2025-11-26 04:40)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-accessible-info-assistant-demo
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-accessible-info-assistant-demo\adr-accessible-info-assistant-demo.md  (Last modified: 2025-11-26 06:33)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-accessible-info-assistant-demo\architecture-notes.md  (Last modified: 2025-11-26 06:33)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-accessible-info-assistant-demo\backlog.md  (Last modified: 2025-11-26 06:33)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-accessible-info-assistant-demo\feature-map.md  (Last modified: 2025-11-26 06:33)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-accessible-info-assistant-demo\P02-Overview.md  (Last modified: 2025-11-26 06:33)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-accessible-info-assistant-demo\README.md  (Last modified: 2025-11-26 06:33)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-accessible-info-assistant-demo\requirements.md  (Last modified: 2025-11-26 06:33)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-accessible-info-assistant-demo\risks.md  (Last modified: 2025-11-26 06:33)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-accessible-info-assistant-demo\tests.md  (Last modified: 2025-11-26 06:33)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-accessible-info-assistant-demo\use-cases.md  (Last modified: 2025-11-26 06:33)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-analytics-command-center-dashboard
 
@@ -9759,6 +9923,19 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-github-projects-dashboard-agent\tests.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-github-projects-dashboard-agent\use-cases.md  (Last modified: 2025-11-26 04:40)
 
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-hub
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-hub\adr-eva-hub.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-hub\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-hub\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-hub\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-hub\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-hub\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-hub\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-hub\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-hub\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-hub\use-cases.md  (Last modified: 2025-11-27 07:53)
+
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-learning-cms
 
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-learning-cms\adr-eva-learning-cms.md  (Last modified: 2025-11-26 04:40)
@@ -9901,6 +10078,19 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-notification-system\risks.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-notification-system\tests.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-notification-system\use-cases.md  (Last modified: 2025-11-26 04:40)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-orchestrator-readme
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-orchestrator-readme\adr-eva-orchestrator-readme.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-orchestrator-readme\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-orchestrator-readme\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-orchestrator-readme\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-orchestrator-readme\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-orchestrator-readme\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-orchestrator-readme\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-orchestrator-readme\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-orchestrator-readme\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-orchestrator-readme\use-cases.md  (Last modified: 2025-11-27 07:53)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-os-app-integrations
 
@@ -10058,6 +10248,19 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-portal-sso-user-profiles\tests.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-portal-sso-user-profiles\use-cases.md  (Last modified: 2025-11-26 04:40)
 
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-product-list
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-product-list\adr-eva-product-list.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-product-list\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-product-list\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-product-list\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-product-list\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-product-list\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-product-list\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-product-list\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-product-list\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-product-list\use-cases.md  (Last modified: 2025-11-27 07:53)
+
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-production-spaces
 
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-production-spaces\adr-eva-production-spaces.md  (Last modified: 2025-11-26 04:40)
@@ -10109,6 +10312,19 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-space-management\risks.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-space-management\tests.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-space-management\use-cases.md  (Last modified: 2025-11-26 04:40)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-suite-full-tree
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-suite-full-tree\adr-eva-suite-full-tree.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-suite-full-tree\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-suite-full-tree\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-suite-full-tree\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-suite-full-tree\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-suite-full-tree\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-suite-full-tree\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-suite-full-tree\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-suite-full-tree\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-suite-full-tree\use-cases.md  (Last modified: 2025-11-27 07:53)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\eva-tool-code-review-helper
 
@@ -10292,6 +10508,32 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\finops-002\tests.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\finops-002\use-cases.md  (Last modified: 2025-11-26 04:40)
 
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\github-token-setup
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\github-token-setup\adr-github-token-setup.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\github-token-setup\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\github-token-setup\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\github-token-setup\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\github-token-setup\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\github-token-setup\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\github-token-setup\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\github-token-setup\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\github-token-setup\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\github-token-setup\use-cases.md  (Last modified: 2025-11-27 07:53)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\health-check-report
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\health-check-report\adr-health-check-report.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\health-check-report\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\health-check-report\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\health-check-report\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\health-check-report\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\health-check-report\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\health-check-report\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\health-check-report\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\health-check-report\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\health-check-report\use-cases.md  (Last modified: 2025-11-27 07:53)
+
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\issue-draft-commands
 
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\issue-draft-commands\adr-issue-draft-commands.md  (Last modified: 2025-11-26 04:40)
@@ -10304,6 +10546,32 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\issue-draft-commands\risks.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\issue-draft-commands\tests.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\issue-draft-commands\use-cases.md  (Last modified: 2025-11-26 04:40)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-cheat-sheet
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-cheat-sheet\adr-marco-cheat-sheet.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-cheat-sheet\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-cheat-sheet\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-cheat-sheet\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-cheat-sheet\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-cheat-sheet\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-cheat-sheet\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-cheat-sheet\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-cheat-sheet\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-cheat-sheet\use-cases.md  (Last modified: 2025-11-27 07:53)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-hub
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-hub\adr-marco-hub.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-hub\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-hub\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-hub\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-hub\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-hub\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-hub\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-hub\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-hub\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\marco-hub\use-cases.md  (Last modified: 2025-11-27 07:53)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\power-bi-dashboard-architecture
 
@@ -10318,6 +10586,110 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\power-bi-dashboard-architecture\tests.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\power-bi-dashboard-architecture\use-cases.md  (Last modified: 2025-11-26 04:40)
 
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-description
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-description\adr-pr-description.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-description\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-description\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-description\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-description\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-description\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-description\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-description\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-description\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-description\use-cases.md  (Last modified: 2025-11-27 07:53)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-summary
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-summary\adr-pr-summary.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-summary\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-summary\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-summary\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-summary\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-summary\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-summary\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-summary\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-summary\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\pr-summary\use-cases.md  (Last modified: 2025-11-27 07:53)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\quick-start
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\quick-start\adr-quick-start.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\quick-start\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\quick-start\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\quick-start\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\quick-start\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\quick-start\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\quick-start\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\quick-start\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\quick-start\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\quick-start\use-cases.md  (Last modified: 2025-11-27 07:53)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\readme
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\readme\adr-readme.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\readme\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\readme\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\readme\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\readme\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\readme\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\readme\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\readme\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\readme\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\readme\use-cases.md  (Last modified: 2025-11-27 07:53)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\ready-to-create
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\ready-to-create\adr-ready-to-create.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\ready-to-create\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\ready-to-create\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\ready-to-create\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\ready-to-create\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\ready-to-create\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\ready-to-create\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\ready-to-create\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\ready-to-create\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\ready-to-create\use-cases.md  (Last modified: 2025-11-27 07:53)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\repo-quick-reference
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\repo-quick-reference\adr-repo-quick-reference.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\repo-quick-reference\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\repo-quick-reference\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\repo-quick-reference\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\repo-quick-reference\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\repo-quick-reference\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\repo-quick-reference\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\repo-quick-reference\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\repo-quick-reference\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\repo-quick-reference\use-cases.md  (Last modified: 2025-11-27 07:53)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\requirements
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\requirements\adr-requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\requirements\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\requirements\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\requirements\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\requirements\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\requirements\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\requirements\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\requirements\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\requirements\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\requirements\use-cases.md  (Last modified: 2025-11-27 07:53)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\safe-deletion-checklist
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\safe-deletion-checklist\adr-safe-deletion-checklist.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\safe-deletion-checklist\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\safe-deletion-checklist\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\safe-deletion-checklist\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\safe-deletion-checklist\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\safe-deletion-checklist\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\safe-deletion-checklist\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\safe-deletion-checklist\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\safe-deletion-checklist\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\safe-deletion-checklist\use-cases.md  (Last modified: 2025-11-27 07:53)
+
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\sample-ai-code-review
 
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\sample-ai-code-review\adr-sample-ai-code-review.md  (Last modified: 2025-11-26 04:40)
@@ -10330,6 +10702,19 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\sample-ai-code-review\risks.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\sample-ai-code-review\tests.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\sample-ai-code-review\use-cases.md  (Last modified: 2025-11-26 04:40)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\start-here
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\start-here\adr-start-here.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\start-here\architecture-notes.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\start-here\backlog.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\start-here\feature-map.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\start-here\P02-Overview.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\start-here\README.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\start-here\requirements.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\start-here\risks.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\start-here\tests.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\start-here\use-cases.md  (Last modified: 2025-11-27 07:53)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\features\user-request-backlog
 
@@ -10355,12 +10740,16 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed
 
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-0123f746-PR_DESCRIPTION.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-02cd2b1a-eva-learning-lab-environments.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-045d584b-eva-vision-powerbi-integration.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-05a17442-eva-tool-meeting-transcription.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-0abd5fd8-CDD-INVENTORY-UPDATED.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-0df52c54-.sample-ai-code-review.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-0e1a1c0e-EVA-HUB.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-12c6273c-README.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-15284f7f-eva-machine-trust-knowledge-brief.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-179ab0f1-PR_SUMMARY.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-190deea0-eva-mobile-app.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-1b29c66a-eva-os-app-integrations.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-1b5804ed-eva-vision-accessibility.md  (Last modified: 2025-11-26 04:40)
@@ -10373,25 +10762,37 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-3ae40f16-eva-vision-screenshot-analysis.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-3b8341e6-eva-analytics-dashboard-suite.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-3bfdc2d0-eva-analytics-learning-dashboard.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-3ff49165-eva-suite-full-tree.txt  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-40310dfc-CHATGPT-REPO-STATUS.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-42454c1f-eva-ecosystem-partnerships.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-44f54e95-eva-portability-and-ai-pairing.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-455c2289-eva-learning-cms.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-462b22f6-CREATE-EVA-REPOS.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-479cd99b-QUICK-START.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-48dfe1bc-HEALTH-CHECK-REPORT.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-49b94f52-power-bi-dashboard-architecture.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-4e50db4e-eva-os-security-sandbox.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-5105e37f-eva-os-ui-components.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-52421970-issue-draft-commands.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-536fbe32-eva-tool-document-summarizer.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-55706a26-eva-portal-sso-user-profiles.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-55d30b64-CDD-ARCHIVE-REPORT-2025-01-27.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-590908df-eva-sandbox-spaces.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-5e27bd11-requirements.txt  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-5e5d23ca-CDD-INVENTORY-OLD.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-678d0724-eva-tool-data-analysis-copilot.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-6b0a1273-REPO-QUICK-REFERENCE.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-6f5e576c-eva-portal-landing-page.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-70bbca07-READY-TO-CREATE.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-77e66685-eva-github-projects-dashboard-agent.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-7cc9e39b-EVA-PRODUCT-LIST.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-8f14eaa0-eva-space-management.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-913fcf09-eva-tools-marketplace.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-9516f425-eva-feature-flags-ab-testing.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-96a06b3c-eva-audit-logs-compliance.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-96acd085-COPILOT-README.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-9971bf92-eva-audit-trail.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-9ee41ae0-START-HERE.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-a3bfb660-CDD-INVENTORY.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-a4cc0393-eva-directory-user-administration.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-a5c1c2aa-eva-wsl2-claude-integration.md  (Last modified: 2025-11-26 04:40)
@@ -10399,24 +10800,33 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-a7750ab1-eva-analytics-command-center-dashboard.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-aa6d083b-eva-os-system-service.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-ab59cafa-eva-tool-code-review-helper.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-ad903980-MARCO-CHEAT-SHEET.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-b2fe2ebd-eva-os-context-awareness.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-b35e7598-MARCO-HUB.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-b363b076-eva-chat-widget.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-b5f0ef80-eva-marketplace-internal-tools-community.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-b6acb76d-eva-external-customer-support.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-b973ec65-eva-production-spaces.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-bc590054-eva-vision-core-engine.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-c2fa847e-eva-vision-database-drilldown.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-c50eaeca-CDD-ECOSYSTEM-FINAL-REPORT-2025-01-27.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-c92a0ccc-eva-vision-voice-interface.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-cc56486c-eva-domain-assistant-core.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-ccad40d3-eva-analytics-space-dashboard.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-cd08da34-eva-liveops-command-center.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-cff13a7f-backloglist.txt  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-d3b4ad52-EVA-ORCHESTRATOR-README.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-d4a76a69-eva-notification-system.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-db5474de-CDD-CONSOLIDATION-COMPLETE-REPORT-2025-01-27.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-dc5664df-eva-learning-progress-tracking.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-df70fd31-eva-os-deployment-models.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-dfaa9026-eva-tool-email-draft-assistant.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-e04de10b-eva-liveops-alerting.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-e98d37e2-eva-os-voice-activation.md  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-edca00b3-CDD-STANDARDIZATION-REPORT-2025-01-27.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-f0488585-GITHUB-TOKEN-SETUP.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-f2417451-SAFE-DELETION-CHECKLIST.md  (Last modified: 2025-11-27 07:53)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-f9c2f2c8-CDD-CONSOLIDATION-REPORT-2025-01-27.md  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-fb61ffa5-eva-portal-navigation-ux.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-AUTO-ff62ae64-eva-os-extension.md  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\intake\processed\P02-FINOPS-007-.sample-cost-anomaly-detection.md  (Last modified: 2025-11-26 04:40)
@@ -10439,6 +10849,13 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\lessons-learned\LESSON-005-user-feedback-and-self-learning-content.md  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\lessons-learned\LESSON-006-sm-first-tool.md  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\lessons-learned\LESSON-011-session-guardrail.md  (Last modified: 2025-11-21 14:19)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\meetings
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\meetings\2025-11-26-13-41-Checkpoint.md  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\meetings\2025-11-26-13-52-EVA-Suite-annoucement.txt  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\meetings\2025-11-26-1543- EVA UI update status.txt  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\meetings\2025-11-26-eva-chat-eva-da-convergence.md  (Last modified: 2025-11-26 18:20)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\docs\metrics
 
@@ -19565,15 +19982,16 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\eva-ux-foundation-demo\src\pages\I11yLanding.tsx  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\eva-ux-foundation-demo\src\pages\I18nDemo.tsx  (Last modified: 2025-11-26 04:40)
 
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\examples
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\examples\p02-task-example-smoke-test.json  (Last modified: 2025-11-26 06:33)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\examples\p02-task-smoke-test.json  (Last modified: 2025-11-26 06:33)
+
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\metrics
 
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\metrics\.gitkeep  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\metrics\latest-metrics.json  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\metrics\manual-overrides.json  (Last modified: 2025-11-21 14:19)
-
-## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\node_modules
-
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\node_modules\.package-lock.json  (Last modified: 2025-11-25 15:09)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\node_modules\.bin
 
@@ -20931,7 +21349,16 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\reports\dry-run-1.json  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\reports\executive-digest.html  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\reports\executive-digest.md  (Last modified: 2025-11-21 14:19)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\reports\housekeeping-report-20251126-065923.md  (Last modified: 2025-11-26 06:59)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\reports\housekeeping-report-20251126-071505.md  (Last modified: 2025-11-26 07:15)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\reports\housekeeping-report-20251126-080640.md  (Last modified: 2025-11-26 08:06)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\reports\housekeeping-report-20251126-080805.md  (Last modified: 2025-11-26 08:08)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\reports\README.md  (Last modified: 2025-11-21 19:13)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\reports\usage
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\reports\usage\p02-usage-latest.json  (Last modified: 2025-11-26 21:16)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\reports\usage\p02-usage-latest.md  (Last modified: 2025-11-26 21:16)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts
 
@@ -20944,14 +21371,29 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\eva-audit-session-gaps.ps1  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\eva-finops-audit-merge.ps1  (Last modified: 2025-11-26 04:40)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\eva-intake-apply.ps1  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\eva-local-agent.ps1  (Last modified: 2025-11-26 18:20)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\generate-hub-update.mjs  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\generate-matrix-site.mjs  (Last modified: 2025-11-21 14:19)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\Invoke-EvaHousekeeping.ps1  (Last modified: 2025-11-26 08:10)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\orchestrator-ingest.mjs  (Last modified: 2025-11-21 14:19)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-intake-processor.ps1  (Last modified: 2025-11-26 04:40)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-run.ps1  (Last modified: 2025-11-26 04:40)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-telemetry.ps1  (Last modified: 2025-11-26 04:40)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-usage-report.ps1  (Last modified: 2025-11-26 04:40)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-004-cdd-classification.ps1  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-005-cdd-gap-detection.ps1  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-006-cdd-dependency-graph.ps1  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-007-cdd-template-generator.ps1  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-008-cdd-ecosystem-report.ps1  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-advisor-daily.py  (Last modified: 2025-11-26 21:34)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-generate-cdd-coverage.ps1  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-generate-intake-inventory.ps1  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-generate-orchestrator-cdd-index.ps1  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-intake-processor.ps1  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-intake-scan.mjs  (Last modified: 2025-11-26 05:57)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-run.ps1  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-telemetry.ps1  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-usage-report.ps1  (Last modified: 2025-11-26 18:20)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\p02-usage-snapshot.ps1  (Last modified: 2025-11-26 21:34)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\qa-check.ps1  (Last modified: 2025-11-21 14:19)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\refresh-eva-suite-tree.ps1  (Last modified: 2025-11-26 06:45)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\refresh-openweb-tree.ps1  (Last modified: 2025-11-26 21:34)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\retro-append.mjs  (Last modified: 2025-11-21 14:19)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\scripts\tests
@@ -21002,7 +21444,8 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\sm-qa-toolbox\project
 
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\sm-qa-toolbox\project\check-project-access.ps1  (Last modified: 2025-11-21 14:19)
-- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\sm-qa-toolbox\project\project-sync.config.template.json  (Last modified: 2025-11-21 14:19)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\sm-qa-toolbox\project\project-sync.config.json  (Last modified: 2025-11-26 21:59)
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\sm-qa-toolbox\project\project-sync.config.template.json  (Last modified: 2025-11-27 07:53)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\sm-qa-toolbox\project\README.md  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\sm-qa-toolbox\project\show-project-statuses.ps1  (Last modified: 2025-11-21 14:19)
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\sm-qa-toolbox\project\sync-project-board.ps1  (Last modified: 2025-11-21 14:19)
@@ -21058,6 +21501,10 @@ relative to the original Microsoft PubSec Information Assistant baseline.
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\temp-offline
 
 - C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\temp-offline\eva-suite-polish-deploy-v1__suite-i18n-scaffold__20251124_132814.md  (Last modified: 2025-11-24 08:28)
+
+## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\templates
+
+- C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\templates\sm-brief-template.md  (Last modified: 2025-11-26 06:33)
 
 ## C:\Users\marco\Documents\_AI Dev\EVA Suite\eva-orchestrator\templates\eva-agent
 
