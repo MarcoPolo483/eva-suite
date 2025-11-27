@@ -1,6 +1,6 @@
 {
   "eva_suite": {
-    "total_products": 25,
+    "total_products": 23,
     "categories": [
       "User Products",
       "AI Intelligence",
@@ -19,40 +19,24 @@
         "name": "EVA Chat",
         "icon": "💬",
         "category": "User Product",
-        "description": "Universal enterprise console where you tell EVA what to do. Example: 'Search our SharePoint for the Q3 budget template Susan used last year, then email it to my team with a note that we need to submit by Friday.' EVA Chat orchestrates multiple agents: finds the document, drafts the email with your signature, shows you the preview, sends on your approval.",
+        "description": "OpenWebUI-inspired universal enterprise console where you tell EVA what to do. Canadian flag branding throughout, world-class accessibility (WCAG 2.1 AA+), full bilingualism (en-CA/fr-CA). Frame mode (embedded in-page) + pop-out capability for focused work. Example: 'Search our SharePoint for the Q3 budget template Susan used last year, then email it to my team with a note that we need to submit by Friday.' EVA Chat orchestrates multiple agents: finds the document, drafts the email with your signature, shows you the preview, sends on your approval. The art of impossible now possible - professional government-grade AI chat.",
         "use_case": {
           "title": "Manager's Monday Morning Routine",
           "steps": [
-            "Opens EVA Chat: 'Show me all team updates from last week'",
-            "EVA searches Teams, Outlook, SharePoint → summarizes 12 updates",
+            "Opens EVA Chat in frame mode (embedded in EVA Portal)",
+            "Says: 'Show me all team updates from last week'",
+            "EVA searches Teams, Outlook, SharePoint → summarizes 12 updates with citations",
             "'Schedule 1-on-1s with anyone who mentioned blockers'",
-            "EVA finds 3 people, checks calendars, books 30-min slots",
+            "EVA finds 3 people, checks calendars, books 30-min slots with calendar invites",
             "'Draft status report for my VP highlighting the product launch milestone'",
-            "EVA drafts email with timeline, shows preview",
-            "Manager edits subject line, says 'Send'"
+            "EVA drafts bilingual email (EN/FR), shows preview with Canadian flag watermark",
+            "Manager uses keyboard shortcuts (WCAG AA+ navigation), edits subject line",
+            "Pops out chat to dedicated window for focused review",
+            "Says 'Send' - EVA confirms with audio feedback (accessibility mode)"
           ],
-          "result": "45-minute Monday morning routine → 10 minutes with EVA"
+          "result": "45-minute Monday morning routine → 10 minutes with EVA Chat. Full accessibility: screen reader support, keyboard navigation, voice commands, high contrast mode. Bilingual: seamless EN/FR switching. OpenWebUI-inspired: frame + pop-out modes, Canadian branding."
         },
-        "moonshot": "Eventually becomes your universal enterprise console - everything you do at work, you just tell EVA.",
-        "has_dual_buttons": true
-      },
-      {
-        "id": 25,
-        "name": "Info Assistant Demo",
-        "icon": "🧠",
-        "category": "User Product",
-        "description": "Bilingual, accessibility-first landing experience that showcases how EVA Info Assistant cards, voice preview, and i18n editor work together. Demonstrates the 'impossible now possible' UX before any backend wiring by pulling strings from the EVA i18n contract and pairing them with seeded interactions.",
-        "use_case": {
-          "title": "Showcase scenario for CIO and accessibility teams",
-          "steps": [
-            "Presenter opens the Info Assistant card on EVA Suite and toggles between EN/FR to prove bilingual readiness.",
-            "Voice preview tile captures a spoken prompt ('What changed in the audit trail today?') and displays the narrated response with citations.",
-            "Presenter switches to the i18n editor view, edits a literal, and points to how APIM will eventually serve those strings.",
-            "Wrap-up: highlight WCAG notes and keyboard navigation working across all elements."
-          ],
-          "result": "Stakeholders see an accessible, bilingual AI experience they can test immediately while Azure/APIM plumbing comes next."
-        },
-        "moonshot": "Single front door for public sector demos where voice, chat, and UI co-exist with explainable strings delivered through APIM-backed i18n services.",
+        "moonshot": "The art of impossible now possible: Government-grade AI chat that sets the global standard for accessibility and bilingualism. Token of appreciation to Canada - world-class showcase of what enterprise AI should be. Eventually becomes your universal enterprise console - everything you do at work, you just tell EVA.",
         "has_dual_buttons": true
       },
       {
@@ -417,50 +401,33 @@
       },
       {
         "id": 18,
-        "name": "EVA Accessibility",
-        "icon": "♿",
+        "name": "EVA Compliance Suite",
+        "icon": "🍁",
         "category": "Developer",
-        "description": "AI-Powered WCAG Scanner - Accessibility-first development assistant. Simulates scanning a target website (EVA Suite Product Explorer) and provides detailed accessibility audit: overall grade, issue counts (errors, warnings, passes), and itemized findings with WCAG references, severity levels, problem descriptions, and suggested fixes. Includes 'AI Accessibility Coach' panel offering quick-win recommendations and next steps. Think of it as your accessibility copilot - making WCAG compliance actionable for developers and designers.",
+        "description": "World-class government compliance platform - Token of appreciation to Canada. Comprehensive suite combining AI-Powered WCAG Scanner + Multi-language i18n Framework + GC Design System Standards. Demonstrates the art of impossible now possible: bilingual (en-CA/fr-CA) accessibility-first development with Government of Canada professional design patterns. Includes WCAG audit tool with AI Accessibility Coach, seamless internationalization framework, and authentic Canada.ca design implementation. Sets the global standard for enterprise compliance - accessible, bilingual, government-grade by default.",
         "use_case": {
-          "title": "Frontend Dev's Accessibility Review",
+          "title": "Government Agency Building Accessible Bilingual Portal",
           "steps": [
-            "Developer opens EVA Accessibility after building new feature",
-            "Sees scan target: EVA Suite - Product Explorer, Grade B (demo)",
-            "Summary: 7 issues, 4 warnings, 23 passes",
-            "Reviews Issue AX1 (WCAG 1.4.3): 'Some secondary text contrast below 4.5:1 - darken background'",
-            "Issue AX2 (WCAG 2.4.1): 'No skip link for keyboard users - add jump to main content'",
-            "AI Accessibility Coach suggests: 'Quick fixes: add skip link, raise text contrast, use semantic headings, group product cards with ARIA labels'",
-            "Developer: 'I can fix 3 of these in 20 minutes'",
-            "Makes changes, re-scans → Grade A-"
+            "Developer opens EVA Compliance Suite for new citizen-facing portal",
+            "**Accessibility Scan**: Runs WCAG audit on prototype → Grade B, 7 issues, 4 warnings, 23 passes",
+            "AI Accessibility Coach suggests: 'Add skip links, increase text contrast to 4.5:1, use semantic headings'",
+            "Developer fixes 3 issues in 20 minutes → re-scan shows Grade A-",
+            "**Internationalization**: Installs eva-i18n, wraps app in I18nProvider",
+            "Replaces hardcoded strings with {t('key')} → automatic EN/FR translation",
+            "Creates locale files: en-CA.json, fr-CA.json with Canadian date/currency formats",
+            "Adds language toggle with Canadian flag → entire portal switches instantly",
+            "**GC Design System**: Applies authentic Canada.ca patterns",
+            "White backgrounds, signature red bar (#af3c43), navy accents (#284162)",
+            "Professional Lato typography, 1200px containers, rectangular buttons",
+            "**Comprehensive Feature Tour**: Shows keyboard navigation, screen reader support, high contrast mode",
+            "Portal now meets WCAG 2.1 AA+, fully bilingual, authentic government design"
           ],
-          "result": "Actionable accessibility insights in minutes vs days of manual WCAG audits"
+          "result": "Government-grade compliance suite: WCAG AA+ accessible + EN/FR bilingual + authentic Canada.ca design. Complete feature tour showcases world-class standards. Token of appreciation to Canada - what enterprise compliance should be."
         },
-        "moonshot": "Make every application accessible by default - accessibility as AI-powered guidance, not an afterthought.",
+        "moonshot": "Set the global standard for enterprise compliance. Every application should be accessible, bilingual, and government-grade by default. The art of impossible now possible - comprehensive compliance as AI-powered guidance, not an afterthought. Token of appreciation to Canada for setting the bar.",
         "has_dual_buttons": true
       },
-      {
-        "id": 19,
-        "name": "EVA i18n",
-        "icon": "🌍",
-        "category": "Developer",
-        "description": "Multi-language support framework (eva-i18n) for global deployments. Seamless internationalization for enterprise applications.",
-        "use_case": {
-          "title": "Adding French to English-Only App",
-          "steps": [
-            "Developer has existing React app, needs French for Quebec deployment",
-            "Installs: npm install @eva-suite/i18n",
-            "Wraps app: <I18nProvider defaultLang='en'><App /></I18nProvider>",
-            "Replaces hardcoded strings: 'Welcome' → {t('welcome')}",
-            "Creates locale files: en.json: {'welcome': 'Welcome'}, fr.json: {'welcome': 'Bienvenue'}",
-            "Adds language toggle: <button onClick={toggleLanguage}>🌍 FR/EN</button>",
-            "User clicks toggle → entire app switches to French instantly",
-            "All dates, numbers, currencies auto-format per locale (Nov 24, 2025 → 24 nov. 2025)"
-          ],
-          "result": "English-only app → bilingual EN/FR in 2 hours with <50 lines of code"
-        },
-        "moonshot": "Ship globally from day one - internationalization that just works.",
-        "has_dual_buttons": true
-      },
+
       {
         "id": 20,
         "name": "EVA Agent Tooling",
