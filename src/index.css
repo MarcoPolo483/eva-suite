@@ -1,33 +1,52 @@
 :root {
-  /* GC Federal Identity Program Colors */
-  --gc-red: #eb2d37;
-  --gc-blue: #0535d2;
-  --gc-dark-blue: #26374a;
-  --gc-yellow: #ffbf47;
-  --gc-green: #278400;
-  --gc-orange: #ee7100;
+  /* Authentic Government of Canada Colors */
+  /* Signature/Brand Colors */
+  --gc-signature-red: #af3c43;
+  --gc-red: #d3080c;
+  --gc-red-hover: #b5070a;
   
-  /* Status Colors */
+  /* Navigation & Interactive */
+  --gc-navy: #284162;
+  --gc-navy-hover: #1c2d46;
+  --gc-link: #284162;
+  --gc-link-hover: #0535d2;
+  
+  /* Backgrounds - Professional White/Gray */
+  --gc-bg-white: #ffffff;
+  --gc-bg-light: #f5f5f5;
+  --gc-bg-lighter: #fafafa;
+  --gc-gray-100: #f8f9fa;
+  --gc-gray-200: #e9ecef;
+  --gc-gray-300: #dee2e6;
+  
+  /* Text - High Contrast */
+  --gc-text-primary: #333333;
+  --gc-text-secondary: #555555;
+  --gc-text-muted: #6c6c6c;
+  --gc-text-inverse: #ffffff;
+  
+  /* Borders */
+  --gc-border-light: #d3d3d3;
+  --gc-border-medium: #cccccc;
+  --gc-border-dark: #8c8c8c;
+  
+  /* Status Colors - Muted */
   --gc-success: #278400;
+  --gc-success-bg: #d8eeca;
+  --gc-success-border: #5fa131;
+  
   --gc-warning: #ee7100;
+  --gc-warning-bg: #f9f4d4;
+  --gc-warning-border: #edc51e;
+  
   --gc-error: #d3080c;
+  --gc-error-bg: #f3e9e8;
+  --gc-error-border: #af3c43;
+  
   --gc-info: #269abc;
+  --gc-info-bg: #d7faff;
+  --gc-info-border: #0c5c85;
   
-  /* Neutral Colors */
-  --gc-white: #ffffff;
-  --gc-light-gray: #f5f5f5;
-  --gc-border-gray: #e0e0e0;
-  --gc-text-gray: #605e5c;
-  --gc-dark-gray: #2b2b2b;
-  
-  /* Legacy support (maps to GC colors) */
-  --primary: var(--gc-blue);
-  --secondary: var(--gc-warning);
-  --success: var(--gc-success);
-  --warning: var(--gc-yellow);
-  --danger: var(--gc-error);
-  --dark: var(--gc-dark-blue);
-  --neutral: var(--gc-text-gray);
 }
 
 * {
@@ -37,9 +56,14 @@
 }
 
 body {
-  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  line-height: 1.6;
-  color: var(--gc-dark-blue);
+  font-family: 'Noto Sans', 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--gc-text-primary);
+  background: var(--gc-bg-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
   background: var(--gc-light-gray);
   margin: 0;
   padding: 0;

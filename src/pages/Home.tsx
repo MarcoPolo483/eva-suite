@@ -60,54 +60,55 @@ const Home: React.FC = () => {
 
   return (
     <>
-      {/* Vision Banner - GC Styled */}
+      {/* Hero Banner - Authentic Canada.ca Style: WHITE background, clean typography */}
       <section className="vision-banner" aria-labelledby="vision-heading" style={{
-        background: '#26374a',
-        color: '#ffffff',
-        padding: '3rem 0',
-        borderBottom: '4px solid #ffbf47',
-        marginBottom: '2rem'
+        background: '#ffffff',
+        padding: '60px 24px',
+        borderBottom: '1px solid #dee2e6'
       }}>
-        <div className="container">
-          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginBottom: '1.5rem' }}>
-            <span style={{ fontSize: '3rem' }}>🍁</span>
-            <h1 id="vision-heading" style={{
-              margin: 0,
-              fontSize: '2.5rem',
-              fontWeight: 700,
-              fontFamily: "'Lato', sans-serif",
-              color: '#ffffff'
-            }}>
-              {t('home.vision.title')}
-            </h1>
-          </div>
-          <div className="vision-story">
-            <p>
-              <strong style={{ color: '#ffbf47' }}>EVA Suite</strong> is an enterprise AI platform comprising{' '}
-              <strong style={{ color: '#ffbf47' }}>24 products</strong> across 5 categories.
+        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <h1 id="vision-heading" style={{
+            margin: '0 0 24px 0',
+            fontSize: '36px',
+            fontWeight: 700,
+            fontFamily: "'Lato', sans-serif",
+            color: '#333333',
+            lineHeight: '1.3'
+          }}>
+            {t('home.vision.title')}
+          </h1>
+          <div className="vision-story" style={{
+            fontSize: '18px',
+            color: '#555555',
+            lineHeight: '1.65',
+            maxWidth: '900px'
+          }}>
+            <p style={{ marginBottom: '24px' }}>
+              <strong style={{ color: '#284162' }}>EVA Suite</strong> is an enterprise AI platform comprising{' '}
+              <strong style={{ color: '#284162' }}>24 products</strong> across 5 categories, built to deliver secure, accessible, and professional solutions for government operations.
             </p>
 
             <div className="vision-highlight" style={{
-              background: 'rgba(255, 191, 71, 0.15)',
-              padding: '1.5rem',
-              borderRadius: '8px',
-              margin: '1.5rem auto',
-              borderLeft: '4px solid #ffbf47',
+              background: '#f9f4d4', /* Subtle warning background */
+              padding: '24px',
+              borderRadius: '4px',
+              margin: '32px 0',
+              borderLeft: '4px solid #ee7100', /* Warning border */
               maxWidth: '850px'
             }}>
-              <p style={{ fontSize: '1.15rem', fontStyle: 'italic', marginBottom: '0.5rem', color: '#ffffff' }}>
-                <strong>"I see EVA everywhere... agents talking to agents."</strong>
+              <p style={{ fontSize: '18px', fontStyle: 'italic', marginBottom: '12px', color: '#333333', fontWeight: 500 }}>
+                "I see EVA everywhere... agents talking to agents."
               </p>
-              <p style={{ fontSize: '0.9rem', opacity: 0.8, margin: 0 }}>– Marco's email, December 2023</p>
+              <p style={{ fontSize: '14px', color: '#6c6c6c', margin: 0 }}>– Marco's email, December 2023</p>
             </div>
 
-            <p>
-              Back in <strong style={{ color: '#ffbf47' }}>December 2023</strong>, before the world fully understood agentic AI,
-              Marco wrote those prophetic words. He saw it: <strong style={{ color: '#ffbf47' }}>agents talking to agents</strong>,
+            <p style={{ marginBottom: '16px' }}>
+              Back in <strong>December 2023</strong>, before the world fully understood agentic AI,
+              Marco wrote those prophetic words. He saw it: <strong>agents talking to agents</strong>,
               autonomous systems collaborating, AI that doesn't just answer questions but <em>takes action</em>.
             </p>
 
-            <p><strong style={{ color: '#ffbf47' }}>Now, in 2025, Marco is making that vision real.</strong></p>
+            <p style={{ marginBottom: 0 }}><strong style={{ color: '#284162' }}>Now, in 2025, Marco is making that vision real.</strong></p>
 
             <p className="signature" style={{
               fontSize: '0.85rem',
@@ -121,63 +122,59 @@ const Home: React.FC = () => {
       </section>
 
       {/* DevTools Hero Section - GC Styled */}
+      {/* Dev Tools Highlight Section - Light Gray Background */}
       <section className="card" style={{
-        marginBottom: '2rem',
-        background: '#ffffff',
-        borderRadius: '8px',
-        padding: '2rem',
-        boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-        border: '2px solid #278400',
-        borderLeft: '6px solid #278400'
+        background: '#f5f5f5',
+        padding: '48px 24px',
+        borderTop: '1px solid #dee2e6',
+        borderBottom: '1px solid #dee2e6'
       }}>
-        <div className="container">
+        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto' }}>
           <h2 style={{
-            color: '#278400',
-            marginBottom: '1rem',
-            fontSize: '1.8rem',
+            color: '#333333',
+            marginBottom: '16px',
+            fontSize: '28px',
             fontWeight: 700,
-            fontFamily: "'Lato', sans-serif",
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.75rem'
+            fontFamily: "'Lato', sans-serif"
           }}>
-            <span style={{ fontSize: '2rem' }}>⚙️</span>
             {t('home.devtools.hero.title')}
           </h2>
           <p style={{
-            color: '#605e5c',
-            fontSize: '1.1rem',
-            marginBottom: '1.5rem',
+            color: '#555555',
+            fontSize: '18px',
+            marginBottom: '32px',
             maxWidth: '800px',
-            lineHeight: 1.6
+            lineHeight: 1.65
           }}>
             {t('home.devtools.hero.subtitle')}
           </p>
 
-          {/* Three Highlight Cards */}
+          {/* Three Highlight Cards - White on Gray */}
           <div style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-            gap: '1.25rem',
-            marginTop: '1.5rem'
+            gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+            gap: '24px',
+            marginTop: '32px'
           }}>
             <div style={{
-              background: '#f5f5f5',
-              padding: '1.25rem',
-              borderRadius: '8px',
-              border: '1px solid #e0e0e0',
-              borderLeft: '4px solid #278400'
+              background: '#ffffff',
+              padding: '24px',
+              borderRadius: '4px',
+              border: '1px solid #dee2e6',
+              boxShadow: '0 1px 3px rgba(0,0,0,0.06)',
+              transition: 'box-shadow 0.2s ease'
             }}>
-              <div style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>🔎</div>
+              <div style={{ fontSize: '32px', marginBottom: '12px' }}>🔎</div>
               <h3 style={{
-                color: '#26374a',
-                fontSize: '1.1rem',
-                marginBottom: '0.5rem',
-                fontWeight: 600
+                color: '#284162',
+                fontSize: '20px',
+                marginBottom: '12px',
+                fontWeight: 600,
+                fontFamily: "'Lato', sans-serif"
               }}>
                 {t('home.devtools.highlights.audit.title')}
               </h3>
-              <p style={{ color: '#605e5c', fontSize: '0.9rem', lineHeight: 1.5 }}>
+              <p style={{ color: '#555555', fontSize: '15px', lineHeight: 1.6, margin: 0 }}>
                 {t('home.devtools.highlights.audit.description')}
               </p>
             </div>
