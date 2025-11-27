@@ -73,48 +73,52 @@ const EvaProcessMapperDemo: React.FC = () => {
   return (
     <div 
       style={{
-        background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)',
-        borderRadius: '12px',
+        background: '#ffffff',
+        borderRadius: '8px',
         padding: '2rem',
-        color: '#fff',
+        color: '#26374a',
         maxWidth: '1200px',
-        margin: '0 auto'
+        margin: '0 auto',
+        boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+        border: '1px solid #e0e0e0',
+        borderBottom: '3px solid #0535d2'
       }}
       aria-label="EVA Process Mapper Demo"
     >
       {/* Header */}
-      <div style={{ marginBottom: '2rem' }}>
+      <div style={{ marginBottom: '2rem', borderBottom: '3px solid #0535d2', paddingBottom: '1rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem', flexWrap: 'wrap' }}>
-          <h2 style={{ fontSize: '1.8rem', margin: 0, color: '#50e6ff' }}>
+          <h2 style={{ fontSize: '1.8rem', margin: 0, color: '#26374a', fontFamily: "'Lato', sans-serif", fontWeight: 700 }}>
             🧩 EVA Process Mapper
           </h2>
           <span style={{
             padding: '0.25rem 0.75rem',
             fontSize: '0.75rem',
-            borderRadius: '12px',
-            background: 'rgba(255, 193, 7, 0.2)',
-            border: '1px solid rgba(255, 193, 7, 0.4)',
-            color: '#ffc107',
-            fontWeight: 'bold'
+            borderRadius: '4px',
+            background: '#f9f4d4',
+            border: '2px solid #ffbf47',
+            color: '#26374a',
+            fontWeight: 600
           }}>
             Demo · Mock process map
           </span>
         </div>
-        <h3 style={{ fontSize: '1.3rem', margin: '0.5rem 0', color: '#ddd' }}>
+        <h3 style={{ fontSize: '1.3rem', margin: '0.5rem 0', color: '#26374a', fontFamily: "'Lato', sans-serif", fontWeight: 600 }}>
           {process.name}
         </h3>
-        <p style={{ color: '#aaa', fontSize: '0.95rem', margin: '0.5rem 0' }}>
+        <p style={{ color: '#605e5c', fontSize: '0.95rem', margin: '0.5rem 0' }}>
           {process.description}
         </p>
         <div style={{
           marginTop: '1rem',
           padding: '1rem',
-          background: 'rgba(80, 230, 255, 0.05)',
-          border: '1px solid rgba(80, 230, 255, 0.2)',
-          borderRadius: '8px'
+          background: '#d7faff',
+          border: '2px solid #0535d2',
+          borderLeft: '4px solid #0535d2',
+          borderRadius: '4px'
         }}>
-          <strong style={{ color: '#50e6ff', fontSize: '0.9rem' }}>Scenario:</strong>
-          <span style={{ color: '#ccc', fontSize: '0.95rem', marginLeft: '0.5rem' }}>
+          <strong style={{ color: '#0535d2', fontSize: '0.9rem', fontFamily: "'Lato', sans-serif" }}>Scenario:</strong>
+          <span style={{ color: '#26374a', fontSize: '0.95rem', marginLeft: '0.5rem' }}>
             {process.scenario}
           </span>
         </div>
@@ -125,9 +129,11 @@ const EvaProcessMapperDemo: React.FC = () => {
         <h3 style={{ 
           fontSize: '1.3rem', 
           marginBottom: '1.5rem', 
-          color: '#ddd', 
-          borderBottom: '2px solid #444', 
-          paddingBottom: '0.5rem' 
+          color: '#26374a', 
+          borderBottom: '2px solid #e0e0e0', 
+          paddingBottom: '0.5rem',
+          fontFamily: "'Lato', sans-serif",
+          fontWeight: 600
         }}>
           🔄 Process Flow
         </h3>
@@ -138,25 +144,26 @@ const EvaProcessMapperDemo: React.FC = () => {
             <div 
               key={actor.id}
               style={{
-                background: '#2a2a2a',
-                borderRadius: '10px',
-                border: '2px solid #444',
+                background: '#ffffff',
+                borderRadius: '4px',
+                border: '1px solid #e0e0e0',
                 overflow: 'hidden'
               }}
             >
               {/* Lane Header */}
               <div style={{
                 background: actor.id === 'eva' 
-                  ? 'linear-gradient(135deg, rgba(80, 230, 255, 0.2) 0%, rgba(32, 201, 151, 0.2) 100%)'
-                  : '#333',
+                  ? '#d8eeca'
+                  : '#f5f5f5',
                 padding: '1rem 1.5rem',
-                borderBottom: '2px solid #444'
+                borderBottom: '2px solid #e0e0e0'
               }}>
                 <h4 style={{ 
                   fontSize: '1.1rem', 
                   margin: 0, 
-                  color: actor.id === 'eva' ? '#50e6ff' : '#ddd',
-                  fontWeight: 'bold'
+                  color: actor.id === 'eva' ? '#278400' : '#26374a',
+                  fontWeight: 600,
+                  fontFamily: "'Lato', sans-serif"
                 }}>
                   {actor.label}
                   {actor.id === 'eva' && (
@@ -164,9 +171,10 @@ const EvaProcessMapperDemo: React.FC = () => {
                       marginLeft: '0.75rem',
                       fontSize: '0.75rem',
                       padding: '0.25rem 0.6rem',
-                      background: 'rgba(80, 230, 255, 0.3)',
-                      borderRadius: '10px',
-                      border: '1px solid #50e6ff'
+                      background: '#ffffff',
+                      borderRadius: '4px',
+                      border: '1px solid #278400',
+                      color: '#278400'
                     }}>
                       AI-Powered
                     </span>
@@ -188,12 +196,12 @@ const EvaProcessMapperDemo: React.FC = () => {
                         style={{
                           padding: '1rem',
                           background: step.assisted_by_eva 
-                            ? 'rgba(80, 230, 255, 0.08)' 
-                            : '#1a1a1a',
-                          borderRadius: '8px',
+                            ? '#d7faff' 
+                            : '#f5f5f5',
+                          borderRadius: '4px',
                           border: step.assisted_by_eva 
-                            ? '2px solid rgba(80, 230, 255, 0.3)' 
-                            : '1px solid #444',
+                            ? '2px solid #0535d2' 
+                            : '1px solid #e0e0e0',
                           borderLeft: `4px solid ${getTypeColor(step.type)}`
                         }}
                       >
@@ -206,11 +214,11 @@ const EvaProcessMapperDemo: React.FC = () => {
                             width: '1.75rem',
                             height: '1.75rem',
                             borderRadius: '50%',
-                            background: '#444',
-                            color: '#fff',
+                            background: '#0535d2',
+                            color: '#ffffff',
                             fontSize: '0.85rem',
-                            fontWeight: 'bold',
-                            fontFamily: 'monospace'
+                            fontWeight: 700,
+                            fontFamily: "'Lato', sans-serif"
                           }}>
                             {step.order}
                           </span>
@@ -218,8 +226,8 @@ const EvaProcessMapperDemo: React.FC = () => {
                           {/* Step ID */}
                           <span style={{
                             fontSize: '0.8rem',
-                            fontWeight: 'bold',
-                            color: '#50e6ff',
+                            fontWeight: 600,
+                            color: '#0535d2',
                             fontFamily: 'monospace'
                           }}>
                             {step.id}
@@ -229,11 +237,11 @@ const EvaProcessMapperDemo: React.FC = () => {
                           <span style={{
                             padding: '0.2rem 0.6rem',
                             fontSize: '0.7rem',
-                            borderRadius: '10px',
-                            background: `${getTypeColor(step.type)}22`,
+                            borderRadius: '4px',
+                            background: `${getTypeColor(step.type)}15`,
                             border: `1px solid ${getTypeColor(step.type)}`,
                             color: getTypeColor(step.type),
-                            fontWeight: 'bold',
+                            fontWeight: 600,
                             textTransform: 'capitalize'
                           }}>
                             {step.type.replace('_', ' ')}
@@ -244,11 +252,11 @@ const EvaProcessMapperDemo: React.FC = () => {
                             <span style={{
                               padding: '0.2rem 0.6rem',
                               fontSize: '0.7rem',
-                              borderRadius: '10px',
-                              background: 'rgba(80, 230, 255, 0.25)',
-                              border: '1px solid #50e6ff',
-                              color: '#50e6ff',
-                              fontWeight: 'bold'
+                              borderRadius: '4px',
+                              background: '#d8eeca',
+                              border: '1px solid #278400',
+                              color: '#278400',
+                              fontWeight: 600
                             }}>
                               ⚡ EVA-assisted
                             </span>
@@ -258,9 +266,9 @@ const EvaProcessMapperDemo: React.FC = () => {
                         {/* Step Label */}
                         <p style={{ 
                           margin: '0.5rem 0', 
-                          color: '#fff', 
+                          color: '#26374a', 
                           fontSize: '1rem',
-                          fontWeight: '500'
+                          fontWeight: 500
                         }}>
                           {step.label}
                         </p>
@@ -268,7 +276,7 @@ const EvaProcessMapperDemo: React.FC = () => {
                         {/* Step Notes */}
                         <p style={{ 
                           margin: '0.5rem 0 0 0', 
-                          color: '#aaa', 
+                          color: '#605e5c', 
                           fontSize: '0.85rem',
                           fontStyle: 'italic'
                         }}>
@@ -286,16 +294,17 @@ const EvaProcessMapperDemo: React.FC = () => {
 
       {/* EVA Process Coach */}
       <div style={{
-        background: 'linear-gradient(135deg, rgba(255, 140, 0, 0.1) 0%, rgba(32, 201, 151, 0.1) 100%)',
-        border: '2px solid rgba(80, 230, 255, 0.3)',
-        borderRadius: '12px',
+        background: '#f9f4d4',
+        border: '2px solid #ffbf47',
+        borderLeft: '4px solid #ee7100',
+        borderRadius: '4px',
         padding: '1.5rem'
       }}>
         <div style={{ marginBottom: '1rem' }}>
-          <h3 style={{ fontSize: '1.3rem', marginBottom: '0.25rem', color: '#50e6ff' }}>
+          <h3 style={{ fontSize: '1.3rem', marginBottom: '0.25rem', color: '#ee7100', fontFamily: "'Lato', sans-serif", fontWeight: 700 }}>
             🧠 EVA Process Coach
           </h3>
-          <p style={{ color: '#aaa', fontSize: '0.85rem', margin: 0 }}>
+          <p style={{ color: '#605e5c', fontSize: '0.85rem', margin: 0 }}>
             AI insights into your process design
           </p>
         </div>
@@ -305,9 +314,10 @@ const EvaProcessMapperDemo: React.FC = () => {
           <h4 style={{
             fontSize: '1rem',
             marginBottom: '0.75rem',
-            color: '#ddd',
-            fontWeight: 'bold',
-            borderBottom: '1px solid rgba(80, 230, 255, 0.3)',
+            color: '#26374a',
+            fontWeight: 600,
+            fontFamily: "'Lato', sans-serif",
+            borderBottom: '2px solid #0535d2',
             paddingBottom: '0.5rem'
           }}>
             📊 What this map shows
@@ -315,7 +325,7 @@ const EvaProcessMapperDemo: React.FC = () => {
           <ul style={{
             margin: 0,
             paddingLeft: '1.5rem',
-            color: '#ccc',
+            color: '#605e5c',
             lineHeight: 1.8
           }}>
             {process.summary.highlights.map((highlight, idx) => (
@@ -331,9 +341,10 @@ const EvaProcessMapperDemo: React.FC = () => {
           <h4 style={{
             fontSize: '1rem',
             marginBottom: '0.75rem',
-            color: '#ddd',
-            fontWeight: 'bold',
-            borderBottom: '1px solid rgba(32, 201, 151, 0.3)',
+            color: '#26374a',
+            fontWeight: 600,
+            fontFamily: "'Lato', sans-serif",
+            borderBottom: '2px solid #278400',
             paddingBottom: '0.5rem'
           }}>
             🎯 Where EVA can help more
@@ -341,7 +352,7 @@ const EvaProcessMapperDemo: React.FC = () => {
           <ul style={{
             margin: 0,
             paddingLeft: '1.5rem',
-            color: '#ccc',
+            color: '#278400',
             lineHeight: 1.8
           }}>
             {process.summary.opportunities.map((opportunity, idx) => (
@@ -355,13 +366,13 @@ const EvaProcessMapperDemo: React.FC = () => {
         {/* Disclaimer */}
         <div style={{
           padding: '1rem',
-          background: 'rgba(209, 52, 56, 0.1)',
-          border: '1px solid rgba(209, 52, 56, 0.3)',
-          borderRadius: '6px',
+          background: '#f9d8d6',
+          border: '2px solid #eb2d37',
+          borderRadius: '4px',
           fontSize: '0.85rem',
-          color: '#ff6b6b'
+          color: '#26374a'
         }}>
-          <strong>⚠️ Disclaimer:</strong> {process.summary.disclaimer}
+          <strong style={{ color: '#d3080c' }}>⚠️ Disclaimer:</strong> {process.summary.disclaimer}
         </div>
       </div>
     </div>

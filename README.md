@@ -44,6 +44,69 @@ All six EVA Suite hero demos defined in the EVA Orchestrator plan (`eva-suite-he
    - Data: `src/data/eva-process-mapper-demo.json`  
    - Shows a swimlane-style journey for a fictional OAS enquiry, highlighting which steps are EVA-assisted and summarizing highlights, opportunities and disclaimers via an "EVA Process Coach".
 
+## What's Included - GC Design System Features
+
+The **GC Demo** (`/gc-demo` route) showcases enterprise-grade components built with Government of Canada standards:
+
+### 🌐 **Internationalization**
+- **Live EN/FR Toggle**: Instant language switching without page reload
+- **Context-Aware Content**: All UI elements, messages, and help text translated
+- **Locale-Aware Formatting**: Canadian date/time formats (en-CA/fr-CA)
+- **Bilingual Sample Questions**: Contextual prompts that adapt to selected language
+- **Official Languages Act Compliance**: Full bilingual support throughout
+
+### ♿ **Accessibility (WCAG 2.1 AA)**
+- **Color Contrast**: All text meets ≥4.5:1 contrast ratios
+  - White on Dark Blue (#26374a): 12.63:1
+  - White on GC Blue (#0535d2): 8.59:1
+- **Keyboard Navigation**: Full keyboard support (Enter to send, Tab navigation)
+- **Focus Management**: Clear focus indicators with 2px blue borders
+- **Auto-Scroll**: Messages automatically scroll into view
+- **Disabled States**: Clear visual and cursor feedback for unavailable actions
+- **Status Indicators**: Typing indicators and loading states for screen readers
+- **Semantic HTML**: Proper tags (`<h1>`, `<button>`, etc.) for assistive technologies
+
+### 🍁 **Government of Canada Design Standards**
+- **Federal Identity Program (FIP) Colors**:
+  - GC Red: `#eb2d37` (alerts)
+  - GC Blue: `#0535d2` (primary actions)
+  - GC Dark Blue: `#26374a` (headers)
+  - GC Yellow: `#ffbf47` (accents)
+  - Success Green: `#278400` (completed states)
+  - Warning Orange: `#ee7100` (pending states)
+- **Canada Wordmark**: Prominent 🍁 maple leaf in headers
+- **Typography**: Following canada.ca guidelines
+  - Headings: Lato font (41px/37px responsive)
+  - Body: Noto Sans (16px base, 1.6 line-height)
+- **Professional Styling**: Clean borders, subtle shadows, generous spacing
+- **Compliance Badges**: Visible certification (WCAG 2.1 AA • FIP • Official Languages Act)
+
+### 💬 **Bilingual AI Chat Frame** (`GCChatFrame.tsx`)
+- White background with GC branding (fixes previous black frame issue)
+- Live EN/FR language toggle in header
+- Simulated AI responses with typing indicators
+- Sample questions for quick start
+- Auto-scroll to latest messages
+- Timestamp formatting (2:45 PM / 14:45)
+- Warning footer marking demo content
+
+### 📊 **Batch RAG Processing Dashboard** (`BatchRAGDemo.tsx`)
+- **Manual Refresh Button**: User-controlled data updates (fixes previous auto-refresh issue)
+- **Dynamic Data Generation**: New random realistic values on each refresh
+  - Documents: 150-850 (changes every click)
+  - Chunks: 2,500-8,500 (changes every click)
+  - Processing time: 12.5-45.8 seconds (changes every click)
+- **Visual Progress Indicators**: Animated progress bars with status colors
+- **Batch Status Table**: Completed/Processing/Queued with color-coded badges
+- **Recent Documents List**: Realistic government file names
+- **Real-time Statistics**: 4-column stats grid with large numbers
+
+### 🎨 **Design System Documentation**
+- FIP color palette with hex codes
+- Typography specifications (Lato + Noto Sans)
+- Accessibility features summary
+- NPM installation instructions for `@eva/gc-look-n-feel`
+
 ## Deployment (GitHub Pages)
 
 This EVA Suite demo is configured for deployment to GitHub Pages:

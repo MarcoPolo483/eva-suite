@@ -53,42 +53,45 @@ const EvaImpactAnalyzerDemo: React.FC = () => {
 
   return (
     <div style={{
-      background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)',
-      borderRadius: '12px',
+      background: '#ffffff',
+      borderRadius: '8px',
       padding: '2rem',
-      color: '#fff',
+      color: '#26374a',
       maxWidth: '1000px',
-      margin: '0 auto'
+      margin: '0 auto',
+      boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+      border: '1px solid #e0e0e0',
+      borderBottom: '3px solid #0535d2'
     }}>
       {/* Header */}
-      <div style={{ marginBottom: '2rem' }}>
+      <div style={{ marginBottom: '2rem', borderBottom: '3px solid #0535d2', paddingBottom: '1rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', margin: 0, color: '#50e6ff' }}>
+          <h2 style={{ fontSize: '1.8rem', margin: 0, color: '#26374a', fontFamily: "'Lato', sans-serif", fontWeight: 700 }}>
             💰 EVA Impact Analyzer – ROI Calculator
           </h2>
           <span style={{
             padding: '0.25rem 0.75rem',
             fontSize: '0.75rem',
-            borderRadius: '12px',
-            background: 'rgba(255, 193, 7, 0.2)',
-            border: '1px solid rgba(255, 193, 7, 0.4)',
-            color: '#ffc107',
-            fontWeight: 'bold'
+            borderRadius: '4px',
+            background: '#f9f4d4',
+            border: '2px solid #ffbf47',
+            color: '#26374a',
+            fontWeight: 600
           }}>
             Demo · Mock data only
           </span>
         </div>
-        <p style={{ color: '#aaa', fontSize: '0.9rem', margin: 0 }}>
+        <p style={{ color: '#605e5c', fontSize: '0.9rem', margin: 0 }}>
           {data.baseline.description}
         </p>
-        <p style={{ color: '#777', fontSize: '0.8rem', margin: '0.5rem 0 0 0', fontStyle: 'italic' }}>
+        <p style={{ color: '#605e5c', fontSize: '0.8rem', margin: '0.5rem 0 0 0', fontStyle: 'italic' }}>
           {data.baseline.notes}
         </p>
       </div>
 
       {/* Scenario Selector */}
       <div style={{ marginBottom: '2rem' }}>
-        <h3 style={{ fontSize: '1.1rem', marginBottom: '0.75rem', color: '#ddd' }}>
+        <h3 style={{ fontSize: '1.1rem', marginBottom: '0.75rem', color: '#26374a', fontFamily: "'Lato', sans-serif", fontWeight: 600 }}>
           Select Impact Scenario
         </h3>
         <div style={{ display: 'flex', gap: '0.5rem', flexWrap: 'wrap' }}>
@@ -99,24 +102,26 @@ const EvaImpactAnalyzerDemo: React.FC = () => {
               style={{
                 padding: '0.75rem 1.5rem',
                 fontSize: '1rem',
-                fontWeight: 'bold',
-                borderRadius: '8px',
-                border: selectedScenarioId === scenario.id ? '2px solid #50e6ff' : '2px solid #444',
-                background: selectedScenarioId === scenario.id ? 'rgba(80, 230, 255, 0.15)' : '#2a2a2a',
-                color: selectedScenarioId === scenario.id ? '#50e6ff' : '#aaa',
+                fontWeight: 600,
+                fontFamily: "'Lato', sans-serif",
+                borderRadius: '4px',
+                border: selectedScenarioId === scenario.id ? '2px solid #0535d2' : '2px solid #e0e0e0',
+                background: selectedScenarioId === scenario.id ? '#d7faff' : '#ffffff',
+                color: selectedScenarioId === scenario.id ? '#0535d2' : '#605e5c',
                 cursor: 'pointer',
-                transition: 'all 0.2s'
+                transition: 'all 0.2s',
+                boxShadow: selectedScenarioId === scenario.id ? '0 2px 4px rgba(5, 53, 210, 0.2)' : 'none'
               }}
               onMouseEnter={(e) => {
                 if (selectedScenarioId !== scenario.id) {
-                  e.currentTarget.style.background = '#333';
-                  e.currentTarget.style.borderColor = '#666';
+                  e.currentTarget.style.background = '#f5f5f5';
+                  e.currentTarget.style.borderColor = '#0535d2';
                 }
               }}
               onMouseLeave={(e) => {
                 if (selectedScenarioId !== scenario.id) {
-                  e.currentTarget.style.background = '#2a2a2a';
-                  e.currentTarget.style.borderColor = '#444';
+                  e.currentTarget.style.background = '#ffffff';
+                  e.currentTarget.style.borderColor = '#e0e0e0';
                 }
               }}
             >
@@ -130,41 +135,42 @@ const EvaImpactAnalyzerDemo: React.FC = () => {
         {/* Inputs Panel */}
         <div style={{
           padding: '1.5rem',
-          background: '#2a2a2a',
-          borderRadius: '10px',
-          border: '2px solid #444'
+          background: '#d7faff',
+          borderRadius: '4px',
+          border: '2px solid #0535d2',
+          borderLeft: '4px solid #0535d2'
         }}>
-          <h4 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: '#50e6ff', borderBottom: '2px solid #444', paddingBottom: '0.5rem' }}>
+          <h4 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: '#0535d2', borderBottom: '2px solid #0535d2', paddingBottom: '0.5rem', fontFamily: "'Lato', sans-serif", fontWeight: 600 }}>
             📊 Inputs
           </h4>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <div>
-              <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.25rem' }}>Employees</div>
-              <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#fff' }}>
+              <div style={{ fontSize: '0.85rem', color: '#605e5c', marginBottom: '0.25rem' }}>Employees</div>
+              <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#26374a', fontFamily: "'Lato', sans-serif" }}>
                 {formatNumber(currentScenario.inputs.employees)}
               </div>
             </div>
             <div>
-              <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.25rem' }}>Hours saved/week/person</div>
-              <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#fff' }}>
+              <div style={{ fontSize: '0.85rem', color: '#605e5c', marginBottom: '0.25rem' }}>Hours saved/week/person</div>
+              <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#26374a', fontFamily: "'Lato', sans-serif" }}>
                 {currentScenario.inputs.hours_saved_per_week}
               </div>
             </div>
             <div>
-              <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.25rem' }}>Hourly cost (CAD)</div>
-              <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#fff' }}>
+              <div style={{ fontSize: '0.85rem', color: '#605e5c', marginBottom: '0.25rem' }}>Hourly cost (CAD)</div>
+              <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#26374a', fontFamily: "'Lato', sans-serif" }}>
                 {formatCurrency(currentScenario.inputs.hourly_cost_cad)}
               </div>
             </div>
             <div>
-              <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.25rem' }}>Weeks per year</div>
-              <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#fff' }}>
+              <div style={{ fontSize: '0.85rem', color: '#605e5c', marginBottom: '0.25rem' }}>Weeks per year</div>
+              <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#26374a', fontFamily: "'Lato', sans-serif" }}>
                 {currentScenario.inputs.weeks_per_year}
               </div>
             </div>
             <div>
-              <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.25rem' }}>Annual platform cost</div>
-              <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#ffc107' }}>
+              <div style={{ fontSize: '0.85rem', color: '#605e5c', marginBottom: '0.25rem' }}>Annual platform cost</div>
+              <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#ee7100', fontFamily: "'Lato', sans-serif" }}>
                 {formatCurrency(currentScenario.inputs.annual_platform_cost_cad)}
               </div>
             </div>
@@ -174,41 +180,42 @@ const EvaImpactAnalyzerDemo: React.FC = () => {
         {/* Outputs Panel */}
         <div style={{
           padding: '1.5rem',
-          background: 'linear-gradient(135deg, rgba(16, 124, 16, 0.2) 0%, rgba(40, 167, 69, 0.15) 100%)',
-          borderRadius: '10px',
-          border: '2px solid rgba(40, 167, 69, 0.5)'
+          background: '#d8eeca',
+          borderRadius: '4px',
+          border: '2px solid #278400',
+          borderLeft: '4px solid #278400'
         }}>
-          <h4 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: '#4ade80', borderBottom: '2px solid rgba(40, 167, 69, 0.5)', paddingBottom: '0.5rem' }}>
+          <h4 style={{ fontSize: '1.2rem', marginBottom: '1rem', color: '#278400', borderBottom: '2px solid #278400', paddingBottom: '0.5rem', fontFamily: "'Lato', sans-serif", fontWeight: 600 }}>
             📈 Outputs
           </h4>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
             <div>
-              <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.25rem' }}>Annual hours saved</div>
-              <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#4ade80' }}>
+              <div style={{ fontSize: '0.85rem', color: '#605e5c', marginBottom: '0.25rem' }}>Annual hours saved</div>
+              <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#278400', fontFamily: "'Lato', sans-serif" }}>
                 {formatNumber(currentScenario.outputs.annual_hours_saved)}
               </div>
             </div>
             <div>
-              <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.25rem' }}>Gross savings (CAD)</div>
-              <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#4ade80' }}>
+              <div style={{ fontSize: '0.85rem', color: '#605e5c', marginBottom: '0.25rem' }}>Gross savings (CAD)</div>
+              <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#278400', fontFamily: "'Lato', sans-serif" }}>
                 {formatCurrency(currentScenario.outputs.annual_gross_savings_cad)}
               </div>
             </div>
             <div>
-              <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.25rem' }}>Net savings (CAD)</div>
-              <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#4ade80' }}>
+              <div style={{ fontSize: '0.85rem', color: '#605e5c', marginBottom: '0.25rem' }}>Net savings (CAD)</div>
+              <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#278400', fontFamily: "'Lato', sans-serif" }}>
                 {formatCurrency(currentScenario.outputs.annual_net_savings_cad)}
               </div>
             </div>
             <div>
-              <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.25rem' }}>ROI</div>
-              <div style={{ fontSize: '1.5rem', fontWeight: 'bold', color: '#50e6ff' }}>
+              <div style={{ fontSize: '0.85rem', color: '#605e5c', marginBottom: '0.25rem' }}>ROI</div>
+              <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#0535d2', fontFamily: "'Lato', sans-serif" }}>
                 {currentScenario.outputs.roi_pct}%
               </div>
             </div>
             <div>
-              <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.25rem' }}>Payback period</div>
-              <div style={{ fontSize: '1.3rem', fontWeight: 'bold', color: '#ffc107' }}>
+              <div style={{ fontSize: '0.85rem', color: '#605e5c', marginBottom: '0.25rem' }}>Payback period</div>
+              <div style={{ fontSize: '1.3rem', fontWeight: 700, color: '#ee7100', fontFamily: "'Lato', sans-serif" }}>
                 {currentScenario.outputs.payback_months} months
               </div>
             </div>
@@ -218,28 +225,29 @@ const EvaImpactAnalyzerDemo: React.FC = () => {
 
       {/* Impact Narrator */}
       <div style={{
-        background: 'linear-gradient(135deg, rgba(255, 140, 0, 0.1) 0%, rgba(80, 230, 255, 0.1) 100%)',
-        border: '2px solid rgba(255, 140, 0, 0.3)',
-        borderRadius: '12px',
+        background: '#f9f4d4',
+        border: '2px solid #ffbf47',
+        borderLeft: '4px solid #ee7100',
+        borderRadius: '4px',
         padding: '1.5rem'
       }}>
         <div style={{ marginBottom: '1rem' }}>
-          <h3 style={{ fontSize: '1.3rem', marginBottom: '0.25rem', color: '#ff8c00' }}>
+          <h3 style={{ fontSize: '1.3rem', marginBottom: '0.25rem', color: '#ee7100', fontFamily: "'Lato', sans-serif", fontWeight: 700 }}>
             💡 Impact Narrator
           </h3>
-          <p style={{ color: '#aaa', fontSize: '0.85rem', margin: 0 }}>
+          <p style={{ color: '#605e5c', fontSize: '0.85rem', margin: 0 }}>
             Business case summary for {currentScenario.label.toLowerCase()} scenario
           </p>
         </div>
 
         <div style={{
           padding: '1rem',
-          background: 'rgba(80, 230, 255, 0.08)',
-          borderRadius: '8px',
+          background: '#d7faff',
+          borderRadius: '4px',
           marginBottom: '1.5rem',
-          borderLeft: '4px solid #50e6ff'
+          borderLeft: '4px solid #0535d2'
         }}>
-          <p style={{ margin: 0, color: '#ddd', fontSize: '1rem', lineHeight: 1.6 }}>
+          <p style={{ margin: 0, color: '#26374a', fontSize: '1rem', lineHeight: 1.6 }}>
             {currentScenario.narrative}
           </p>
         </div>
@@ -247,13 +255,13 @@ const EvaImpactAnalyzerDemo: React.FC = () => {
         {/* Disclaimer */}
         <div style={{
           padding: '1rem',
-          background: 'rgba(209, 52, 56, 0.1)',
-          border: '1px solid rgba(209, 52, 56, 0.3)',
-          borderRadius: '6px',
+          background: '#f9d8d6',
+          border: '2px solid #eb2d37',
+          borderRadius: '4px',
           fontSize: '0.85rem',
-          color: '#ff6b6b'
+          color: '#26374a'
         }}>
-          <strong>⚠️ Disclaimer:</strong> {data.disclaimer}
+          <strong style={{ color: '#d3080c' }}>⚠️ Disclaimer:</strong> {data.disclaimer}
         </div>
       </div>
     </div>

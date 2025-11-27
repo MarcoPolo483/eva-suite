@@ -57,32 +57,35 @@ const EvaAccessibilityDemo: React.FC = () => {
 
   return (
     <div style={{
-      background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)',
-      borderRadius: '12px',
+      background: '#ffffff',
+      borderRadius: '8px',
       padding: '2rem',
-      color: '#fff',
+      color: '#26374a',
       maxWidth: '1000px',
-      margin: '0 auto'
+      margin: '0 auto',
+      boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+      border: '1px solid #e0e0e0',
+      borderBottom: '3px solid #0535d2'
     }}>
       {/* Header */}
-      <div style={{ marginBottom: '2rem' }}>
+      <div style={{ marginBottom: '2rem', borderBottom: '3px solid #0535d2', paddingBottom: '1rem' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
-          <h2 style={{ fontSize: '1.8rem', margin: 0, color: '#50e6ff' }}>
+          <h2 style={{ fontSize: '1.8rem', margin: 0, color: '#26374a', fontFamily: "'Lato', sans-serif", fontWeight: 700 }}>
             ♿ EVA Accessibility – AI WCAG Scanner
           </h2>
           <span style={{
             padding: '0.25rem 0.75rem',
             fontSize: '0.75rem',
-            borderRadius: '12px',
-            background: 'rgba(255, 193, 7, 0.2)',
-            border: '1px solid rgba(255, 193, 7, 0.4)',
-            color: '#ffc107',
-            fontWeight: 'bold'
+            borderRadius: '4px',
+            background: '#f9f4d4',
+            border: '2px solid #ffbf47',
+            color: '#26374a',
+            fontWeight: 600
           }}>
             Demo · Mock data only
           </span>
         </div>
-        <p style={{ color: '#aaa', fontSize: '0.9rem', margin: 0 }}>
+        <p style={{ color: '#605e5c', fontSize: '0.9rem', margin: 0 }}>
           AI-powered accessibility scanning with WCAG compliance insights
         </p>
       </div>
@@ -91,20 +94,21 @@ const EvaAccessibilityDemo: React.FC = () => {
       <div style={{
         marginBottom: '2rem',
         padding: '1rem',
-        background: 'rgba(80, 230, 255, 0.05)',
-        border: '1px solid rgba(80, 230, 255, 0.2)',
-        borderRadius: '8px'
+        background: '#d7faff',
+        border: '2px solid #0535d2',
+        borderLeft: '4px solid #0535d2',
+        borderRadius: '4px'
       }}>
-        <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: '#50e6ff' }}>
+        <h3 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', color: '#0535d2', fontFamily: "'Lato', sans-serif", fontWeight: 700 }}>
           Scan Target
         </h3>
-        <p style={{ margin: '0.25rem 0', color: '#ddd', fontSize: '0.95rem' }}>
+        <p style={{ margin: '0.25rem 0', color: '#26374a', fontSize: '0.95rem' }}>
           <strong>Site:</strong> {data.scan_target.name}
         </p>
-        <p style={{ margin: '0.25rem 0', color: '#aaa', fontSize: '0.85rem' }}>
-          <strong>URL:</strong> <a href={data.scan_target.url} target="_blank" rel="noopener noreferrer" style={{ color: '#50e6ff' }}>{data.scan_target.url}</a>
+        <p style={{ margin: '0.25rem 0', color: '#605e5c', fontSize: '0.85rem' }}>
+          <strong>URL:</strong> <a href={data.scan_target.url} target="_blank" rel="noopener noreferrer" style={{ color: '#0535d2' }}>{data.scan_target.url}</a>
         </p>
-        <p style={{ margin: '0.25rem 0', color: '#aaa', fontSize: '0.85rem' }}>
+        <p style={{ margin: '0.25rem 0', color: '#605e5c', fontSize: '0.85rem' }}>
           <strong>Scanned:</strong> {formatTimestamp(data.scan_target.timestamp)}
         </p>
       </div>
@@ -118,49 +122,49 @@ const EvaAccessibilityDemo: React.FC = () => {
       }}>
         <div style={{
           padding: '1rem',
-          background: '#2a2a2a',
-          borderRadius: '8px',
-          border: '2px solid #444',
+          background: '#f9f4d4',
+          borderRadius: '4px',
+          border: '2px solid #ffbf47',
           textAlign: 'center'
         }}>
-          <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.5rem' }}>Overall Grade</div>
-          <div style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#ffc107' }}>
+          <div style={{ fontSize: '0.85rem', color: '#605e5c', marginBottom: '0.5rem', fontFamily: "'Lato', sans-serif", fontWeight: 600 }}>Overall Grade</div>
+          <div style={{ fontSize: '1.8rem', fontWeight: 700, color: '#ee7100', fontFamily: "'Lato', sans-serif" }}>
             {data.summary.overall_grade}
           </div>
         </div>
         <div style={{
           padding: '1rem',
-          background: '#2a2a2a',
-          borderRadius: '8px',
-          border: '2px solid #dc3545',
+          background: '#f9d8d6',
+          borderRadius: '4px',
+          border: '2px solid #eb2d37',
           textAlign: 'center'
         }}>
-          <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.5rem' }}>Issues</div>
-          <div style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#dc3545' }}>
+          <div style={{ fontSize: '0.85rem', color: '#605e5c', marginBottom: '0.5rem', fontFamily: "'Lato', sans-serif", fontWeight: 600 }}>Issues</div>
+          <div style={{ fontSize: '1.8rem', fontWeight: 700, color: '#d3080c', fontFamily: "'Lato', sans-serif" }}>
             {data.summary.issues_count}
           </div>
         </div>
         <div style={{
           padding: '1rem',
-          background: '#2a2a2a',
-          borderRadius: '8px',
-          border: '2px solid #ffc107',
+          background: '#f9f4d4',
+          borderRadius: '4px',
+          border: '2px solid #ffbf47',
           textAlign: 'center'
         }}>
-          <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.5rem' }}>Warnings</div>
-          <div style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#ffc107' }}>
+          <div style={{ fontSize: '0.85rem', color: '#605e5c', marginBottom: '0.5rem', fontFamily: "'Lato', sans-serif", fontWeight: 600 }}>Warnings</div>
+          <div style={{ fontSize: '1.8rem', fontWeight: 700, color: '#ee7100', fontFamily: "'Lato', sans-serif" }}>
             {data.summary.warnings_count}
           </div>
         </div>
         <div style={{
           padding: '1rem',
-          background: '#2a2a2a',
-          borderRadius: '8px',
-          border: '2px solid #28a745',
+          background: '#d8eeca',
+          borderRadius: '4px',
+          border: '2px solid #278400',
           textAlign: 'center'
         }}>
-          <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.5rem' }}>Passes</div>
-          <div style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#28a745' }}>
+          <div style={{ fontSize: '0.85rem', color: '#605e5c', marginBottom: '0.5rem', fontFamily: "'Lato', sans-serif", fontWeight: 600 }}>Passes</div>
+          <div style={{ fontSize: '1.8rem', fontWeight: 700, color: '#278400', fontFamily: "'Lato', sans-serif" }}>
             {data.summary.passes_count}
           </div>
         </div>
@@ -168,23 +172,23 @@ const EvaAccessibilityDemo: React.FC = () => {
 
       {/* Issues List */}
       <div style={{ marginBottom: '2rem' }}>
-        <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', color: '#ddd', borderBottom: '2px solid #444', paddingBottom: '0.5rem' }}>
+        <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', color: '#26374a', borderBottom: '2px solid #e0e0e0', paddingBottom: '0.5rem', fontFamily: "'Lato', sans-serif", fontWeight: 600 }}>
           🔍 Accessibility Issues
         </h3>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
           {data.issues.map((issue) => (
             <div key={issue.id} style={{
               padding: '1.25rem',
-              background: '#2a2a2a',
-              borderRadius: '8px',
-              border: `2px solid ${getSeverityColor(issue.severity)}33`,
+              background: '#ffffff',
+              borderRadius: '4px',
+              border: `1px solid #e0e0e0`,
               borderLeft: `4px solid ${getSeverityColor(issue.severity)}`
             }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.75rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', marginBottom: '0.75rem', flexWrap: 'wrap' }}>
                 <span style={{ 
                   fontSize: '0.85rem', 
-                  fontWeight: 'bold', 
-                  color: '#50e6ff',
+                  fontWeight: 600, 
+                  color: '#0535d2',
                   fontFamily: 'monospace'
                 }}>
                   {issue.id}
@@ -192,11 +196,11 @@ const EvaAccessibilityDemo: React.FC = () => {
                 <span style={{
                   padding: '0.25rem 0.75rem',
                   fontSize: '0.7rem',
-                  borderRadius: '12px',
-                  background: `${getSeverityColor(issue.severity)}22`,
+                  borderRadius: '4px',
+                  background: `${getSeverityColor(issue.severity)}15`,
                   border: `1px solid ${getSeverityColor(issue.severity)}`,
                   color: getSeverityColor(issue.severity),
-                  fontWeight: 'bold',
+                  fontWeight: 600,
                   textTransform: 'uppercase'
                 }}>
                   {issue.severity}
@@ -204,29 +208,29 @@ const EvaAccessibilityDemo: React.FC = () => {
                 <span style={{
                   padding: '0.2rem 0.6rem',
                   fontSize: '0.7rem',
-                  borderRadius: '10px',
-                  background: '#444',
-                  color: '#aaa',
-                  fontWeight: 'bold'
+                  borderRadius: '4px',
+                  background: '#f5f5f5',
+                  color: '#605e5c',
+                  fontWeight: 600
                 }}>
                   WCAG {issue.wcag_ref}
                 </span>
-                <span style={{ color: '#aaa', fontSize: '0.9rem', fontWeight: 'bold' }}>
+                <span style={{ color: '#605e5c', fontSize: '0.9rem', fontWeight: 600 }}>
                   {issue.area}
                 </span>
               </div>
-              <p style={{ margin: '0.5rem 0', color: '#ddd', fontSize: '0.95rem' }}>
+              <p style={{ margin: '0.5rem 0', color: '#26374a', fontSize: '0.95rem' }}>
                 {issue.description}
               </p>
               <div style={{
                 marginTop: '0.75rem',
                 padding: '0.75rem',
-                background: 'rgba(80, 230, 255, 0.08)',
-                borderRadius: '6px',
-                borderLeft: '3px solid #50e6ff'
+                background: '#d7faff',
+                borderRadius: '4px',
+                borderLeft: '3px solid #0535d2'
               }}>
-                <strong style={{ color: '#50e6ff', fontSize: '0.85rem' }}>Suggested Fix:</strong>
-                <span style={{ color: '#ccc', fontSize: '0.9rem', marginLeft: '0.5rem' }}>
+                <strong style={{ color: '#0535d2', fontSize: '0.85rem', fontFamily: "'Lato', sans-serif" }}>Suggested Fix:</strong>
+                <span style={{ color: '#605e5c', fontSize: '0.9rem', marginLeft: '0.5rem' }}>
                   {issue.suggested_fix}
                 </span>
               </div>
@@ -237,16 +241,17 @@ const EvaAccessibilityDemo: React.FC = () => {
 
       {/* AI Accessibility Coach */}
       <div style={{
-        background: 'linear-gradient(135deg, rgba(80, 230, 255, 0.1) 0%, rgba(16, 124, 16, 0.1) 100%)',
-        border: '2px solid rgba(80, 230, 255, 0.3)',
-        borderRadius: '12px',
+        background: '#d8eeca',
+        border: '2px solid #278400',
+        borderLeft: '4px solid #278400',
+        borderRadius: '4px',
         padding: '1.5rem'
       }}>
         <div style={{ marginBottom: '1rem' }}>
-          <h3 style={{ fontSize: '1.3rem', marginBottom: '0.25rem', color: '#50e6ff' }}>
+          <h3 style={{ fontSize: '1.3rem', marginBottom: '0.25rem', color: '#278400', fontFamily: "'Lato', sans-serif", fontWeight: 700 }}>
             🧠 AI Accessibility Coach
           </h3>
-          <p style={{ color: '#aaa', fontSize: '0.85rem', margin: 0 }}>
+          <p style={{ color: '#605e5c', fontSize: '0.85rem', margin: 0 }}>
             Static EVA Accessibility demo
           </p>
         </div>
@@ -256,9 +261,10 @@ const EvaAccessibilityDemo: React.FC = () => {
           <h4 style={{
             fontSize: '1rem',
             marginBottom: '0.75rem',
-            color: '#ddd',
-            fontWeight: 'bold',
-            borderBottom: '1px solid rgba(80, 230, 255, 0.3)',
+            color: '#26374a',
+            fontWeight: 600,
+            fontFamily: "'Lato', sans-serif",
+            borderBottom: '2px solid #278400',
             paddingBottom: '0.5rem'
           }}>
             🎯 Quick Fixes Recommended
@@ -266,7 +272,7 @@ const EvaAccessibilityDemo: React.FC = () => {
           <ul style={{
             margin: 0,
             paddingLeft: '1.5rem',
-            color: '#ccc',
+            color: '#605e5c',
             lineHeight: 1.8
           }}>
             {data.quick_fixes.map((fix, idx) => (
@@ -280,13 +286,13 @@ const EvaAccessibilityDemo: React.FC = () => {
         {/* Disclaimer */}
         <div style={{
           padding: '1rem',
-          background: 'rgba(209, 52, 56, 0.1)',
-          border: '1px solid rgba(209, 52, 56, 0.3)',
-          borderRadius: '6px',
+          background: '#f9f4d4',
+          border: '2px solid #ffbf47',
+          borderRadius: '4px',
           fontSize: '0.85rem',
-          color: '#ff6b6b'
+          color: '#26374a'
         }}>
-          <strong>⚠️ Disclaimer:</strong> {data.disclaimer}
+          <strong style={{ color: '#ee7100' }}>⚠️ Disclaimer:</strong> {data.disclaimer}
         </div>
       </div>
     </div>

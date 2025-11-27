@@ -3,6 +3,7 @@ import Layout from './components/Layout'
 import Home from './pages/Home'
 import ProductPage from './pages/ProductPage'
 import DevToolsProductPage from './pages/DevToolsProductPage'
+import GCDemoPage from './pages/GCDemoPage'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/products/:id" element={<ProductPage />} />
         <Route path="/devtools" element={<DevToolsProductPage />} />
+        <Route path="/gc-demo" element={<GCDemoPage />} />
       </Routes>
     </Layout>
   )

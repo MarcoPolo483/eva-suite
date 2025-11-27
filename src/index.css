@@ -1,11 +1,31 @@
 :root {
-  --primary: #007bff;
-  --secondary: #ff8c00;
-  --success: #28a745;
-  --warning: #ffc107;
-  --danger: #dc3545;
-  --dark: #2c3e50;
-  --neutral: #6c757d;
+  /* GC Federal Identity Program Colors */
+  --gc-red: #eb2d37;
+  --gc-blue: #0535d2;
+  --gc-dark-blue: #26374a;
+  --gc-yellow: #ffbf47;
+  
+  /* Status Colors */
+  --gc-success: #278400;
+  --gc-warning: #ee7100;
+  --gc-error: #d3080c;
+  --gc-info: #269abc;
+  
+  /* Neutral Colors */
+  --gc-white: #ffffff;
+  --gc-light-gray: #f5f5f5;
+  --gc-border-gray: #e0e0e0;
+  --gc-text-gray: #605e5c;
+  --gc-dark-gray: #2b2b2b;
+  
+  /* Legacy support (maps to GC colors) */
+  --primary: var(--gc-blue);
+  --secondary: var(--gc-warning);
+  --success: var(--gc-success);
+  --warning: var(--gc-yellow);
+  --danger: var(--gc-error);
+  --dark: var(--gc-dark-blue);
+  --neutral: var(--gc-text-gray);
 }
 
 * {
@@ -15,10 +35,10 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background: #f4f7f9;
+  color: var(--gc-dark-blue);
+  background: var(--gc-light-gray);
   margin: 0;
   padding: 0;
 }
@@ -336,7 +356,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 24px 80px;
-  background: #f4f7f9;
+  background: #ffffff;
 }
 
 .product-header {
@@ -345,12 +365,11 @@ body {
   gap: 32px;
   margin: 32px 0 64px;
   padding: 48px 40px;
-  background: linear-gradient(145deg, #ffffff 0%, #fafbfc 100%);
-  border-radius: 20px;
-  box-shadow: 
-    0 8px 24px rgba(0,0,0,0.08),
-    0 4px 12px rgba(0,0,0,0.04);
-  border: 1px solid rgba(0,0,0,0.05);
+  background: linear-gradient(145deg, #d7faff 0%, #ffffff 100%);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 2px solid #0535d2;
+  border-bottom: 4px solid #0535d2;
 }
 
 .product-header-icon {
@@ -361,73 +380,74 @@ body {
 
 .product-header-title {
   font-size: 3rem;
-  font-weight: 900;
-  color: var(--dark);
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color: var(--gc-dark-blue);
   margin: 0 0 16px 0;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.02em;
   line-height: 1.1;
 }
 
 .product-header-category {
-  background: linear-gradient(135deg, var(--primary) 0%, #0056b3 100%);
+  background: var(--gc-blue);
   color: white;
   padding: 10px 22px;
-  border-radius: 10px;
+  border-radius: 4px;
   font-size: 0.8rem;
   display: inline-block;
-  font-weight: 800;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
   letter-spacing: 1.5px;
-  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+  box-shadow: 0 2px 4px rgba(5, 53, 210, 0.3);
 }
 
 .product-section-title {
   font-size: 2.2rem;
-  font-weight: 800;
-  color: var(--dark);
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color: var(--gc-dark-blue);
   margin: 64px 0 32px 0;
   padding: 0 0 16px 0;
-  border-bottom: 4px solid var(--primary);
+  border-bottom: 3px solid var(--gc-blue);
   display: block;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.02em;
   width: 100%;
 }
 
 .product-section-body {
   font-size: 1.2rem;
-  line-height: 2;
-  color: #1a202c;
+  line-height: 1.8;
+  color: var(--gc-dark-blue);
   margin: 32px 0;
   padding: 36px;
   background: white;
-  border-radius: 16px;
-  border-left: 6px solid var(--primary);
-  box-shadow: 
-    0 4px 16px rgba(0,0,0,0.06),
-    0 2px 8px rgba(0,0,0,0.03);
+  border-radius: 8px;
+  border-left: 4px solid var(--gc-blue);
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .product-section-body strong {
-  color: var(--primary);
-  font-weight: 700;
+  color: var(--gc-blue);
+  font-weight: 600;
 }
 
 .product-usecase-steps {
   margin: 32px 0;
   padding: 36px 40px 36px 64px;
   background: white;
-  border-radius: 16px;
-  border-left: 6px solid var(--success);
-  box-shadow: 
-    0 4px 16px rgba(0,0,0,0.06),
-    0 2px 8px rgba(0,0,0,0.03);
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  border-left: 4px solid var(--gc-success);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
   list-style-position: outside;
   text-align: left;
 }
 
 .product-usecase-steps li {
   font-size: 1.15rem;
-  line-height: 2;
+  line-height: 1.8;
   color: #1a202c;
   margin-bottom: 20px;
   padding-left: 12px;
@@ -440,8 +460,8 @@ body {
 }
 
 .product-usecase-steps li::marker {
-  color: var(--success);
-  font-weight: 800;
+  color: var(--gc-success);
+  font-weight: 700;
   font-size: 1.3rem;
 }
 

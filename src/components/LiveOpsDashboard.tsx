@@ -58,23 +58,43 @@ const LiveOpsDashboard: React.FC = () => {
 
   return (
     <div style={{
-      background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)',
+      background: '#ffffff',
       padding: '2rem',
-      borderRadius: '12px',
-      color: '#fff'
+      borderRadius: '8px',
+      color: '#26374a',
+      boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+      border: '1px solid #e0e0e0'
     }}>
-      {/* Header */}
-      <div style={{ marginBottom: '2rem' }}>
-        <h2 style={{ fontSize: '1.8rem', marginBottom: '0.5rem' }}>
-          📊 EVA LiveOps Dashboard
+      {/* Header - GC Styled */}
+      <div style={{
+        marginBottom: '2rem',
+        paddingBottom: '1rem',
+        borderBottom: '3px solid #0535d2'
+      }}>
+        <h2 style={{
+          fontSize: '1.8rem',
+          marginBottom: '0.5rem',
+          color: '#26374a',
+          fontWeight: 700,
+          fontFamily: "'Lato', sans-serif",
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem'
+        }}>
+          <span style={{ fontSize: '2rem' }}>📊</span>
+          EVA LiveOps Dashboard
         </h2>
-        <p style={{ color: '#aaa', fontSize: '0.9rem' }}>
+        <p style={{
+          color: '#605e5c',
+          fontSize: '0.9rem',
+          margin: 0
+        }}>
           Timeframe: {metrics.timeframe.replace('_', ' ')} • 
           Last updated: {formatTimestamp(metrics.updated_at)}
         </p>
       </div>
 
-      {/* KPI Tiles */}
+      {/* KPI Tiles - GC Styled */}
       <div style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))',
@@ -82,71 +102,130 @@ const LiveOpsDashboard: React.FC = () => {
         marginBottom: '2rem'
       }}>
         <div style={{
-          background: 'rgba(0, 123, 255, 0.1)',
-          border: '1px solid rgba(0, 123, 255, 0.3)',
+          background: '#d7faff',
+          border: '2px solid #0535d2',
+          borderLeft: '4px solid #0535d2',
           padding: '1.5rem',
           borderRadius: '8px'
         }}>
-          <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.5rem' }}>
+          <div style={{
+            fontSize: '0.85rem',
+            color: '#605e5c',
+            marginBottom: '0.5rem',
+            textTransform: 'uppercase',
+            fontWeight: 600,
+            letterSpacing: '0.5px'
+          }}>
             Total Sessions
           </div>
-          <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#007bff' }}>
+          <div style={{
+            fontSize: '2rem',
+            fontWeight: 700,
+            color: '#0535d2',
+            fontFamily: "'Lato', sans-serif"
+          }}>
             {metrics.kpis.total_sessions.toLocaleString()}
           </div>
         </div>
 
         <div style={{
-          background: 'rgba(40, 167, 69, 0.1)',
-          border: '1px solid rgba(40, 167, 69, 0.3)',
+          background: '#d8eeca',
+          border: '2px solid #278400',
+          borderLeft: '4px solid #278400',
           padding: '1.5rem',
           borderRadius: '8px'
         }}>
-          <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.5rem' }}>
+          <div style={{
+            fontSize: '0.85rem',
+            color: '#605e5c',
+            marginBottom: '0.5rem',
+            textTransform: 'uppercase',
+            fontWeight: 600,
+            letterSpacing: '0.5px'
+          }}>
             Error Rate
           </div>
-          <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#28a745' }}>
+          <div style={{
+            fontSize: '2rem',
+            fontWeight: 700,
+            color: '#278400',
+            fontFamily: "'Lato', sans-serif"
+          }}>
             {metrics.kpis.error_rate_pct}%
           </div>
         </div>
 
         <div style={{
-          background: 'rgba(255, 193, 7, 0.1)',
-          border: '1px solid rgba(255, 193, 7, 0.3)',
+          background: '#f9f4d4',
+          border: '2px solid #ffbf47',
+          borderLeft: '4px solid #ffbf47',
           padding: '1.5rem',
           borderRadius: '8px'
         }}>
-          <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.5rem' }}>
+          <div style={{
+            fontSize: '0.85rem',
+            color: '#605e5c',
+            marginBottom: '0.5rem',
+            textTransform: 'uppercase',
+            fontWeight: 600,
+            letterSpacing: '0.5px'
+          }}>
             p95 Latency
           </div>
-          <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#ffc107' }}>
+          <div style={{
+            fontSize: '2rem',
+            fontWeight: 700,
+            color: '#ee7100',
+            fontFamily: "'Lato', sans-serif"
+          }}>
             {metrics.kpis.p95_latency_ms}ms
           </div>
         </div>
 
         <div style={{
-          background: 'rgba(220, 53, 69, 0.1)',
-          border: '1px solid rgba(220, 53, 69, 0.3)',
+          background: '#f9d8d6',
+          border: '2px solid #d3080c',
+          borderLeft: '4px solid #d3080c',
           padding: '1.5rem',
           borderRadius: '8px'
         }}>
-          <div style={{ fontSize: '0.85rem', color: '#aaa', marginBottom: '0.5rem' }}>
+          <div style={{
+            fontSize: '0.85rem',
+            color: '#605e5c',
+            marginBottom: '0.5rem',
+            textTransform: 'uppercase',
+            fontWeight: 600,
+            letterSpacing: '0.5px'
+          }}>
             APIM Cost (24h)
           </div>
-          <div style={{ fontSize: '2rem', fontWeight: 'bold', color: '#dc3545' }}>
+          <div style={{
+            fontSize: '2rem',
+            fontWeight: 700,
+            color: '#d3080c',
+            fontFamily: "'Lato', sans-serif"
+          }}>
             ${metrics.kpis.apim_cost_cad.toFixed(2)}
           </div>
         </div>
       </div>
 
-      {/* Sessions Chart */}
+      {/* Sessions Chart - GC Styled */}
       <div style={{
-        background: 'rgba(255, 255, 255, 0.05)',
+        background: '#f5f5f5',
         padding: '1.5rem',
         borderRadius: '8px',
+        border: '1px solid #e0e0e0',
         marginBottom: '2rem'
       }}>
-        <h3 style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>
-          Sessions per Hour
+        <h3 style={{
+          fontSize: '1.2rem',
+          marginBottom: '1rem',
+          color: '#26374a',
+          fontWeight: 600,
+          fontFamily: "'Lato', sans-serif"
+        }}>
+          Sessions by Hour
         </h3>
         <div 
           style={{ 
@@ -176,7 +255,7 @@ const LiveOpsDashboard: React.FC = () => {
                   style={{
                     width: '100%',
                     height: `${heightPercent}%`,
-                    background: 'linear-gradient(180deg, #007bff, #0056b3)',
+                    background: 'linear-gradient(180deg, #0535d2, #26374a)',
                     borderRadius: '4px 4px 0 0',
                     transition: 'all 0.3s ease',
                     position: 'relative'
@@ -189,7 +268,8 @@ const LiveOpsDashboard: React.FC = () => {
                     left: '50%',
                     transform: 'translateX(-50%)',
                     fontSize: '0.7rem',
-                    color: '#aaa',
+                    color: '#605e5c',
+                    fontWeight: 600,
                     whiteSpace: 'nowrap'
                   }}>
                     {entry.sessions}
@@ -197,7 +277,7 @@ const LiveOpsDashboard: React.FC = () => {
                 </div>
                 <div style={{ 
                   fontSize: '0.7rem', 
-                  color: '#888',
+                  color: '#605e5c',
                   marginTop: '0.5rem',
                   transform: 'rotate(-45deg)',
                   transformOrigin: 'center',
@@ -211,15 +291,25 @@ const LiveOpsDashboard: React.FC = () => {
         </div>
       </div>
 
-      {/* EVA LiveOps Copilot Panel */}
+      {/* EVA LiveOps Copilot Panel - GC Styled */}
       <div style={{
-        background: 'rgba(255, 140, 0, 0.1)',
-        border: '2px solid rgba(255, 140, 0, 0.3)',
+        background: '#ffffff',
+        border: '2px solid #ffbf47',
+        borderLeft: '4px solid #ffbf47',
         padding: '1.5rem',
         borderRadius: '8px'
       }}>
-        <h3 style={{ fontSize: '1.3rem', marginBottom: '1rem', color: '#ff8c00' }}>
-          🤖 EVA LiveOps Copilot
+        <h3 style={{
+          fontSize: '1.3rem',
+          marginBottom: '1rem',
+          color: '#ee7100',
+          fontWeight: 700,
+          fontFamily: "'Lato', sans-serif",
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem'
+        }}>
+          <span>🤖</span> EVA LiveOps Copilot
         </h3>
 
         {/* Viewpoint Selector */}
@@ -241,30 +331,22 @@ const LiveOpsDashboard: React.FC = () => {
               aria-selected={selectedViewpoint === insight.viewpoint}
               style={{
                 padding: '0.75rem 1.5rem',
-                borderRadius: '6px',
-                border: 'none',
+                borderRadius: '4px',
+                border: selectedViewpoint === insight.viewpoint 
+                  ? '2px solid #ffbf47'
+                  : '1px solid #e0e0e0',
                 background: selectedViewpoint === insight.viewpoint 
-                  ? '#ff8c00' 
-                  : 'rgba(255, 255, 255, 0.1)',
+                  ? '#ffbf47' 
+                  : '#ffffff',
                 color: selectedViewpoint === insight.viewpoint 
-                  ? '#000' 
-                  : '#fff',
+                  ? '#26374a' 
+                  : '#605e5c',
                 fontWeight: selectedViewpoint === insight.viewpoint 
-                  ? 'bold' 
-                  : 'normal',
+                  ? 700 
+                  : 500,
                 cursor: 'pointer',
                 transition: 'all 0.3s ease',
                 fontSize: '0.9rem'
-              }}
-              onMouseEnter={(e) => {
-                if (selectedViewpoint !== insight.viewpoint) {
-                  e.currentTarget.style.background = 'rgba(255, 140, 0, 0.2)';
-                }
-              }}
-              onMouseLeave={(e) => {
-                if (selectedViewpoint !== insight.viewpoint) {
-                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-                }
               }}
             >
               {insight.label}
@@ -275,66 +357,73 @@ const LiveOpsDashboard: React.FC = () => {
         {/* Insight Content */}
         <div role="tabpanel" aria-labelledby={`${selectedViewpoint}-tab`}>
           <div style={{
-            background: 'rgba(0, 0, 0, 0.3)',
+            background: '#f9f4d4',
             padding: '1.5rem',
             borderRadius: '8px',
-            marginBottom: '1rem'
+            marginBottom: '1rem',
+            border: '1px solid #ffbf47',
+            borderLeft: '4px solid #ee7100'
           }}>
             <h4 style={{ 
               fontSize: '1.1rem', 
               marginBottom: '0.75rem',
-              color: '#ff8c00'
+              color: '#26374a',
+              fontWeight: 600,
+              fontFamily: "'Lato', sans-serif"
             }}>
               Summary
             </h4>
-            <p style={{ lineHeight: 1.6, color: '#ddd' }}>
+            <p style={{ lineHeight: 1.6, color: '#26374a', margin: 0 }}>
               {currentInsight.summary}
             </p>
           </div>
 
           <div style={{
-            background: 'rgba(0, 0, 0, 0.3)',
+            background: '#f5f5f5',
             padding: '1.5rem',
             borderRadius: '8px',
-            marginBottom: '1rem'
+            marginBottom: '1rem',
+            border: '1px solid #e0e0e0'
           }}>
             <h4 style={{ 
               fontSize: '1.1rem', 
               marginBottom: '0.75rem',
-              color: '#ff8c00'
+              color: '#26374a',
+              fontWeight: 600,
+              fontFamily: "'Lato', sans-serif"
             }}>
-              Key Findings
+              Findings
             </h4>
-            <ul style={{ 
-              lineHeight: 1.8, 
-              color: '#ddd',
-              paddingLeft: '1.5rem'
-            }}>
+            <ul style={{ margin: 0, paddingLeft: '1.5rem', lineHeight: 1.8 }}>
               {currentInsight.findings.map((finding, idx) => (
-                <li key={idx}>{finding}</li>
+                <li key={idx} style={{ color: '#605e5c', marginBottom: '0.5rem' }}>
+                  {finding}
+                </li>
               ))}
             </ul>
           </div>
 
           <div style={{
-            background: 'rgba(0, 0, 0, 0.3)',
+            background: '#d8eeca',
             padding: '1.5rem',
-            borderRadius: '8px'
+            borderRadius: '8px',
+            border: '1px solid #278400',
+            borderLeft: '4px solid #278400'
           }}>
             <h4 style={{ 
               fontSize: '1.1rem', 
               marginBottom: '0.75rem',
-              color: '#ff8c00'
+              color: '#26374a',
+              fontWeight: 600,
+              fontFamily: "'Lato', sans-serif"
             }}>
               Recommendations
             </h4>
-            <ul style={{ 
-              lineHeight: 1.8, 
-              color: '#ddd',
-              paddingLeft: '1.5rem'
-            }}>
+            <ul style={{ margin: 0, paddingLeft: '1.5rem', lineHeight: 1.8 }}>
               {currentInsight.recommendations.map((rec, idx) => (
-                <li key={idx}>{rec}</li>
+                <li key={idx} style={{ color: '#26374a', marginBottom: '0.5rem', fontWeight: 500 }}>
+                  {rec}
+                </li>
               ))}
             </ul>
           </div>

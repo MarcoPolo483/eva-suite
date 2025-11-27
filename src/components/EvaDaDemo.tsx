@@ -71,18 +71,34 @@ const EvaDaDemo: React.FC = () => {
 
   return (
     <div style={{
-      background: 'linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%)',
-      borderRadius: '12px',
+      background: '#ffffff',
+      borderRadius: '8px',
       padding: '2rem',
-      color: '#fff',
+      color: '#26374a',
       maxWidth: '900px',
-      margin: '0 auto'
+      margin: '0 auto',
+      boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+      border: '1px solid #e0e0e0'
     }}>
-      <div style={{ marginBottom: '2rem' }}>
-        <h2 style={{ fontSize: '1.8rem', marginBottom: '0.5rem', color: '#50e6ff' }}>
-          🔍 EVA DA – Decision Support Assistant
+      <div style={{
+        marginBottom: '2rem',
+        paddingBottom: '1rem',
+        borderBottom: '3px solid #0535d2'
+      }}>
+        <h2 style={{
+          fontSize: '1.8rem',
+          marginBottom: '0.5rem',
+          color: '#26374a',
+          fontWeight: 700,
+          fontFamily: "'Lato', sans-serif",
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.5rem'
+        }}>
+          <span style={{ fontSize: '2rem' }}>🔍</span>
+          EVA DA – Decision Support Assistant
         </h2>
-        <p style={{ color: '#aaa', fontSize: '0.9rem' }}>
+        <p style={{ color: '#605e5c', fontSize: '0.9rem', margin: 0 }}>
           Mock demo: Ask a question about CPP-D or EI eligibility and see decision reasoning.
         </p>
       </div>
@@ -96,8 +112,9 @@ const EvaDaDemo: React.FC = () => {
               display: 'block', 
               marginBottom: '0.5rem', 
               fontSize: '0.95rem',
-              fontWeight: 'bold',
-              color: '#ddd'
+              fontWeight: 600,
+              color: '#26374a',
+              fontFamily: "'Lato', sans-serif"
             }}
           >
             Select Domain:
@@ -110,11 +127,12 @@ const EvaDaDemo: React.FC = () => {
               width: '100%',
               padding: '0.75rem',
               fontSize: '1rem',
-              borderRadius: '6px',
-              border: '2px solid #444',
-              background: '#2a2a2a',
-              color: '#fff',
-              cursor: 'pointer'
+              borderRadius: '4px',
+              border: '2px solid #e0e0e0',
+              background: '#ffffff',
+              color: '#26374a',
+              cursor: 'pointer',
+              fontFamily: "'Noto Sans', sans-serif"
             }}
           >
             {data.domains.map(domain => (
@@ -133,8 +151,9 @@ const EvaDaDemo: React.FC = () => {
               display: 'block', 
               marginBottom: '0.5rem', 
               fontSize: '0.95rem',
-              fontWeight: 'bold',
-              color: '#ddd'
+              fontWeight: 600,
+              color: '#26374a',
+              fontFamily: "'Lato', sans-serif"
             }}
           >
             Your Question:
@@ -148,11 +167,11 @@ const EvaDaDemo: React.FC = () => {
               width: '100%',
               padding: '0.75rem',
               fontSize: '1rem',
-              borderRadius: '6px',
-              border: '2px solid #444',
-              background: '#2a2a2a',
-              color: '#fff',
-              fontFamily: 'inherit',
+              borderRadius: '4px',
+              border: '2px solid #e0e0e0',
+              background: '#ffffff',
+              color: '#26374a',
+              fontFamily: "'Noto Sans', sans-serif",
               resize: 'vertical'
             }}
           />
@@ -164,22 +183,25 @@ const EvaDaDemo: React.FC = () => {
           style={{
             padding: '0.75rem 2rem',
             fontSize: '1rem',
-            fontWeight: 'bold',
-            borderRadius: '6px',
+            fontWeight: 700,
+            borderRadius: '4px',
             border: 'none',
-            background: 'linear-gradient(135deg, #0078d4 0%, #50e6ff 100%)',
-            color: '#fff',
+            background: '#0535d2',
+            color: '#ffffff',
             cursor: 'pointer',
-            transition: 'transform 0.2s, box-shadow 0.2s',
-            boxShadow: '0 4px 12px rgba(0, 120, 212, 0.3)'
+            transition: 'all 0.3s ease',
+            boxShadow: '0 2px 6px rgba(5, 53, 210, 0.3)',
+            fontFamily: "'Lato', sans-serif"
           }}
           onMouseEnter={(e) => {
+            e.currentTarget.style.background = '#26374a';
             e.currentTarget.style.transform = 'translateY(-2px)';
-            e.currentTarget.style.boxShadow = '0 6px 20px rgba(0, 120, 212, 0.4)';
+            e.currentTarget.style.boxShadow = '0 4px 12px rgba(38, 55, 74, 0.4)';
           }}
           onMouseLeave={(e) => {
+            e.currentTarget.style.background = '#0535d2';
             e.currentTarget.style.transform = 'translateY(0)';
-            e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 120, 212, 0.3)';
+            e.currentTarget.style.boxShadow = '0 2px 6px rgba(5, 53, 210, 0.3)';
           }}
         >
           Ask EVA DA
@@ -193,8 +215,9 @@ const EvaDaDemo: React.FC = () => {
           style={{
             marginTop: '2rem',
             padding: '1.5rem',
-            background: 'rgba(80, 230, 255, 0.05)',
-            border: '2px solid rgba(80, 230, 255, 0.3)',
+            background: '#d7faff',
+            border: '2px solid #0535d2',
+            borderLeft: '4px solid #0535d2',
             borderRadius: '8px'
           }}
         >
@@ -202,11 +225,12 @@ const EvaDaDemo: React.FC = () => {
             <div style={{
               marginBottom: '1rem',
               padding: '0.75rem',
-              background: 'rgba(255, 193, 7, 0.1)',
-              border: '1px solid rgba(255, 193, 7, 0.3)',
-              borderRadius: '6px',
+              background: '#f9f4d4',
+              border: '2px solid #ffbf47',
+              borderLeft: '4px solid #ee7100',
+              borderRadius: '4px',
               fontSize: '0.85rem',
-              color: '#ffc107'
+              color: '#26374a'
             }}>
               ℹ️ This is a static demo – answer is based on a canned scenario for this domain.
             </div>
@@ -217,19 +241,22 @@ const EvaDaDemo: React.FC = () => {
             <h3 style={{ 
               fontSize: '1.3rem', 
               marginBottom: '0.5rem',
-              color: '#50e6ff',
-              fontWeight: 'bold'
+              color: '#26374a',
+              fontWeight: 700,
+              fontFamily: "'Lato', sans-serif"
             }}>
               Decision
             </h3>
             <div style={{
               padding: '1rem',
-              background: 'rgba(16, 124, 16, 0.2)',
-              border: '2px solid rgba(16, 124, 16, 0.5)',
-              borderRadius: '6px',
+              background: '#d8eeca',
+              border: '2px solid #278400',
+              borderLeft: '4px solid #278400',
+              borderRadius: '4px',
               fontSize: '1.1rem',
-              fontWeight: 'bold',
-              color: '#4ade80'
+              fontWeight: 700,
+              color: '#278400',
+              fontFamily: "'Lato', sans-serif"
             }}>
               {activeScenario.answer.decision}
             </div>
@@ -240,17 +267,19 @@ const EvaDaDemo: React.FC = () => {
             <h4 style={{ 
               fontSize: '1.1rem', 
               marginBottom: '0.75rem',
-              color: '#ddd',
-              fontWeight: 'bold',
-              borderBottom: '1px solid #444',
-              paddingBottom: '0.5rem'
+              color: '#26374a',
+              fontWeight: 600,
+              borderBottom: '2px solid #e0e0e0',
+              paddingBottom: '0.5rem',
+              fontFamily: "'Lato', sans-serif"
             }}>
               Explanation
             </h4>
             <p style={{ 
               lineHeight: 1.6, 
-              color: '#ccc',
-              fontSize: '0.95rem'
+              color: '#605e5c',
+              fontSize: '0.95rem',
+              margin: 0
             }}>
               {activeScenario.answer.explanation}
             </p>
@@ -261,17 +290,18 @@ const EvaDaDemo: React.FC = () => {
             <h4 style={{ 
               fontSize: '1.1rem', 
               marginBottom: '0.75rem',
-              color: '#ddd',
-              fontWeight: 'bold',
-              borderBottom: '1px solid #444',
-              paddingBottom: '0.5rem'
+              color: '#26374a',
+              fontWeight: 600,
+              borderBottom: '2px solid #e0e0e0',
+              paddingBottom: '0.5rem',
+              fontFamily: "'Lato', sans-serif"
             }}>
               Key Conditions
             </h4>
             <ul style={{ 
               margin: 0,
               paddingLeft: '1.5rem',
-              color: '#ccc',
+              color: '#605e5c',
               lineHeight: 1.8
             }}>
               {activeScenario.answer.conditions.map((condition, idx) => (
@@ -287,17 +317,18 @@ const EvaDaDemo: React.FC = () => {
             <h4 style={{ 
               fontSize: '1.1rem', 
               marginBottom: '0.75rem',
-              color: '#ddd',
-              fontWeight: 'bold',
-              borderBottom: '1px solid #444',
-              paddingBottom: '0.5rem'
+              color: '#26374a',
+              fontWeight: 600,
+              borderBottom: '2px solid #e0e0e0',
+              paddingBottom: '0.5rem',
+              fontFamily: "'Lato', sans-serif"
             }}>
               Sources Referenced (Demo)
             </h4>
             <ul style={{ 
               margin: 0,
               paddingLeft: '1.5rem',
-              color: '#aaa',
+              color: '#605e5c',
               lineHeight: 1.8,
               fontSize: '0.9rem'
             }}>
@@ -313,27 +344,29 @@ const EvaDaDemo: React.FC = () => {
           {activeScenario.answer.notes && (
             <div style={{
               padding: '0.75rem',
-              background: 'rgba(0, 120, 212, 0.1)',
-              border: '1px solid rgba(0, 120, 212, 0.3)',
-              borderRadius: '6px',
+              background: '#d7faff',
+              border: '2px solid #0535d2',
+              borderLeft: '4px solid #0535d2',
+              borderRadius: '4px',
               fontSize: '0.85rem',
-              color: '#50e6ff',
+              color: '#26374a',
               marginBottom: '1rem'
             }}>
-              <strong>Note:</strong> {activeScenario.answer.notes}
+              <strong style={{ color: '#0535d2' }}>Note:</strong> {activeScenario.answer.notes}
             </div>
           )}
 
           {/* Generic Disclaimer */}
           <div style={{
             padding: '1rem',
-            background: 'rgba(209, 52, 56, 0.1)',
-            border: '1px solid rgba(209, 52, 56, 0.3)',
-            borderRadius: '6px',
+            background: '#f9d8d6',
+            border: '2px solid #eb2d37',
+            borderLeft: '4px solid #d3080c',
+            borderRadius: '4px',
             fontSize: '0.85rem',
-            color: '#ff6b6b'
+            color: '#26374a'
           }}>
-            <strong>⚠️ Disclaimer:</strong> {data.generic_disclaimer}
+            <strong style={{ color: '#d3080c' }}>⚠️ Disclaimer:</strong> {data.generic_disclaimer}
           </div>
         </div>
       )}
