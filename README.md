@@ -1,6 +1,10 @@
-# EVA Suite – Enterprise AI Platform
+# EVA Suite Portal – Product Catalog & Hero Demos
 
-A showcase application demonstrating 24 EVA Suite products across 5 categories, built with React + TypeScript + Vite.
+**Live Demo**: https://marcopolo483.github.io/eva-suite/
+
+EVA Suite Portal is **Product #1** of the EVA Suite ecosystem - the front door with product catalog, hero demos, EVA Library, and Agile Scrum Portal.
+
+**Built with**: React 19 + TypeScript + Vite 7 + GC Design System (WCAG 2.1 AA, bilingual EN-CA/FR-CA)
 
 ## EVA Suite Lab Overview
 
