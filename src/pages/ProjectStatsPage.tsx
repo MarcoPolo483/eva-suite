@@ -116,7 +116,7 @@ const ProjectStatsPage: React.FC = () => {
     totalLOC: '15,000+',
     totalDuration: '~60 min',
     testCoverage: '85.32%',
-    testsPass ing: '142/154',
+    testsPassing: '142/154',
     accessibility: '100/100',
     securityVulns: '0 critical',
     productionUptime: '99.95%'
