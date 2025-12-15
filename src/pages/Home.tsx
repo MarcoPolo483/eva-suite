@@ -392,6 +392,165 @@ const Home: React.FC = () => {
           </p>
         </div>
 
+        {/* EVA Library Section - GC Styled */}
+        <section className="card" style={{
+          background: 'linear-gradient(135deg, #f0f4f8 0%, #ffffff 100%)',
+          padding: '2rem',
+          borderRadius: '8px',
+          marginBottom: '2rem',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+          border: '1px solid #e0e0e0',
+          borderLeft: '4px solid #278400'
+        }} aria-labelledby="library-heading">
+          <h3 id="library-heading" style={{
+            color: '#278400',
+            marginBottom: '1rem',
+            fontSize: '1.5rem',
+            fontWeight: 700,
+            fontFamily: "'Lato', sans-serif",
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem'
+          }}>
+            <span>📚</span> EVA Library (Books Collection)
+          </h3>
+          <p style={{
+            color: '#605e5c',
+            marginBottom: '1.5rem',
+            fontSize: '1.05rem',
+            lineHeight: 1.6
+          }}>
+            Comprehensive documentation for the EVA Suite ecosystem. Architecture guides, implementation patterns, and governance frameworks.
+          </p>
+          <div style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+            gap: '1.5rem'
+          }}>
+            {/* EVA Agentic AI Book */}
+            <a 
+              href="/eva-suite/books/eva-agentic-book/index.html"
+              style={{
+                background: '#ffffff',
+                padding: '1.5rem',
+                borderRadius: '6px',
+                border: '1px solid #dee2e6',
+                textDecoration: 'none',
+                transition: 'all 0.2s ease',
+                display: 'block',
+                cursor: 'pointer'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.boxShadow = '0 4px 12px rgba(0,0,0,0.15)';
+                e.currentTarget.style.transform = 'translateY(-2px)';
+                e.currentTarget.style.borderColor = '#278400';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.boxShadow = 'none';
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.borderColor = '#dee2e6';
+              }}
+            >
+              <h4 style={{
+                color: '#0535d2',
+                marginBottom: '0.5rem',
+                fontSize: '1.2rem',
+                fontWeight: 600,
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem'
+              }}>
+                <span>🤖</span> EVA Agentic AI Book
+              </h4>
+              <p style={{
+                color: '#605e5c',
+                fontSize: '0.95rem',
+                lineHeight: 1.5,
+                marginBottom: '0.75rem'
+              }}>
+                The definitive guide to EVA's agentic AI architecture, governance framework (C0-C3 autonomy levels), and implementation patterns.
+              </p>
+              <div style={{
+                display: 'flex',
+                gap: '0.5rem',
+                flexWrap: 'wrap'
+              }}>
+                <span style={{
+                  background: '#e6f4ea',
+                  color: '#1e7e34',
+                  padding: '0.25rem 0.5rem',
+                  borderRadius: '4px',
+                  fontSize: '0.8rem',
+                  fontWeight: 500
+                }}>
+                  ✓ Chapter 05 Available
+                </span>
+                <span style={{
+                  background: '#fff3cd',
+                  color: '#856404',
+                  padding: '0.25rem 0.5rem',
+                  borderRadius: '4px',
+                  fontSize: '0.8rem',
+                  fontWeight: 500
+                }}>
+                  6 SVG Architecture Diagrams
+                </span>
+              </div>
+            </a>
+
+            {/* EVA Sovereign UI Book - Coming Soon */}
+            <div style={{
+              background: '#f8f9fa',
+              padding: '1.5rem',
+              borderRadius: '6px',
+              border: '1px solid #dee2e6',
+              opacity: 0.7
+            }}>
+              <h4 style={{
+                color: '#6c757d',
+                marginBottom: '0.5rem',
+                fontSize: '1.2rem',
+                fontWeight: 600,
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem'
+              }}>
+                <span>🎨</span> EVA Sovereign UI Book
+              </h4>
+              <p style={{
+                color: '#6c757d',
+                fontSize: '0.95rem',
+                lineHeight: 1.5,
+                marginBottom: '0.75rem'
+              }}>
+                UI component library with GC Design System, WCAG 2.1 AA compliance, and bilingual support.
+              </p>
+              <span style={{
+                background: '#e2e3e5',
+                color: '#6c757d',
+                padding: '0.25rem 0.5rem',
+                borderRadius: '4px',
+                fontSize: '0.8rem',
+                fontWeight: 500,
+                display: 'inline-block'
+              }}>
+                ⏸ Coming Soon
+              </span>
+            </div>
+          </div>
+          <div style={{
+            marginTop: '1rem',
+            padding: '1rem',
+            background: '#fff9e6',
+            borderRadius: '4px',
+            borderLeft: '3px solid #ffbf47',
+            fontSize: '0.9rem',
+            color: '#605e5c'
+          }}>
+            <strong>📖 Note:</strong> All books comply with WCAG 2.1 AA, Official Languages Act (EN-CA/FR-CA), and GC Design System standards.
+          </div>
+        </section>
+
         {/* Products Section - GC Styled */}
         <section className="card" style={{
           background: '#ffffff',
