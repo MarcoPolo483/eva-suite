@@ -103,6 +103,26 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             >
               {t('navDevTools')}
             </NavLink>
+            <a
+              href="/eva-suite/library/"
+              style={{
+                color: '#284162',
+                textDecoration: 'none',
+                padding: '8px 16px',
+                borderRadius: '4px',
+                transition: 'background 0.2s ease',
+                fontWeight: 400,
+                fontSize: '15px'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = '#f5f5f5';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = 'transparent';
+              }}
+            >
+              📚 {lang === 'en' ? 'Library' : 'Bibliothèque'}
+            </a>
             <NavLink
               to="/project-stats"
               className={({ isActive }) =>
@@ -139,9 +159,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             >
               {t('navGCDemo')}
             </NavLink>
-            <span style={{ 
-              width: '1px', 
-              height: '20px', 
+            <span style={{
+              width: '1px',
+              height: '20px',
               background: '#dee2e6',
               margin: '0 4px'
             }} />
