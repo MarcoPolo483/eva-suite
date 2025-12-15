@@ -116,7 +116,7 @@ const ProjectStatsPage: React.FC = () => {
     totalLOC: '15,000+',
     totalDuration: '~60 min',
     testCoverage: '85.32%',
-    testsPassing: '142/154',
+    testsPass ing: '142/154',
     accessibility: '100/100',
     securityVulns: '0 critical',
     productionUptime: '99.95%'
@@ -146,23 +146,23 @@ const ProjectStatsPage: React.FC = () => {
     <div style={{ padding: '2rem', maxWidth: '1200px', margin: '0 auto' }}>
       {/* Back Link */}
       <p style={{ fontSize: '0.75rem', marginBottom: '1rem' }}>
-        <Link to="/">← {t('productPage.back')}</Link>
+        <Link to="/">ΓåÉ {t('productPage.back')}</Link>
       </p>
 
       {/* Header */}
       <header style={{ marginBottom: '3rem', borderBottom: '2px solid #0535d2', paddingBottom: '1.5rem' }}>
         <h1 style={{ fontSize: '2.5rem', color: '#26374a', marginBottom: '0.5rem', fontWeight: 600 }}>
-          📊 {lang === 'fr' ? 'Statistiques du Projet' : 'Project Stats'}
+          ≡ƒôè {lang === 'fr' ? 'Statistiques du Projet' : 'Project Stats'}
         </h1>
         <p style={{ fontSize: '1.1rem', color: '#605e5c', marginBottom: '0.5rem' }}>
           {lang === 'fr' 
-            ? 'EVA Domain Assistant 2.0 – Métriques de développement assisté par IA'
-            : 'EVA Domain Assistant 2.0 – AI-Assisted Development Metrics'}
+            ? 'EVA Domain Assistant 2.0 ΓÇô M├⌐triques de d├⌐veloppement assist├⌐ par IA'
+            : 'EVA Domain Assistant 2.0 ΓÇô AI-Assisted Development Metrics'}
         </p>
         <p style={{ fontSize: '0.95rem', color: '#8a8886', fontStyle: 'italic' }}>
           {lang === 'fr'
-            ? '15 000+ lignes de code en 60 minutes • Prêt pour la production • Conforme Protected B'
-            : '15,000+ lines of code in 60 minutes • Production-ready • Protected B compliant'}
+            ? '15 000+ lignes de code en 60 minutes ΓÇó Pr├¬t pour la production ΓÇó Conforme Protected B'
+            : '15,000+ lines of code in 60 minutes ΓÇó Production-ready ΓÇó Protected B compliant'}
         </p>
       </header>
 
@@ -177,15 +177,15 @@ const ProjectStatsPage: React.FC = () => {
           gap: '1.5rem' 
         }}>
           {[
-            { label: lang === 'fr' ? 'Phases' : 'Phases', value: overallStats.totalPhases, icon: '🚀' },
-            { label: lang === 'fr' ? 'Fichiers' : 'Files', value: overallStats.totalFiles, icon: '📄' },
-            { label: lang === 'fr' ? 'Lignes de code' : 'Lines of Code', value: overallStats.totalLOC, icon: '💻' },
-            { label: lang === 'fr' ? 'Durée' : 'Duration', value: overallStats.totalDuration, icon: '⏱️' },
-            { label: lang === 'fr' ? 'Couverture de tests' : 'Test Coverage', value: overallStats.testCoverage, icon: '🧪' },
-            { label: lang === 'fr' ? 'Tests réussis' : 'Tests Passing', value: overallStats.testsPass ing, icon: '✅' },
-            { label: lang === 'fr' ? 'Accessibilité' : 'Accessibility', value: overallStats.accessibility, icon: '♿' },
-            { label: lang === 'fr' ? 'Vulnérabilités' : 'Vulns (Critical)', value: overallStats.securityVulns, icon: '🔒' },
-            { label: lang === 'fr' ? 'Disponibilité' : 'Uptime (2024)', value: overallStats.productionUptime, icon: '📈' }
+            { label: lang === 'fr' ? 'Phases' : 'Phases', value: overallStats.totalPhases, icon: '≡ƒÜÇ' },
+            { label: lang === 'fr' ? 'Fichiers' : 'Files', value: overallStats.totalFiles, icon: '≡ƒôä' },
+            { label: lang === 'fr' ? 'Lignes de code' : 'Lines of Code', value: overallStats.totalLOC, icon: '≡ƒÆ╗' },
+            { label: lang === 'fr' ? 'Dur├⌐e' : 'Duration', value: overallStats.totalDuration, icon: 'ΓÅ▒∩╕Å' },
+            { label: lang === 'fr' ? 'Couverture de tests' : 'Test Coverage', value: overallStats.testCoverage, icon: '≡ƒº¬' },
+            { label: lang === 'fr' ? 'Tests r├⌐ussis' : 'Tests Passing', value: overallStats.testsPass ing, icon: 'Γ£à' },
+            { label: lang === 'fr' ? 'Accessibilit├⌐' : 'Accessibility', value: overallStats.accessibility, icon: 'ΓÖ┐' },
+            { label: lang === 'fr' ? 'Vuln├⌐rabilit├⌐s' : 'Vulns (Critical)', value: overallStats.securityVulns, icon: '≡ƒöÆ' },
+            { label: lang === 'fr' ? 'Disponibilit├⌐' : 'Uptime (2024)', value: overallStats.productionUptime, icon: '≡ƒôê' }
           ].map((stat, idx) => (
             <div 
               key={idx} 
@@ -212,7 +212,7 @@ const ProjectStatsPage: React.FC = () => {
       {/* Phase-by-Phase Breakdown */}
       <section style={{ marginBottom: '3rem' }}>
         <h2 style={{ fontSize: '1.75rem', color: '#26374a', marginBottom: '1.5rem', fontWeight: 600 }}>
-          {lang === 'fr' ? 'Métriques par phase' : 'Phase-by-Phase Metrics'}
+          {lang === 'fr' ? 'M├⌐triques par phase' : 'Phase-by-Phase Metrics'}
         </h2>
         <div style={{ 
           display: 'grid', 
@@ -254,7 +254,7 @@ const ProjectStatsPage: React.FC = () => {
                   fontWeight: 600,
                   textTransform: 'uppercase'
                 }}>
-                  ✅ {lang === 'fr' ? 'Terminé' : 'Complete'}
+                  Γ£à {lang === 'fr' ? 'Termin├⌐' : 'Complete'}
                 </span>
               </div>
 
@@ -277,7 +277,7 @@ const ProjectStatsPage: React.FC = () => {
                 </div>
                 <div>
                   <div style={{ fontSize: '0.75rem', color: '#8a8886', marginBottom: '0.25rem' }}>
-                    {lang === 'fr' ? 'Durée' : 'Duration'}
+                    {lang === 'fr' ? 'Dur├⌐e' : 'Duration'}
                   </div>
                   <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#0535d2' }}>
                     {phase.duration}
@@ -311,7 +311,7 @@ const ProjectStatsPage: React.FC = () => {
       {/* Cumulative Progress Chart (ASCII) */}
       <section style={{ marginBottom: '3rem' }}>
         <h2 style={{ fontSize: '1.75rem', color: '#26374a', marginBottom: '1.5rem', fontWeight: 600 }}>
-          {lang === 'fr' ? 'Progrès cumulatif' : 'Cumulative Progress'}
+          {lang === 'fr' ? 'Progr├¿s cumulatif' : 'Cumulative Progress'}
         </h2>
         <div style={{
           backgroundColor: '#f3f2f1',
@@ -354,7 +354,7 @@ const ProjectStatsPage: React.FC = () => {
       {/* Production Metrics */}
       <section style={{ marginBottom: '3rem' }}>
         <h2 style={{ fontSize: '1.75rem', color: '#26374a', marginBottom: '1.5rem', fontWeight: 600 }}>
-          {lang === 'fr' ? 'Métriques de production (2024)' : 'Production Metrics (2024)'}
+          {lang === 'fr' ? 'M├⌐triques de production (2024)' : 'Production Metrics (2024)'}
         </h2>
         <div style={{ 
           display: 'grid', 
@@ -367,7 +367,7 @@ const ProjectStatsPage: React.FC = () => {
             { label: lang === 'fr' ? 'Latence (p99)' : 'Latency (p99)', value: productionMetrics.latencyP99, color: '#ff8c00' },
             { label: lang === 'fr' ? 'Cache Hit Rate' : 'Cache Hit Rate', value: productionMetrics.cacheHitRate, color: '#0535d2' },
             { label: lang === 'fr' ? 'Taux d'erreur' : 'Error Rate', value: productionMetrics.errorRate, color: '#278400' },
-            { label: lang === 'fr' ? 'Coût/requête' : 'Cost/Query', value: productionMetrics.queryCost, color: '#278400' }
+            { label: lang === 'fr' ? 'Co├╗t/requ├¬te' : 'Cost/Query', value: productionMetrics.queryCost, color: '#278400' }
           ].map((metric, idx) => (
             <div 
               key={idx}
@@ -393,7 +393,7 @@ const ProjectStatsPage: React.FC = () => {
       {/* Compliance Status */}
       <section style={{ marginBottom: '3rem' }}>
         <h2 style={{ fontSize: '1.75rem', color: '#26374a', marginBottom: '1.5rem', fontWeight: 600 }}>
-          {lang === 'fr' ? 'État de conformité' : 'Compliance Status'}
+          {lang === 'fr' ? '├ëtat de conformit├⌐' : 'Compliance Status'}
         </h2>
         <div style={{ 
           display: 'grid', 
@@ -422,13 +422,13 @@ const ProjectStatsPage: React.FC = () => {
                   fontSize: '0.75rem',
                   fontWeight: 600
                 }}>
-                  ✅ {lang === 'fr' ? 'Prêt' : 'Ready'}
+                  Γ£à {lang === 'fr' ? 'Pr├¬t' : 'Ready'}
                 </span>
               </div>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
                   <div style={{ fontSize: '0.75rem', color: '#8a8886', marginBottom: '0.25rem' }}>
-                    {lang === 'fr' ? 'Contrôles' : 'Controls'}
+                    {lang === 'fr' ? 'Contr├┤les' : 'Controls'}
                   </div>
                   <div style={{ fontSize: '1.5rem', fontWeight: 700, color: '#0535d2' }}>
                     {cert.controls}
@@ -451,7 +451,7 @@ const ProjectStatsPage: React.FC = () => {
       {/* Velocity Metrics */}
       <section style={{ marginBottom: '3rem' }}>
         <h2 style={{ fontSize: '1.75rem', color: '#26374a', marginBottom: '1.5rem', fontWeight: 600 }}>
-          {lang === 'fr' ? 'Avantage du développement assisté par IA' : 'AI-Assisted Development Advantage'}
+          {lang === 'fr' ? 'Avantage du d├⌐veloppement assist├⌐ par IA' : 'AI-Assisted Development Advantage'}
         </h2>
         <div style={{
           backgroundColor: '#f3f2f1',
@@ -462,7 +462,7 @@ const ProjectStatsPage: React.FC = () => {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '2rem' }}>
             <div style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '0.875rem', color: '#8a8886', marginBottom: '0.5rem' }}>
-                {lang === 'fr' ? 'Temps de développement' : 'Development Time'}
+                {lang === 'fr' ? 'Temps de d├⌐veloppement' : 'Development Time'}
               </div>
               <div style={{ fontSize: '2.5rem', fontWeight: 700, color: '#0535d2', marginBottom: '0.25rem' }}>
                 60 min
@@ -471,7 +471,7 @@ const ProjectStatsPage: React.FC = () => {
                 {lang === 'fr' ? 'vs 3 mois (traditionnel)' : 'vs 3 months (traditional)'}
               </div>
               <div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#278400', marginTop: '0.5rem' }}>
-                {lang === 'fr' ? '2,160× plus rapide' : '2,160× faster'}
+                {lang === 'fr' ? '2,160├ù plus rapide' : '2,160├ù faster'}
               </div>
             </div>
 
@@ -486,28 +486,28 @@ const ProjectStatsPage: React.FC = () => {
                 {lang === 'fr' ? 'vs 10-20 (traditionnel)' : 'vs 10-20 (traditional)'}
               </div>
               <div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#278400', marginTop: '0.5rem' }}>
-                {lang === 'fr' ? '12,5-25× plus rapide' : '12.5-25× faster'}
+                {lang === 'fr' ? '12,5-25├ù plus rapide' : '12.5-25├ù faster'}
               </div>
             </div>
 
             <div style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '0.875rem', color: '#8a8886', marginBottom: '0.5rem' }}>
-                {lang === 'fr' ? 'Économies de coûts' : 'Cost Savings'}
+                {lang === 'fr' ? '├ëconomies de co├╗ts' : 'Cost Savings'}
               </div>
               <div style={{ fontSize: '2.5rem', fontWeight: 700, color: '#0535d2', marginBottom: '0.25rem' }}>
                 $90K
               </div>
               <div style={{ fontSize: '0.875rem', color: '#605e5c', fontStyle: 'italic' }}>
-                {lang === 'fr' ? 'vs développement traditionnel' : 'vs traditional development'}
+                {lang === 'fr' ? 'vs d├⌐veloppement traditionnel' : 'vs traditional development'}
               </div>
               <div style={{ fontSize: '1.25rem', fontWeight: 700, color: '#278400', marginTop: '0.5rem' }}>
-                {lang === 'fr' ? '100 % économisé' : '100% saved'}
+                {lang === 'fr' ? '100 % ├⌐conomis├⌐' : '100% saved'}
               </div>
             </div>
 
             <div style={{ textAlign: 'center' }}>
               <div style={{ fontSize: '0.875rem', color: '#8a8886', marginBottom: '0.5rem' }}>
-                {lang === 'fr' ? 'Qualité maintenue' : 'Quality Maintained'}
+                {lang === 'fr' ? 'Qualit├⌐ maintenue' : 'Quality Maintained'}
               </div>
               <div style={{ fontSize: '2.5rem', fontWeight: 700, color: '#0535d2', marginBottom: '0.25rem' }}>
                 85%
@@ -534,17 +534,17 @@ const ProjectStatsPage: React.FC = () => {
       }}>
         <p>
           {lang === 'fr'
-            ? '🍁 Token d'appréciation au Canada – Établir la norme mondiale pour l'IA gouvernementale'
-            : '🍁 Token of appreciation to Canada – Setting the global standard for government-grade AI'}
+            ? '≡ƒìü Token d'appr├⌐ciation au Canada ΓÇô ├ëtablir la norme mondiale pour l'IA gouvernementale'
+            : '≡ƒìü Token of appreciation to Canada ΓÇô Setting the global standard for government-grade AI'}
         </p>
         <p style={{ marginTop: '0.5rem' }}>
           {lang === 'fr'
-            ? 'L'art de l'impossible maintenant possible – De la vision à la production en 60 minutes'
-            : 'The art of impossible now possible – From vision to production in 60 minutes'}
+            ? 'L'art de l'impossible maintenant possible ΓÇô De la vision ├á la production en 60 minutes'
+            : 'The art of impossible now possible ΓÇô From vision to production in 60 minutes'}
         </p>
         <p style={{ marginTop: '1rem' }}>
           <Link to="/" style={{ color: '#0535d2', textDecoration: 'underline' }}>
-            ← {t('productPage.back')}
+            ΓåÉ {t('productPage.back')}
           </Link>
         </p>
       </footer>
