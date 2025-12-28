@@ -1,10 +1,26 @@
 # Phase 5+ Governance OS — Caption (Copilot Language)
 
-- Purpose: Executive overview of governance at scale (40+ products).
-- Per-Repo: PR templates use CLAIM tokens; `.eva-memory.json` and evidence folders feed CI.
-- Central Policy: One policy + schema + versioned enforcement bundle; lifecycle rules allow deprecation/migration.
-- Evidence Registry: Git-native packs (WCAG, GC-DS, bilingual) with `provenance.json` to track origin/freshness.
-- Telemetry: Daily aggregator produces `governance-metrics.json` for dashboards.
-- Policy Evolution: Deprecation engine warns/soft-fails/hard-fails; migration PRs help teams update.
-- GC Controls: Outputs for ATO packages and AIRA/EARB evidence export (continuous ATO).
-- Why it scales: clear boundaries (repo vs central), provenance, telemetry, and automated migration support.
+What it is
+- Governance operating system scaling Phase 4 across 40+ products: central policy + evidence registry + lifecycle + telemetry.
+
+Why it exists
+- Provides continuous compliance, portfolio visibility, and controlled evolution without manual governance overhead.
+
+What fails CI
+- Deprecated claim past grace window (hard-fail)
+- Missing provenance in shared evidence packs
+- Central policy/schema mismatch
+- Repo lacks required CLAIM tokens/evidence
+
+Where evidence lives
+- Per-repo: `.eva/evidence/**`, `coverage/**`, `audits/**`
+- Shared: `eva-evidence-registry/*` packs with `provenance.json`
+
+Exception / override process
+- Time-boxed override label with justification + audit log; periodic review to renew/remove.
+
+What’s next (Phase 5+)
+- Implement migration PR generator
+- Add governance telemetry dashboards
+- Integrate AIRA/EARB and ATO package builders
+- Introduce SLSA/cosign for provenance (Phase 6)
